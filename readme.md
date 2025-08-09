@@ -1,4 +1,4 @@
-# 🚀 Título do Projeto
+# 🚀 Garra Marília - DevMenthors
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)
 ## 📋 Índice
@@ -13,7 +13,7 @@
 ---
 
 ## 📄 Descrição
-Este projeto tem o objetivo de [descrever o objetivo principal do projeto]. Ele foi criado como parte do aprendizado sobre [mencionar o tema, como Git e GitHub].
+Este projeto tem o objetivo de colaborar com a instituição de Garro Marília. Ele foi criado como parte do aprendizado sobre o campo de tecnologia, com foco em tecnologias de desenvolvimeto web.
 
 ## 💻 Tecnologias Utilizadas
 * HTML5
