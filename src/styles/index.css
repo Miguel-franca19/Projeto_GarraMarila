@@ -1,3 +1,4 @@
 /* Importação de todos os arquivos CSS */
 
 @import './global.css';
+@import './navbar.css';

@@ -20,7 +20,7 @@
   --quintenary-color: #B45309;
   --font-color: #585858;
   --background-color: #f5f5f5;
-
+  --white-color: #ffffff;
   /* Borda para testar containers */
   --border: 1px solid #c0c0c0;
 }
@@ -115,6 +115,31 @@ body {
   margin-bottom: 5px;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Responsividade CSS */
+.desktop-only {
+  display: none !important;
+}
+
+.menu-burguer {
+  display: block !important;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+@media (min-width: 768px) {
+  .desktop-only {
+    display: block !important;
+  }
+
+  .nav {
+    visibility: visible !important;
+  }
+
+  .menu-burguer {
+    display: none !important;
+  }
 }
 
 /* Fim do arquivo global.css */
