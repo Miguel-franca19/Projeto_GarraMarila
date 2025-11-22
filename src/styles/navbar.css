@@ -10,7 +10,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .logo img{
+.navbar .logo img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -23,19 +23,45 @@
 }
 
 .navbar .nav {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    visibility: hidden;
+  list-style: none;
+  display: none;
+  gap: 20px;
 }
 
 .navbar .nav .nav-link {
-    text-decoration: none;
-    color: var(--font-color);
-    font-weight: 500;
-    transition: color 150ms ease;
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 500;
+  transition: color 150ms ease;
 }
 
 .navbar .nav .nav-link:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Menu Burguer Button CSS */
+.menu-burguer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.material-symbols-outlined {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 24px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.material-symbols-outlined:hover {
+  background-color: var(--secondary-color);
+}
+
+.hidden {
+  display: none !important;
 }

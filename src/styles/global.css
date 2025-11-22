@@ -134,7 +134,7 @@ body {
   }
 
   .nav {
-    visibility: visible !important;
+    display: flex !important;
   }
 
   .menu-burguer {
