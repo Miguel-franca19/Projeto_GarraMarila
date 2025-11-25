@@ -88,7 +88,7 @@
   display: none;
 }
 
-.material-symbols-outlined {
+.menu-burguer {
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
@@ -99,7 +99,7 @@
   transition: background-color 0.3s;
 }
 
-.material-symbols-outlined:hover {
+.menu-burguer:hover {
   background-color: var(--secondary-color);
 }
 
