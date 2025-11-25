@@ -98,6 +98,11 @@
   transition: background-color 0.3s;
 }
 
+.menu-burguer i {
+  display: block;
+  margin: auto;
+}
+
 .menu-burguer:hover {
   background-color: var(--secondary-color);
 }

@@ -9,11 +9,11 @@
   margin-top: 2rem;
 }
 
-#hero .container-column:first-child {
+.container-column:first-child {
   flex: 1;
 }
 
-.hero-img {
+.img {
   max-width: 472px;
   max-height: 712px;
   width: calc(35vw + 100px);
@@ -48,7 +48,6 @@
     gap: 30px;
   }
 }
-
 
 .container-image {
   display: block;

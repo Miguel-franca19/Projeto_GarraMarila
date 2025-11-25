@@ -30,6 +30,7 @@ body {
   font-family: "Arial", sans-serif;
   background-color: var(--background-color);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Containers CSS */
@@ -38,6 +39,22 @@ body {
   max-width: 1800px;
   margin: 0 auto;
   border: var(--border);
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: var(--border);
+}
+
+.container-fluid h2 {
+  font-size: calc(.9em + 1vw);
+  font-weight: 500;
+  color: var(--font-color);
+  margin-bottom: 10px;
 }
 
 .container-row {
@@ -51,6 +68,7 @@ body {
 .container-column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border: var(--border);
 }
 
@@ -87,7 +105,7 @@ body {
 
 /* Text Elements CSS */
 .title {
-  font-size: calc(2em + 1vw);
+  font-size: calc(2em + 1.5vw);
   font-weight: bold;
   margin-bottom: 10px;
 }
