@@ -35,9 +35,8 @@ body {
 /* Containers CSS */
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 20px;
   border: var(--border);
 }
 
@@ -52,17 +51,17 @@ body {
 .container-column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   border: var(--border);
 }
 
 /* Buttons CSS */
 .btn {
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: calc(1em + 0.01vw);
   transition: all 150ms ease;
 }
 
@@ -88,7 +87,7 @@ body {
 
 /* Text Elements CSS */
 .title {
-  font-size: 2em;
+  font-size: calc(2em + 1vw);
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -100,9 +99,9 @@ body {
 }
 
 .text {
-  font-size: 1em;
+  font-size: calc(1em + 0.1vw);
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
   color: var(--font-color);
 }
 
@@ -148,6 +147,10 @@ body {
   .menu-burguer,
   .sidebar {
     display: none !important;
+  }
+
+  .container {
+    padding: 20px;
   }
 }
 
