@@ -72,6 +72,12 @@ body {
   border: var(--border);
 }
 
+#about,
+#programs {
+ margin-top: 4rem;
+}
+
+
 /* Buttons CSS */
 .btn {
   color: #fff;
