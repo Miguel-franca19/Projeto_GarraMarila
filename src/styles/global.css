@@ -75,7 +75,8 @@ body {
 #about,
 #programs,
 #adoption,
-#donation {
+#donation,
+#needs {
  margin-top: 4rem;
 }
 
@@ -129,6 +130,11 @@ body {
   line-height: 1.5;
   margin-bottom: 1.5rem;
   color: var(--font-color);
+}
+
+.text-info {
+  max-width: 600px;
+  margin: 10px auto 40px;
 }
 
 /* Form Elements CSS */

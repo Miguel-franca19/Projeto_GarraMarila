@@ -1,0 +1,138 @@
+/* Needs CSS 
+
+  Estilos para a seção de Necessidades Urgentes.
+
+*/
+.needs-cards-container {
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Needs Card */
+.needs-card {
+  background-color: var(--white-color);
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  max-width: 280px; /* Para acomodar 4 cards em desktop */
+}
+
+/* Tag de Status */
+.needs-tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: var(--white-color);
+}
+
+.tag-critical {
+  background-color: #e53935; 
+}
+
+.tag-urgent {
+  background-color: var(--primary-color); 
+}
+
+.tag-moderate {
+  background-color: #4caf50;
+}
+
+/* Icone e Título */
+.needs-icon-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.needs-icon-title img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.icon-medical {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.needs-card .subtitle {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Informações de Estoque */
+.stock-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.stock-label {
+  font-size: 0.9em;
+  color: var(--font-color);
+  margin: 0;
+}
+
+.stock-value {
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--quartenary-color);
+  margin: 0;
+}
+
+/* Barra de Progresso */
+.progress-bar-container {
+  background-color: #eee;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.progress-critical {
+  background-color: #e53935;
+}
+.progress-urgent {
+  background-color: var(--primary-color); 
+}
+.progress-moderate {
+  background-color: #4caf50;
+}
+
+/* Botão do Card */
+.needs-btn {
+  width: 100%;
+  border: 1px solid lightgrey;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .needs-cards-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .needs-card {
+    max-width: 90%;
+  }
+}
