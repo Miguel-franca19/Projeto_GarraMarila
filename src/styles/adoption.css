@@ -19,7 +19,6 @@
 .adoption-cards-container {
   justify-content: space-between;
   gap: 30px;
-  padding: 0 10px;
   width: 100%;
 }
 
@@ -90,8 +89,8 @@
   align-items: center;
   gap: 10px;
   margin: 30px auto 0;
-  border: 1px solid var(--font-color);
-  border-radius: 25px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
   background-color: var(--white-color) !important;
   padding: 15px 30px;
   text-decoration: none;
@@ -106,4 +105,10 @@
     border: none;
     padding: 0;
   }
+
+  .adoption-cards-container {
+    justify-content: center;
+  }
 }
+
+

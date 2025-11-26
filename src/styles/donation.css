@@ -1,0 +1,191 @@
+/* Donation CSS 
+
+  Estilos para a seção de Doação.
+
+*/
+
+.donation-cards-container {
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+/* Donation Card */
+.donation-card {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* Card Content */
+.donation-card-content {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--font-color);
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 0.9em;
+  color: var(--font-color);
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.benefits-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 1em;
+  color: var(--font-color);
+  line-height: 1.8;
+}
+
+.benefits-list li::before {
+  content: "✓"; 
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.payment-title {
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--font-color);
+  margin-bottom: 10px;
+}
+
+.payment-icons {
+  gap: 10px;
+}
+
+.payment-icon {
+  border: var(--border);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: var(--font-color);
+}
+
+.btn-donate {
+  width: 100%;
+  margin-top: auto; 
+}
+
+/* Highlight Card (Apadrinhamento Mensal) */
+.highlight-card {
+  border: 2px solid var(--primary-color);
+  position: relative;
+}
+
+.highlight-card .btn-primary {
+  background-color: var(--primary-color);
+}
+
+.highlight-tag {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/* QR Code Section */
+.qrcode-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  width: fit-content;
+  margin: 0 auto 50px;
+}
+
+.qrcode-img {
+  width: 100px;
+  height: 100px;
+}
+
+.qrcode-text {
+  text-align: left;
+}
+
+.qrcode-text .subtitle {
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+
+.qrcode-description {
+  margin-bottom: 5px;
+  font-size: 0.95em;
+}
+
+.qrcode-chave {
+  margin-bottom: 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Final Info and Quote */
+.final-info {
+  font-size: 0.9em;
+  color: var(--font-color);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--font-color);
+  padding: 0 10px;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 767px) {
+  .qrcode-section {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+  .qrcode-text {
+    text-align: center;
+  }
+  .donation-cards-container {
+    justify-content: center;
+  }
+}
