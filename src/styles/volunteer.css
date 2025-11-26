@@ -1,0 +1,178 @@
+/* Volunteer CSS 
+
+  Estilos para a seção de Voluntariado.
+
+*/
+
+#volunteer .text {
+  text-align: left;
+  max-width: none;
+}
+
+.volunteer-content-wrapper {
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+}
+
+.volunteer-info-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.volunteer-form-column {
+  max-width: 450px;
+  width: 100%;
+}
+
+/* Tags de Áreas de Atuação */
+.volunteer-tags-container {
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.volunteer-tag {
+  background-color: lightgray;
+  color: var(--font-color);
+  padding: 7px 15px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+/* Como Funciona */
+.how-it-works {
+  padding: 20px;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  flex: 1;
+}
+
+.how-it-works .subtitle {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-size: calc(1.5em + 0.5vw);
+}
+
+.steps-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.steps-list li {
+  position: relative;
+  font-size: 1em;
+  color: var(--font-color);
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.steps-list li::before {
+  content: "🐾";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+/* Formulário Card */
+.volunteer-form-card {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+.volunteer-form-card .title {
+  text-align: left;
+  font-size: calc(1.5em + 0.5vw);
+}
+
+.form-instruction-text {
+  font-size: 0.9em;
+  color: var(--font-color);
+  margin-bottom: 30px;
+}
+
+/* Formulário */
+.volunteer-form .form-group {
+  margin-bottom: 20px;
+}
+
+.volunteer-form .label {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.volunteer-form .input {
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+}
+
+.volunteer-form .textarea {
+  resize: vertical;
+}
+
+.form-submit-btn {
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: var(--primary-color) !important;
+}
+
+.form-whatsapp-btn {
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px;
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  background-color: var(--white-color);
+}
+
+@media (max-width: 900px) {
+  .volunteer-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .volunteer-info-column,
+  .volunteer-form-column {
+    text-align: center;
+  }
+
+  #volunteer .title,
+  .volunteer-subtitle,
+  #volunteer .text,
+  .volunteer-form-card .subtitle,
+  .form-instruction-text,
+  .volunteer-form .label,
+  .how-it-works .subtitle {
+    text-align: center;
+  }
+
+  .volunteer-info-column {
+    align-items: center;
+  }
+
+  .steps-list {
+    text-align: left;
+  }
+}

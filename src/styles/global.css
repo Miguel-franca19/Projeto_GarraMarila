@@ -50,7 +50,8 @@ body {
   border: var(--border);
 }
 
-.container-fluid h2 {
+.container-fluid h2,
+.subtitle {
   font-size: calc(.9em + 1vw);
   font-weight: 500;
   color: var(--font-color);
@@ -76,7 +77,10 @@ body {
 #programs,
 #adoption,
 #donation,
-#needs {
+#needs,
+#volunteer,
+#transparency,
+#impact {
  margin-top: 4rem;
 }
 
@@ -84,8 +88,9 @@ body {
 /* Buttons CSS */
 .btn {
   color: #fff;
-  padding: 10px 25px;
+  padding: 15px 25px;
   border: none;
+  gap: 8px;
   border-radius: 5px;
   cursor: pointer;
   font-size: calc(1em + 0.01vw);
@@ -109,7 +114,7 @@ body {
   color: black;
 }
 .btn-secondary:hover {
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(240, 240, 240);
 }
 
 /* Text Elements CSS */
@@ -117,12 +122,6 @@ body {
   font-size: calc(2em + 1.5vw);
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 1.35em;
-  margin-bottom: 8px;
-  font-weight: 500;
 }
 
 .text {

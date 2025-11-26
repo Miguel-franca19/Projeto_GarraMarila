@@ -54,15 +54,6 @@
   margin-bottom: 20px;
 }
 
-.tag {
-  background-color: var(--background-color);
-  color: var(--font-color);
-  padding: 3px 10px;
-  border-radius: 5px;
-  font-size: 0.8em;
-  font-weight: 600;
-}
-
 .adoption-card .button-group {
   justify-content: space-between;
   gap: 10px;
