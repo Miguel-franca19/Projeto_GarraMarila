@@ -131,6 +131,15 @@ body {
   color: var(--font-color);
 }
 
+.tag {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
 .text-info {
   max-width: 600px;
   margin: 10px auto 40px;

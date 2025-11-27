@@ -73,6 +73,7 @@
   width: fit-content;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin: 30px auto 0;
   border: 1px solid lightgray;
