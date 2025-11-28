@@ -801,7 +801,7 @@
     <!-- Impact History End -->
     <!-- Footer Start -->
     <footer class="container" id="footer">
-      <div class="container-row">
+      <div class="container-row newsletter-container">
         <div class="container-column">
           <h2 class="subtitle">Fique por dentro</h2>
           <h1 class="title">Receba notícias e histórias de adoção</h1>
@@ -809,9 +809,55 @@
             Enviamos só o essencial: transparência de gastos, resgates e vitórias da comunidade.
           </p>
         </div>
-        <div class="container-column">
-          
+        <form class="container-column container-form" method="post">
+          <div class="container-row">
+            <input type="email" name="email_newsletter" id="email_newsletter" placeholder="Seu Email:" class="input">
+            <input type="submit" value="Assinar" class="btn btn-primary">
+          </div>
+          <small class="text">
+            Ao assinar, você concorda em receber comunicações do GARRA.
+          </small>
+        </form>
+      </div>
+      <div class="container-row footer-data-row">
+        <div class="container-column footer-logo-col">
+          <img src="src/assets/logo.png" alt="Logo GARRA" class="footer-logo"/>
+          <p class="text footer-description">
+            Grupo de Apoio e Resgate de Animais. <br/> Salvando vidas desde 2015.
+          </p>
         </div>
+        <div class="container-column footer-nav-col">
+          <h3 class="subtitle footer-section-title">Navegação</h3>
+          <ul class="footer-list">
+            <li><a href="#about" class="footer-link">Sobre</a></li>
+            <li><a href="#" class="footer-link">Animais</a></li>
+            <li><a href="#" class="footer-link">Doar</a></li>
+            <li><a href="#volunteer" class="footer-link">Voluntariado</a></li>
+            <li><a href="#transparency" class="footer-link">Transparência</a></li>
+          </ul>
+        </div>
+        <div class="container-column footer-contact-col">
+          <h3 class="subtitle footer-section-title">Contato</h3>
+          <ul class="footer-list">
+            <li>contato@garra.org.br</li>
+            <li>(00) 0000-0000</li>
+            <li>WhatsApp: (00) 00000-0000</li>
+            <li>Rua Exemplo, 123</li>
+            <li>Cidade - Estado</li>
+          </ul>
+        </div>
+        <div class="container-column footer-pix-col">
+          <h3 class="subtitle footer-section-title">Doe via Pix</h3>
+          <img src="src/assets/qrcode.png" alt="QR Code Pix" class="footer-qrcode" />
+          <small class="text pix-key-text">
+            Chave Pix: <br/> doar@garra.org.br
+          </small>
+        </div>
+      </div>
+      <div class="footer-copyright-row">
+        <p class="text copyright-text">
+          © 2025 GARRA - Grupo de Apoio e Resgate de Animais. CNPJ: 00.000.000/0001-00. Transparência e prestação de contas públicas.
+        </p>
       </div>
     </footer>
     <!-- Footer End -->

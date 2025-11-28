@@ -31,9 +31,8 @@
 }
 
 .card-title {
-  font-size: 1.2em;
+  font-size: calc(1.2em + 0.3vw);
   font-weight: bold;
-  color: var(--font-color);
   margin-bottom: 5px;
 }
 

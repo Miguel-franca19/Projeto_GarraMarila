@@ -118,6 +118,7 @@
 .volunteer-form .input {
   padding: 12px 10px;
   border: 1px solid #ccc;
+  width: 100%;
 }
 
 .volunteer-form .textarea {

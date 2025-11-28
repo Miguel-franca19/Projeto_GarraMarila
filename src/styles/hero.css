@@ -9,7 +9,8 @@
   margin-top: 2rem;
 }
 
-.container-column:first-child {
+#hero .container-column:first-child,
+#about .container-column:first-child {
   flex: 1;
 }
 
@@ -28,9 +29,21 @@
   width: 93px;
   height: 93px;
   align-self: center;
+  transition: all 250ms ease-in-out;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 7px;
+  cursor: pointer;
 }
 
-.container-column small {
+.qrcode:hover {
+  transform: scale(1.05);
+  border: 1px solid lightgray;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+
+}
+
+#hero .container-column small {
   width: 100px;
   text-align: center;
   color: var(--font-color);
