@@ -44,6 +44,8 @@ body {
   background-color: var(--background-color);
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+  padding-top: 60px;
 }
 
 /* Containers CSS */
@@ -51,7 +53,7 @@ body {
   width: 90%;
   max-width: 1800px;
   margin: 0 auto;
-  border: var(--border);
+  /* border: var(--border); */
 }
 
 .container-fluid {
@@ -60,7 +62,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: var(--border);
+  /* border: var(--border); */
 }
 
 .container-fluid h2,
@@ -76,14 +78,14 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  border: var(--border);
+  /* border: var(--border); */
 }
 
 .container-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: var(--border);
+  /* border: var(--border); */
 }
 
 #about,
