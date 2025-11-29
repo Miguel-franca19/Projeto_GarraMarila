@@ -11,15 +11,16 @@
 }
 
 #footer .container-column:first-child {
-  flex: calc(.7 + 7vw);
+  flex: calc(0.7 + 7vw);
 }
 
 #footer .container-form {
-  flex: .8;
+  flex: 0.8;
 }
 
 #footer .title {
   font-size: calc(1em + 1.3vw);
+  font-family: var(--text-font);
 }
 
 #footer .btn {
@@ -37,7 +38,7 @@
 
 #footer small {
   margin-top: 1rem;
-  font-size: calc(.8em + .1vw);
+  font-size: calc(0.8em + 0.1vw);
 }
 
 /* Estilos da Parte Inferior (Dados) */
@@ -63,7 +64,7 @@
 }
 
 .footer-description {
-  font-size: calc(.85em + 0.1vw);
+  font-size: calc(0.85em + 0.1vw);
   margin-bottom: 0;
   line-height: 1.4;
 }
@@ -81,7 +82,7 @@
 }
 
 .footer-list li {
-  font-size: calc(.9em + 0.1vw);
+  font-size: calc(0.9em + 0.1vw);
   color: var(--font-color);
   margin-bottom: 8px;
 }
@@ -134,7 +135,7 @@
 }
 
 .copyright-text {
-  font-size: calc(.8em + 0.1vw);
+  font-size: calc(0.8em + 0.1vw);
   color: #888;
   margin: 0;
 }
@@ -172,11 +173,11 @@
     flex-wrap: wrap;
   }
 
-  #footer .container-form .btn{
+  #footer .container-form .btn {
     width: 100%;
   }
 
-  #footer small{
+  #footer small {
     text-align: center;
   }
 }

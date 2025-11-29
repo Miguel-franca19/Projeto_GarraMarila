@@ -63,7 +63,7 @@
 }
 
 .benefits-list li::before {
-  content: "✓"; 
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--primary-color);
@@ -91,7 +91,7 @@
 
 .btn-donate {
   width: 100%;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 /* Highlight Card (Apadrinhamento Mensal) */
@@ -127,8 +127,15 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: var(--white-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.064);
   width: fit-content;
+  transition: all 250ms ease-in-out;
   margin: 0 auto 50px;
+  cursor: pointer;
+}
+
+.qrcode-section:hover {
+  transform: scale(1.03);
 }
 
 .qrcode-img {

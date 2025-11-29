@@ -95,6 +95,7 @@
 .volunteer-form-card .title {
   text-align: left;
   font-size: calc(1.5em + 0.5vw);
+  font-family: var(--text-font);
 }
 
 .form-instruction-text {
@@ -120,6 +121,10 @@
   border: 1px solid #ccc;
   width: 100%;
 }
+
+.volunteer-form .input:focus {
+  outline: none;
+  border-color: var(--primary-color);}
 
 .volunteer-form .textarea {
   resize: vertical;
