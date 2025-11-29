@@ -1,10 +1,3 @@
-const sidebar = document.querySelector('#sidebar');
-const toggleButton = document.querySelectorAll('.menu-burguer');
+// Importação de todos os scripts necessários
 
-toggleButton.forEach(button => {
-  button.addEventListener('click', toggleMenu);
-});
-
-function toggleMenu() {
-  sidebar.classList.toggle('active');
-}
+import './open-menu.js';
