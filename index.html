@@ -3,11 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GARRA Marília | Resgate, Adoção e Doação de Animais (Cães e Gatos)</title>
-    <meta name="description" content="ONG GARRA em Marília/SP. Ajude no resgate, castração e adoção de cães e gatos. Doe ração, seja voluntário ou contribua via Pix. Transparência garantida." />
-    <meta name="keywords" content="ONG Marília, Adoção de Animais Marília, Resgate de Cães, Doação de Ração, Voluntariado Marília, Abrigo de Gatos, Pix para Animais" />
-    <meta property="og:title" content="GARRA Marília | Resgate e Adoção de Animais" />
-    <meta property="og:description" content="ONG GARRA em Marília/SP. Ajude no resgate, castração e adoção de cães e gatos. Doe ração, seja voluntário ou contribua via Pix. Transparência garantida." />
+    <title>
+      GARRA Marília | Resgate, Adoção e Doação de Animais (Cães e Gatos)
+    </title>
+    <meta
+      name="description"
+      content="ONG GARRA em Marília/SP. Ajude no resgate, castração e adoção de cães e gatos. Doe ração, seja voluntário ou contribua via Pix. Transparência garantida."
+    />
+    <meta
+      name="keywords"
+      content="ONG Marília, Adoção de Animais Marília, Resgate de Cães, Doação de Ração, Voluntariado Marília, Abrigo de Gatos, Pix para Animais"
+    />
+    <meta
+      property="og:title"
+      content="GARRA Marília | Resgate e Adoção de Animais"
+    />
+    <meta
+      property="og:description"
+      content="ONG GARRA em Marília/SP. Ajude no resgate, castração e adoção de cães e gatos. Doe ração, seja voluntário ou contribua via Pix. Transparência garantida."
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://garramarilia.vercel.app/" />
     <meta property="og:image" content="src/assets/logo.png" />
@@ -22,10 +36,62 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-</head>
+    <style>
+      /* Swiper Carousel Styles */
+      .adoption-cards-container {
+        position: relative;
+        width: 100%;
+        padding: 20px 0 60px;
+        overflow: hidden;
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 50px;
+      }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+      }
+      /* Swiper Navigation Buttons */
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: var(--primary-color);
+        background-color: var(--white-color);
+        width: 50px;
+        height: 50px;
+        border-radius: 50% !important;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: all 150ms ease;
+      }
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        transform: scale(1.1);
+      }
+      /* Swiper Pagination */
+      .swiper-pagination-bullet {
+        background-color: var(--font-color);
+        opacity: 0.5;
+        width: 12px;
+        height: 12px;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: var(--primary-color);
+        opacity: 1;
+      }
+    </style>
+  </head>
   <body>
     <!-- Navbar Start -->
     <nav class="navbar" data-aos="fade-down" data-aos-duration="600">
@@ -515,7 +581,7 @@
         <div class="qrcode-text" data-aos="fade-left" data-aos-delay="500">
           <h3 class="subtitle">Pix QR Code</h3>
           <p class="text qrcode-description">Escaneie para doar rapidamente</p>
-          <p class="text qrcode-chave">Chave Pix:   garra.marilia@gmail.com</p>
+          <p class="text qrcode-chave">Chave Pix: garra.marilia@gmail.com</p>
         </div>
       </div>
       <p class="final-info" data-aos="fade-up" data-aos-delay="600">
@@ -900,81 +966,203 @@
           compartilhamos nas redes sociais.
         </p>
       </div>
-      <div class="adoption-cards-container container-row">
-        <div class="adoption-card">
-          <img
-            src="src/assets/rex-img.png"
-            alt="Cachorro Rex"
-            class="adoption-img"
-          />
-          <div class="card-content">
-            <div class="card-meta">
-              <span class="material-symbols-outlined icon-time">schedule</span>
-              <small>há 2 dias</small>
+      <!-- Swiper Container -->
+      <div class="adoption-cards-container">
+        <div class="swiper impactSwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="adoption-card">
+                <img
+                  src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop"
+                  alt="Cachorro Rex"
+                  class="adoption-img"
+                />
+                <div class="card-content">
+                  <div class="card-meta">
+                    <span class="material-symbols-outlined icon-time"
+                      >schedule</span
+                    >
+                    <small>há 2 dias</small>
+                  </div>
+                  <h3 class="subtitle">Rex encontrou um lar!</h3>
+                  <p class="card-description-impact">
+                    Depois de 3 meses no abrigo, Rex foi adotado por uma família
+                    amorosa. Veja a emoção do encontro! 🖤🐾
+                  </p>
+                  <a href="#" class="btn btn-link">
+                    Ver no Instagram
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <h3 class="subtitle">Rex encontrou um lar!</h3>
-            <p class="card-description-impact">
-              Depois de 3 meses no abrigo, Rex foi adotado por uma família
-              amorosa. Veja a emoção do encontro! 🖤🐾
-            </p>
-            <a href="#" class="btn btn-link">
-              Ver no Instagram
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-        <div class="adoption-card">
-          <img
-            src="src/assets/mia-img.png"
-            alt="Gata Luna"
-            class="adoption-img"
-          />
-          <div class="card-content">
-            <div class="card-meta">
-              <span class="material-symbols-outlined icon-time">schedule</span>
-              <small>há 5 dias</small>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="adoption-card">
+                <img
+                  src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
+                  alt="Gata Luna"
+                  class="adoption-img"
+                />
+                <div class="card-content">
+                  <div class="card-meta">
+                    <span class="material-symbols-outlined icon-time"
+                      >schedule</span
+                    >
+                    <small>há 5 dias</small>
+                  </div>
+                  <h3 class="subtitle">Resgate de 5 gatinhos</h3>
+                  <p class="card-description-impact">
+                    Resgatamos uma ninhada abandonada. Todos estão saudáveis e
+                    prontos para adoção em breve! ✨
+                  </p>
+                  <a href="#" class="btn btn-link">
+                    Ver no Facebook
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <h3 class="subtitle">Resgate de 5 gatinhos</h3>
-            <p class="card-description-impact">
-              Resgatamos uma ninhada abandonada. Todos estão saudáveis e prontos
-              para adoção em breve! ✨
-            </p>
-            <a href="#" class="btn btn-link">
-              Ver no Facebook
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
-          </div>
-        </div>
-        <div class="adoption-card">
-          <img
-            src="src/assets/luck-img.png"
-            alt="Gatinha Mia"
-            class="adoption-img"
-          />
-          <div class="card-content">
-            <div class="card-meta">
-              <span class="material-symbols-outlined icon-time">schedule</span>
-              <small>há 1 semana</small>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="adoption-card">
+                <img
+                  src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=300&fit=crop"
+                  alt="Gatinha Mia"
+                  class="adoption-img"
+                />
+                <div class="card-content">
+                  <div class="card-meta">
+                    <span class="material-symbols-outlined icon-time"
+                      >schedule</span
+                    >
+                    <small>há 1 semana</small>
+                  </div>
+                  <h3 class="subtitle">Mutirão de castração</h3>
+                  <p class="card-description-impact">
+                    Mais um mutirão realizado! 45 animais castrados
+                    gratuitamente. Obrigado aos voluntários! 🙏
+                  </p>
+                  <a href="#" class="btn btn-link">
+                    Ver no Instagram
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
             </div>
-            <h3 class="subtitle">Mutirão de castração</h3>
-            <p class="card-description-impact">
-              Mais um mutirão realizado! 45 animais castrados gratuitamente.
-              Obrigado aos voluntários! 🙏
-            </p>
-            <a href="#" class="btn btn-link">
-              Ver no Instagram
-              <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="adoption-card">
+                <img
+                  src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop"
+                  alt="Cachorro Rex"
+                  class="adoption-img"
+                />
+                <div class="card-content">
+                  <div class="card-meta">
+                    <span class="material-symbols-outlined icon-time"
+                      >schedule</span
+                    >
+                    <small>há 2 dias</small>
+                  </div>
+                  <h3 class="subtitle">Rex encontrou um lar!</h3>
+                  <p class="card-description-impact">
+                    Depois de 3 meses no abrigo, Rex foi adotado por uma família
+                    amorosa. Veja a emoção do encontro! 🖤🐾
+                  </p>
+                  <a href="#" class="btn btn-link">
+                    Ver no Instagram
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="adoption-card">
+                <img
+                  src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
+                  alt="Gata Luna"
+                  class="adoption-img"
+                />
+                <div class="card-content">
+                  <div class="card-meta">
+                    <span class="material-symbols-outlined icon-time"
+                      >schedule</span
+                    >
+                    <small>há 5 dias</small>
+                  </div>
+                  <h3 class="subtitle">Resgate de 5 gatinhos</h3>
+                  <p class="card-description-impact">
+                    Resgatamos uma ninhada abandonada. Todos estão saudáveis e
+                    prontos para adoção em breve! ✨
+                  </p>
+                  <a href="#" class="btn btn-link">
+                    Ver no Facebook
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <div class="adoption-card">
+                <img
+                  src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=300&fit=crop"
+                  alt="Gatinha Mia"
+                  class="adoption-img"
+                />
+                <div class="card-content">
+                  <div class="card-meta">
+                    <span class="material-symbols-outlined icon-time"
+                      >schedule</span
+                    >
+                    <small>há 1 semana</small>
+                  </div>
+                  <h3 class="subtitle">Mutirão de castração</h3>
+                  <p class="card-description-impact">
+                    Mais um mutirão realizado! 45 animais castrados
+                    gratuitamente. Obrigado aos voluntários! 🙏
+                  </p>
+                  <a href="#" class="btn btn-link">
+                    Ver no Instagram
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Navigation Buttons -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <div class="container-row" style="margin-top: 2rem">
-        <a href="https://www.instagram.com/garramarilia/" class="btn btn-secondary see-all-btn" data-aos="fade-up">
-          <img src="src/assets/icons/instagram.png" alt="instagram-icon" />
+        <a
+          href="https://www.instagram.com/garramarilia/"
+          class="btn btn-secondary see-all-btn"
+          data-aos="fade-up"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="instagram-icon"
+          />
           Seguir no Instagram
         </a>
-        <a href="https://www.facebook.com/garramarilia" class="btn btn-secondary see-all-btn" data-aos="fade-up">
-          <img src="src/assets/icons/facebook.png" alt="facebook-icon" />
+        <a
+          href="https://www.facebook.com/garramarilia"
+          class="btn btn-secondary see-all-btn"
+          data-aos="fade-up"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"
+            alt="facebook-icon"
+          />
           Seguir no Facebook
         </a>
       </div>
@@ -1067,9 +1255,56 @@
       </div>
     </footer>
     <!-- Footer End -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="src/scripts/index.js"></script>
+    <script>
+      const swiper = new Swiper(".impactSwiper", {
+        // Slides por visualização
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        // Loop infinito
+        loop: true,
+
+        // Autoplay
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+
+        // Navegação
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // Paginação
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+          // Quando a largura >= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // Quando a largura >= 768px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // Quando a largura >= 1024px
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
     <script>
       AOS.init({
         // Define o offset (em px) de quando a animação deve começar
