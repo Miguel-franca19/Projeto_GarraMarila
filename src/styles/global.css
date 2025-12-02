@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 250ms ease-in-out;
 }
 
 :root {
@@ -28,6 +29,9 @@
   --quartenary-color: #08415c; /* Azul Escuro - Insticucional */
   --quintenary-color: #b45309;
   --font-color: #585858;
+  --btn-color: black;
+  --hover-color: rgb(240, 240, 240);
+  --title-color: #222;
   --background-color: #f5f5f5;
   --white-color: #ffffff;
   --font-title: 'MarvinRound', sans-serif;
@@ -38,6 +42,22 @@
 
 }
 
+.dark {
+  /* Cores para o Modo Escuro */
+  --primary-color: #ff9800; /* Pode manter cores de destaque, se quiser */
+  --secondary-color: #dd7c00; /* Uma variação escura do destaque */
+  --tertiary-color: #2c2c2c; /* Cor de fundo principal escura */
+  --quartenary-color: #ffffff; /* Use branco para o que era azul escuro */
+  --quintenary-color: #ffb347; /* Uma cor clara para o que era escuro */
+  --font-color: #e0e0e0; /* Cor da fonte clara */
+  --background-color: #1a1a1a; /* Fundo mais escuro */
+  --white-color: #2c2c2c; /* Onde era branco puro, coloque um cinza escuro */
+  --btn-color: white;
+  --title-color: #ffb347;
+  --hover-color: #2c2c2c;
+}
+
+
 html,
 body {
   font-family: var(--font-text);
@@ -45,6 +65,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 4.5rem;
+  padding-top: 40px;
 }
 
 /* Containers CSS */
@@ -102,7 +123,6 @@ body {
 
 /* Buttons CSS */
 .btn {
-  color: #fff;
   padding: 15px 25px;
   border: none;
   gap: 8px;
@@ -121,6 +141,7 @@ body {
 }
 
 .btn-primary {
+  color: var(--white-color);
   background-color: var(--primary-color);
 }
 
@@ -130,10 +151,10 @@ body {
 
 .btn-secondary {
   background-color: transparent;
-  color: black;
+  color: var(--btn-color);
 }
 .btn-secondary:hover {
-  background-color: rgb(240, 240, 240);
+  background-color: var(--hover-color);
 }
 
 /* Text Elements CSS */
@@ -142,7 +163,7 @@ body {
   font-weight: bold;
   margin-bottom: 10px;
   font-family: var(--font-title);
-  color: #222;
+  color: var(--title-color);
 }
 
 .text {
@@ -171,6 +192,8 @@ body {
   padding: 10px;
   border: var(--border);
   border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--btn-color);
 }
 
 .input:focus {

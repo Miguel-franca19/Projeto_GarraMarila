@@ -39,6 +39,7 @@
 #footer small {
   margin-top: 1rem;
   font-size: calc(0.8em + 0.1vw);
+  color: var(--font-color);
 }
 
 /* Estilos da Parte Inferior (Dados) */
@@ -73,7 +74,7 @@
   font-weight: bold;
   margin-bottom: 15px;
   font-size: calc(1.2em + 0.1vw);
-  color: #000;
+  color: var(--btn-color);
 }
 
 .footer-list {

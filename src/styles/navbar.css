@@ -98,6 +98,11 @@
   margin: 60px 0 40px;
 }
 
+.buttons-navbar {
+  display: flex;
+  align-items: center;
+}
+
 /* Menu Burguer Button CSS */
 .menu-burguer {
   background: none;
@@ -135,6 +140,10 @@
   background-color: rgba(255, 255, 255, 0.99);
   transform: blur(5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark .navbar.sticky-scrolled {
+  background-color: #262626fa;
 }
 
 .navbar.sticky-scrolled .logo img {

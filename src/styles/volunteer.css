@@ -42,6 +42,11 @@
   font-weight: 500;
 }
 
+.dark .volunteer-tag {
+  background-color: var(--tertiary-color);
+  border-color: var(--hover-color);
+}
+
 /* Como Funciona */
 .how-it-works {
   padding: 20px;
@@ -51,7 +56,7 @@
 }
 
 .how-it-works .subtitle {
-  color: black;
+  color: var(--title-color);
   font-size: 1.5em;
   font-weight: bold;
   font-size: calc(1.5em + 0.5vw);
@@ -114,6 +119,7 @@
   font-size: 0.9em;
   font-weight: 500;
   margin-bottom: 5px;
+  color: var(--btn-color);
 }
 
 .volunteer-form .input {

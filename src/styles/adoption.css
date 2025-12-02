@@ -41,6 +41,7 @@
   font-size: 1.8em;
   font-weight: bold;
   margin-bottom: 0;
+  color: var(--title-color);
 }
 
 .pet-info {
@@ -84,7 +85,7 @@
 }
 
 .see-all-btn:hover {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: var(--hover-color) !important;
 }
 
 @media (max-width: 767px) {

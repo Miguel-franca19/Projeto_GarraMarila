@@ -2,3 +2,4 @@
 
 import './open-menu.js';
 import './sticky-navbar.js';
+import './theme.js';

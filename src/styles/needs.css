@@ -21,7 +21,11 @@
   justify-content: space-between;
   position: relative;
   width: 100%;
-  max-width: 280px; /* Para acomodar 4 cards em desktop */
+  max-width: 280px;
+}
+
+.dark .needs-card {
+  border: 0;
 }
 
 /* Tag de Status */
@@ -69,7 +73,7 @@
 }
 
 .needs-card .subtitle {
-  color: black;
+  color: var(--btn-color);
   font-weight: 600;
   font-size: 1.2em;
   margin: 0;

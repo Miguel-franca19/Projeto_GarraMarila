@@ -34,6 +34,7 @@
   font-size: calc(1.2em + 0.3vw);
   font-weight: bold;
   margin-bottom: 5px;
+  color: var(--title-color)
 }
 
 .card-description {
@@ -46,6 +47,7 @@
   font-size: 2.2em;
   font-weight: bold;
   margin-bottom: 20px;
+  color: var(--title-color);
 }
 
 .benefits-list {
