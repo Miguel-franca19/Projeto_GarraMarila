@@ -1076,63 +1076,6 @@
   <!-- Footer End -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    const swiper = new Swiper(".impactSwiper", {
-      // Slides por visualização
-      slidesPerView: 1,
-      spaceBetween: 30,
-
-      // Loop infinito
-      loop: true,
-
-      // Autoplay
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-
-      // Navegação
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-
-      // Paginação
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-
-      // Responsive breakpoints
-      breakpoints: {
-        // Quando a largura >= 640px
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        // Quando a largura >= 768px
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        // Quando a largura >= 1024px
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-  <script>
-    AOS.init({
-      // Define o offset (em px) de quando a animação deve começar
-      offset: 120,
-      // Duração da animação (em ms)
-      duration: 1000,
-      // Uma vez que o elemento é animado, se deve ou não repetir a animação ao rolar para cima
-      once: true,
-    });
-  </script>
   <script type="module" src="src/scripts/index.js"></script>
 </body>
 
