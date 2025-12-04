@@ -168,13 +168,17 @@
 .navbar.sticky-scrolled {
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.99);
-  transform: blur(5px);
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dark .navbar.sticky-scrolled {
-  background-color: #262626fa;
+  background-color: rgba(38, 38, 38, 0.8); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar.sticky-scrolled .logo img {
