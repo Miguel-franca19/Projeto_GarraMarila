@@ -177,94 +177,8 @@
     </header>
     <!-- Header End -->
     <!-- Adoption Start -->
-    <section class="container" id="adoption">
-      <div class="adoption-cards-container container-row">
-        <div class="adoption-card" data-aos="zoom-in" data-aos-delay="300">
-          <img
-            src="src/assets/rex-img.png"
-            alt="Cachorro Rex"
-            class="adoption-img"
-            loading="lazy"
-          />
-          <div class="adoption-card-content">
-            <div
-              class="container-row"
-              style="align-items: center; justify-content: space-between"
-            >
-              <h3>Rex</h3>
-              <span class="tag">Cachorro</span>
-            </div>
-            <p class="pet-info">Cachorro • 2 anos</p>
-            <p class="text description-text">
-              Carinhoso, adora brincar e é ótimo com crianças.
-            </p>
-            <div class="container-row button-group">
-              <button class="btn btn-secondary">
-                <span class="material-symbols-outlined">favorite</span>
-                Apadrinhar
-              </button>
-              <button class="btn btn-primary">Adotar</button>
-            </div>
-          </div>
-        </div>
-        <div class="adoption-card" data-aos="zoom-in" data-aos-delay="450">
-          <img
-            src="src/assets/luna-img.png"
-            alt="Gata Luna"
-            class="adoption-img"
-            loading="lazy"
-          />
-          <div class="adoption-card-content">
-            <div
-              class="container-row"
-              style="align-items: center; justify-content: space-between"
-            >
-              <h3>Luna</h3>
-              <span class="tag">Gata</span>
-            </div>
-            <p class="pet-info">Gata • 1 ano</p>
-            <p class="text description-text">
-              Calma e independente, perfeita para apartamento.
-            </p>
-            <div class="container-row button-group">
-              <button class="btn btn-secondary">
-                <span class="material-symbols-outlined">favorite</span>
-                Apadrinhar
-              </button>
-              <button class="btn btn-primary">Adotar</button>
-            </div>
-          </div>
-        </div>
-        <div class="adoption-card" data-aos="zoom-in" data-aos-delay="600">
-          <img
-            src="src/assets/mia-img.png"
-            alt="Gatinha Mia"
-            class="adoption-img"
-            loading="lazy"
-          />
-          <div class="adoption-card-content">
-            <div
-              class="container-row"
-              style="align-items: center; justify-content: space-between"
-            >
-              <h3>Mia</h3>
-              <span class="tag">Gata</span>
-            </div>
-            <p class="pet-info">Gata • 3 meses</p>
-            <p class="text description-text">
-              Gatinha curiosa e carinhosa, adora colo.
-            </p>
-            <div class="container-row button-group">
-              <button class="btn btn-secondary">
-                <span class="material-symbols-outlined">favorite</span>
-                Apadrinhar
-              </button>
-              <button class="btn btn-primary">Adotar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <section class="container" id="all-animals">
+      <div class="adoption-cards-container container-row" id="dynamic-pet-list"></div>
     </section>
     <!-- Adoption End -->
     <!-- Footer Start -->
@@ -339,5 +253,6 @@
     <!-- Footer End -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="src/scripts/index.js"></script>
+    <script src="src/services/data-animals.js"></script>
   </body>
 </html>

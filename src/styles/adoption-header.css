@@ -38,6 +38,10 @@
   margin: 0;
 }
 
+#all-animals {
+    margin-top: 2rem;
+}
+
 /* Form CSS  */
 #form-search-animal {
   flex: 1;
@@ -61,52 +65,4 @@
   color: #777;
   font-size: 20px;
   pointer-events: none;
-}
-
-/* --- Estilização dos Selects Customizados --- */
-.custom-select-wrapper {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  background-color: #fff;
-  overflow: hidden; /* Importante para esconder o select nativo se necessário */
-}
-
-.custom-select {
-  /* Remove a aparência nativa (a seta padrão do sistema) */
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  /* Estilos visuais */
-  border: none;
-  background: transparent;
-  padding: 15px 40px 15px 15px; /* Padding: 40px para a seta customizada */
-  font-size: 16px;
-  color: #333;
-  cursor: pointer;
-  z-index: 1;
-}
-
-/* 1. Ícone de Filtro (na primeira box 'Todos') */
-.species-filter .filter-icon {
-  color: #a0a0a0;
-  font-size: 20px;
-  padding-left: 15px; /* Espaço à esquerda */
-  padding-right: 5px; /* Espaço para o texto */
-}
-
-/* 2. Seta Customizada para todos os selects */
-.dropdown-arrow {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  color: #a0a0a0;
-  font-size: 24px;
-  pointer-events: none; /* Não bloqueia o clique no select */
-  z-index: 2; /* Sobrepõe o select */
 }
