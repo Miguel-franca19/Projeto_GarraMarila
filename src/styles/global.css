@@ -212,6 +212,10 @@ body {
   display: none !important;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .menu-burguer {
   display: block !important;
   cursor: pointer;
@@ -219,8 +223,8 @@ body {
 }
 
 @media (min-width: 768px) {
-  .desktop-only {
-    display: block !important;
+  .buttons-navbar {
+    display: flex !important;
   }
 
   .nav {

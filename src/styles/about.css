@@ -11,6 +11,10 @@
 }
 
 .about-data .container-column h3 {
-  font-size: calc(1em + 1vw);
-  color: var(--primary-color);
+  font-size: calc(2em + 1vw);
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--quintenary-color), var(--primary-color), var(--secondary-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

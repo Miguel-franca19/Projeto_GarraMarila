@@ -13,6 +13,7 @@
 
 .adoption-cards-container {
   justify-content: space-between;
+  margin: auto;
   gap: 30px;
   width: 100%;
 }
@@ -76,7 +77,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin: 30px auto 0;
+  margin: 45px auto 0;
   border: 1px solid lightgray;
   border-radius: 10px;
   background-color: var(--white-color) !important;
@@ -86,6 +87,28 @@
 
 .see-all-btn:hover {
   background-color: var(--hover-color) !important;
+}
+
+/* Oculta o quarto card e todos os cards seguintes */
+.adoption-cards-container .adoption-card:nth-child(n + 4) {
+  display: none;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.adoption-cards-container.show-all .adoption-card {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 767px) {

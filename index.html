@@ -1,1340 +1,1123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      GARRA Marília | Resgate, Adoção e Doação de Animais (Cães e Gatos)
-    </title>
-    <meta
-      name="description"
-      content="ONG GARRA em Marília/SP. Ajude no resgate, castração e adoção de cães e gatos. Doe ração, seja voluntário ou contribua via Pix. Transparência garantida."
-    />
-    <meta
-      name="keywords"
-      content="ONG Marília, Adoção de Animais Marília, Resgate de Cães, Doação de Ração, Voluntariado Marília, Abrigo de Gatos, Pix para Animais"
-    />
-    <meta
-      property="og:title"
-      content="GARRA Marília | Resgate e Adoção de Animais"
-    />
-    <meta
-      property="og:description"
-      content="ONG GARRA em Marília/SP. Ajude no resgate, castração e adoção de cães e gatos. Doe ração, seja voluntário ou contribua via Pix. Transparência garantida."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://garramarilia.vercel.app/" />
-    <meta property="og:image" content="src/assets/logo.png" />
-    <meta name="author" content="ONG GARRA" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://garramarilia.vercel.app/" />
-    <link rel="stylesheet" href="src/styles/index.css" />
-    <link rel="shortcut icon" href="src/assets/logo.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <style>
-      /* Swiper Carousel Styles */
-      .adoption-cards-container {
-        position: relative;
-        width: 100%;
-        padding: 20px 0 0;
-        overflow: hidden;
-      }
-      .swiper {
-        width: 100%;
-        height: 100%;
-        padding-bottom: 50px;
-      }
-      .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-      }
-      /* Swiper Navigation Buttons */
-      .swiper-button-next,
-      .swiper-button-prev {
-        color: var(--primary-color);
-        background-color: var(--white-color);
-        width: 50px;
-        height: 50px;
-        border-radius: 50% !important;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        transition: all 150ms ease;
-      }
-      .swiper-button-next:after,
-      .swiper-button-prev:after {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .swiper-button-next:hover,
-      .swiper-button-prev:hover {
-        background-color: var(--primary-color);
-        color: var(--white-color);
-        transform: scale(1.1);
-      }
-      /* Swiper Pagination */
-      .swiper-pagination-bullet {
-        background-color: var(--font-color);
-        opacity: 0.5;
-        width: 12px;
-        height: 12px;
-      }
-      .swiper-pagination-bullet-active {
-        background-color: var(--primary-color);
-        opacity: 1;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Navbar Start -->
-    <nav class="navbar" data-aos="fade-down" data-aos-duration="600">
-      <div class="container">
-        <a href="#" class="logo">
-          <img
-            src="src/assets/logotipo-garra-80x80-transparent.png"
-            alt="Logo Garra Marília"
-          />
-          <span data-aos="fade-right" data-aos-delay="100">Garra</span>
-        </a>
-        <ul class="nav">
-          <li class="nav-item" data-aos="fade-in" data-aos-delay="200">
-            <a href="#about" class="nav-link">Sobre</a>
-          </li>
-          <li class="nav-item" data-aos="fade-in" data-aos-delay="300">
-            <a href="#adoption" class="nav-link">Animais</a>
-          </li>
-          <li class="nav-item" data-aos="fade-in" data-aos-delay="400">
-            <a href="#donation" class="nav-link">Doar</a>
-          </li>
-          <li class="nav-item" data-aos="fade-in" data-aos-delay="500">
-            <a href="#volunteer" class="nav-link">Voluntariado</a>
-          </li>
-          <li class="nav-item" data-aos="fade-in" data-aos-delay="600">
-            <a href="#transparency" class="nav-link">Transparência</a>
-          </li>
-        </ul>
-        <div
-          class="buttons-navbar"
-          style="gap: 10px"
-          data-aos="fade-left"
-          data-aos-delay="700"
-        >
-          <!-- From Uiverse.io by Galahhad --> 
-          <label class="theme-switch">
-            <input type="checkbox" class="theme-switch__checkbox">
-            <div class="theme-switch__container">
-              <div class="theme-switch__clouds"></div>
-              <div class="theme-switch__stars-container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
-                </svg>
-              </div>
-              <div class="theme-switch__circle-container">
-                <div class="theme-switch__sun-moon-container">
-                  <div class="theme-switch__moon">
-                    <div class="theme-switch__spot"></div>
-                    <div class="theme-switch__spot"></div>
-                    <div class="theme-switch__spot"></div>
-                  </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    ONG GARRA Marília | Resgate, Adoção e Doação de Animais (Cães e Gatos)
+  </title>
+  <meta name="description" content="ONG GARRA em Marília/SP. Ajude no resgate, castração e adoção de cães e gatos. Doe ração, seja voluntário ou contribua via Pix. Transparência garantida." />
+  <meta name="keywords" content="ONG Marília, Adoção de Animais Marília, Resgate de Cães, Doação de Ração, Voluntariado Marília, Abrigo de Gatos, Pix para Animais" />
+  <meta property="og:title" content="GARRA Marília | Resgate e Adoção de Animais" />
+  <meta property="og:description" content="ONG GARRA em Marília/SP. Ajude no resgate, castração e adoção de cães e gatos. Doe ração, seja voluntário ou contribua via Pix. Transparência garantida." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://garramarilia.vercel.app/" />
+  <meta property="og:image" content="src/assets/logo.png" />
+  <meta name="author" content="ONG GARRA" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://garramarilia.vercel.app/" />
+  <link rel="stylesheet" href="src/styles/index.css" />
+  <link rel="shortcut icon" href="src/assets/logo.png" type="image/x-icon" />
+  <!-- Otimização do CSS das Libs Swiper JS, Google Icons e AOS Animate -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+  </noscript>
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </noscript>
+  <style>
+    /* Swiper Carousel Styles */
+    .adoption-cards-container {
+      position: relative;
+      width: 100%;
+      padding: 20px 0 0;
+      overflow: hidden;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    /* Swiper Navigation Buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: var(--primary-color);
+      background-color: var(--white-color);
+      width: 50px;
+      height: 50px;
+      border-radius: 50% !important;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: all 150ms ease;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+      transform: scale(1.1);
+    }
+
+    /* Swiper Pagination */
+    .swiper-pagination-bullet {
+      background-color: var(--font-color);
+      opacity: 0.5;
+      width: 12px;
+      height: 12px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--primary-color);
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar" data-aos="fade-down" data-aos-duration="600">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="src/assets/logotipo-garra-80x80-transparent.png" alt="Logo Garra Marília" />
+        <span data-aos="fade-right" data-aos-delay="100">Garra</span>
+      </a>
+      <ul class="nav">
+        <li class="nav-item" data-aos="fade-in" data-aos-delay="200">
+          <a href="#about" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item" data-aos="fade-in" data-aos-delay="300">
+          <a href="#adoption" class="nav-link">Animais</a>
+        </li>
+        <li class="nav-item" data-aos="fade-in" data-aos-delay="400">
+          <a href="#donation" class="nav-link">Doar</a>
+        </li>
+        <li class="nav-item" data-aos="fade-in" data-aos-delay="500">
+          <a href="#volunteer" class="nav-link">Voluntariado</a>
+        </li>
+        <li class="nav-item" data-aos="fade-in" data-aos-delay="600">
+          <a href="#transparency" class="nav-link">Transparência</a>
+        </li>
+      </ul>
+      <div class="buttons-navbar" style="gap: 10px" data-aos="fade-left" data-aos-delay="700">
+        <!-- From Uiverse.io by Galahhad -->
+        <label class="theme-switch">
+          <input type="checkbox" class="theme-switch__checkbox">
+          <div class="theme-switch__container">
+            <div class="theme-switch__clouds"></div>
+            <div class="theme-switch__stars-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+            <div class="theme-switch__circle-container">
+              <div class="theme-switch__sun-moon-container">
+                <div class="theme-switch__moon">
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
+                  <div class="theme-switch__spot"></div>
                 </div>
               </div>
             </div>
-          </label>
-          <button class="btn btn-secondary">Voluntariar</button>
-          <button class="btn btn-primary">Doar</button>
-        </div>
-        <button class="menu-burguer" data-aos="fade-left" data-aos-delay="800">
-          <i id="menu-icon" class="material-symbols-outlined">menu</i>
-        </button>
+          </div>
+        </label>
+        <a href="#volunteer"><button class="btn btn-secondary">Voluntariar</button></a>
+        <a href="#adoption"><button class="btn btn-primary">Doar</button></a>
       </div>
-    </nav>
-    <!-- Navbar End -->
-    <!--Sidebar Start -->
-    <aside id="sidebar" class="sidebar">
-      <div class="sidebar-header">
-        <a href="#" class="logo">
-          <img
-            src="src/assets/logotipo-garra-80x80-transparent.png"
-            alt="Logo Garra Marília"
+      <button class="menu-burguer" data-aos="fade-left" data-aos-delay="800">
+        <i id="menu-icon" class="material-symbols-outlined">menu</i>
+      </button>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+  <!--Sidebar Start -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <a href="#" class="logo">
+        <img src="src/assets/logotipo-garra-80x80-transparent.png" alt="Logo Garra Marília" />
+        <span>Garra</span>
+      </a>
+      <button id="close-btn" class="menu-burguer">
+        <i class="material-symbols-outlined">close</i>
+      </button>
+    </div>
+    <ul class="sidebar-nav">
+      <li class="hover-nav-item">
+        <a href="#about" class="sidebar-nav-link">Sobre</a>
+      </li>
+      <li class="hover-nav-item">
+        <a href="#adoption" class="sidebar-nav-link">Animais</a>
+      </li>
+      <li class="hover-nav-item">
+        <a href="#donation" class="sidebar-nav-link">Doar</a>
+      </li>
+      <li class="hover-nav-item">
+        <a href="#volunteer" class="sidebar-nav-link">Voluntariado</a>
+      </li>
+      <li class="hover-nav-item">
+        <a href="#transparency" class="sidebar-nav-link">Transparência</a>
+      </li>
+    </ul>
+    <div class="sidebar-buttons">
+      <button class="btn btn-secondary">Voluntariar</button>
+      <button class="btn btn-primary">Doar</button>
+    </div>
+    <ul class="sidebar-list">
+      <li>garra.marilia@gmail.com</li>
+      <li>Rua Pascoal Eugênio Brasini, 255</li>
+      <li>Marília - São Paulo</li>
+    </ul>
+  </aside>
+  <!--Sidebar End -->
+  <!-- Hero Start -->
+  <section class="container" id="hero">
+    <div class="container-row">
+      <div class="container-column">
+        <p class="hero-highlight" data-aos="fade-up">
+          ONG GARRA - Grupo de Apoio e Resgate de Animais
+        </p>
+        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+          Salvando vidas, construindo esperança <br />
+          <span>Doe agora e faça a diferença</span>
+        </h1>
+        <p class="text" style="max-width: 660px" data-aos="fade-up" data-aos-delay="200">
+          Resgatamos, tratamos e encontramos lares amorosos para cães e gatos
+          em situação de vulnerabilidade. Sua doação salva vidas hoje.
+        </p>
+        <div class="container-row cta-container">
+          <div class="container-column button-container">
+            <button class="btn btn-primary" data-aos="fade-right" data-aos-delay="300">
+              Doar Agora
+            </button>
+            <button class="btn btn-secondary" data-aos="fade-right" data-aos-delay="400">
+              Seja Voluntário
+            </button>
+          </div>
+          <div class="container-column" data-aos="zoom-in" data-aos-delay="500">
+            <img src="src/assets/qrcode.png" alt="qrcode" class="qrcode" />
+            <small>
+              Pix QR Code Doação rápida
+            </small>
+          </div>
+        </div>
+        <div class="container-row">
+          <p class="text-icon" data-aos="fade-up" data-aos-delay="600">
+            <img src="src/assets/icons/hero-icon-heart.png" alt="heart-icon" />
+            2.500+ vidas impactadas
+          </p>
+          <p class="text-icon" data-aos="fade-up" data-aos-delay="700">
+            <img src="src/assets/icons/hero-icon-users.png" alt="user-icon" />
+            300 voluntários ativos
+          </p>
+        </div>
+      </div>
+      <div class="container-column container-image" data-aos="fade-left" data-aos-delay="100">
+        <picture>
+          <source
+            srcset="src/assets/hero-img.webp"
+            type="image/webp"
+            sizes="(max-width: 1200px) 100vw, 1200px"
           />
-          <span>Garra</span>
-        </a>
-        <button id="close-btn" class="menu-burguer">
-          <i class="material-symbols-outlined">close</i>
-        </button>
-      </div>
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-item">
-          <a href="#about" class="sidebar-nav-link">Sobre</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a href="#adoption" class="sidebar-nav-link">Animais</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a href="#donation" class="sidebar-nav-link">Doar</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a href="#volunteer" class="sidebar-nav-link">Voluntariado</a>
-        </li>
-        <li class="sidebar-nav-item">
-          <a href="#transparency" class="sidebar-nav-link">Transparência</a>
-        </li>
-      </ul>
-      <div class="sidebar-buttons">
-        <button class="btn btn-secondary">Voluntariar</button>
-        <button class="btn btn-primary">Doar</button>
-      </div>
-    </aside>
-    <!--Sidebar End -->
-    <!-- Hero Start -->
-    <section class="container" id="hero">
-      <div class="container-row">
-        <div class="container-column">
-          <p class="hero-highlight" data-aos="fade-up">
-            ONG GARRA - Grupo de Apoio e Resgate de Animais
-          </p>
-          <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-            Salvando vidas, construindo esperança <br />
-            <span>Doe agora e faça a diferença</span>
-          </h1>
-          <p
-            class="text"
-            style="max-width: 660px"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Resgatamos, tratamos e encontramos lares amorosos para cães e gatos
-            em situação de vulnerabilidade. Sua doação salva vidas hoje.
-          </p>
-          <div class="container-row cta-container">
-            <div class="container-column button-container">
-              <button
-                class="btn btn-primary"
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                Doar Agora
-              </button>
-              <button
-                class="btn btn-secondary"
-                data-aos="fade-right"
-                data-aos-delay="400"
-              >
-                Seja Voluntário
-              </button>
-            </div>
-            <div
-              class="container-column"
-              data-aos="zoom-in"
-              data-aos-delay="500"
-            >
-              <img src="src/assets/qrcode.png" alt="qrcode" class="qrcode" />
-              <small>Pix QR Code Doação rápida</small>
-            </div>
-          </div>
-          <div class="container-row">
-            <p class="text-icon" data-aos="fade-up" data-aos-delay="600">
-              <img
-                src="src/assets/icons/hero-icon-heart.png"
-                alt="heart-icon"
-              />
-              2.500+ vidas impactadas
-            </p>
-            <p class="text-icon" data-aos="fade-up" data-aos-delay="700">
-              <img src="src/assets/icons/hero-icon-users.png" alt="user-icon" />
-              300 voluntários ativos
-            </p>
-          </div>
-        </div>
-        <div class="container-column container-image">
+        
           <img
             src="src/assets/hero-img.png"
             class="img"
-            alt="hero-img"
-            data-aos="fade-left"
-            data-aos-delay="100"
+            alt="Cão e Gato abraçados em um campo gramado. Simboliza a união e a missão da ONG GARRA."
+            loading="eager"
           />
-        </div>
+        </picture>
       </div>
-    </section>
-    <!-- Hero End -->
-    <!-- About Start -->
-    <section class="container" id="about">
-      <div class="container-fluid">
-        <h2 data-aos="fade-up">Sobre o GARRA</h2>
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-          Nossa missão é salvar vidas
-        </h1>
-      </div>
-      <div class="container-row">
-        <div class="container-column">
-          <p class="text" data-aos="fade-up" data-aos-delay="200">
-            O GARRA (Grupo de Apoio e Resgate de Animais) nasceu em 2015 com a
-            missão de resgatar, reabilitar e encontrar lares amorosos para
-            animais em situação de abandono e maus-tratos.
-          </p>
-          <p class="text" data-aos="fade-up" data-aos-delay="300">
-            Ao longo dos anos, já resgatamos mais de 2.500 animais, realizamos
-            milhares de castrações gratuitas e promovemos a educação sobre posse
-            responsável em nossa comunidade.
-          </p>
-          <div class="container-row about-data">
-            <div class="container-column">
-              <h3 data-aos="zoom-in" data-aos-delay="400">2500 +</h3>
-              <p class="text" data-aos="fade-up" data-aos-delay="450">
-                Animais resgatados
-              </p>
-            </div>
-            <div class="container-column">
-              <h3 data-aos="zoom-in" data-aos-delay="500">5000 +</h3>
-              <p class="text" data-aos="fade-up" data-aos-delay="550">
-                Castatrações realizadas
-              </p>
-            </div>
-            <div class="container-column">
-              <h3 data-aos="zoom-in" data-aos-delay="600">300</h3>
-              <p class="text" data-aos="fade-up" data-aos-delay="650">
-                Voluntários
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="container-column container-image">
-          <img
-            src="src/assets/about-img.png"
-            class="img"
-            alt="about-img"
-            data-aos="zoom-out"
-            data-aos-delay="200"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- About End -->
-    <!-- Programs Start -->
-    <section class="container" id="programs">
-      <div class="container-fluid">
-        <h2 data-aos="fade-up">O que fazemos</h2>
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-          Programas que salvam vidas
-        </h1>
-      </div>
-      <div
-        class="container-row cards-container"
-        style="margin: 5rem 0"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-        data-aos-delay="200"
-      >
-        <div class="card" data-aos="zoom-in-up" data-aos-delay="300">
-          <div class="container-row">
-            <div class="container-column">
-              <img
-                src="src/assets/icons/program-icon-paw.png"
-                alt="program-paw-icon"
-              />
-            </div>
-            <div class="container-column">
-              <h3>Resgate e Acolhimento</h3>
-              <p class="text">
-                Atendimento a animais em risco e acolhimento temporário.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card" data-aos="zoom-in-up" data-aos-delay="500">
-          <div class="container-row">
-            <div class="container-column">
-              <img
-                src="src/assets/icons/program-icon-health.png"
-                alt="program-health-icon"
-              />
-            </div>
-            <div class="container-column">
-              <h3>Saúde e Castração</h3>
-              <p class="text">
-                Clínica parceira, vacinação e mutirões de castração.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="card" data-aos="zoom-in-up" data-aos-delay="700">
-          <div class="container-row">
-            <div class="container-column">
-              <img
-                src="src/assets/icons/program-icon-heart.png"
-                alt="program-heart-icon"
-              />
-            </div>
-            <div class="container-column">
-              <h3>Adoção Responsável</h3>
-              <p class="text">Triagem, feiras e acompanhamento pós-adoção.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Programs End -->
-    <!-- Adoption Start -->
-    <section class="container" id="adoption">
-      <div class="container-fluid">
-        <h2 class="subtitle" data-aos="fade-up">Adoção e Apadrinhamento</h2>
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-          Conheça quem está esperando por você
-        </h1>
-        <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
-          Todos os animais são castrados, vacinados e vermifugados. Você pode
-          adotar ou apadrinhar à distância.
+    </div>
+  </section>
+  <!-- Hero End -->
+  <!-- About Start -->
+  <section class="container" id="about">
+    <div class="container-fluid">
+      <h2 data-aos="fade-up">Sobre o GARRA</h2>
+      <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+        Nossa missão é salvar vidas
+      </h1>
+    </div>
+    <div class="container-row">
+      <div class="container-column">
+        <p class="text" data-aos="fade-up" data-aos-delay="200">
+          O GARRA (Grupo de Apoio e Resgate de Animais) nasceu em 2015 com a
+          missão de resgatar, reabilitar e encontrar lares amorosos para
+          animais em situação de abandono e maus-tratos.
         </p>
-      </div>
-      <div class="adoption-cards-container container-row">
-        <div class="adoption-card" data-aos="zoom-in" data-aos-delay="300">
-          <img
-            src="src/assets/rex-img.png"
-            alt="Cachorro Rex"
-            class="adoption-img"
-          />
-          <div class="adoption-card-content">
-            <div
-              class="container-row"
-              style="align-items: center; justify-content: space-between"
-            >
-              <h3>Rex</h3>
-              <span class="tag">Cachorro</span>
-            </div>
-            <p class="pet-info">Cachorro • 2 anos</p>
-            <p class="text description-text">
-              Carinhoso, adora brincar e é ótimo com crianças.
-            </p>
-            <div class="container-row button-group">
-              <button class="btn btn-secondary">
-                <span class="material-symbols-outlined">favorite</span>
-                Apadrinhar
-              </button>
-              <button class="btn btn-primary">Adotar</button>
-            </div>
-          </div>
-        </div>
-        <div class="adoption-card" data-aos="zoom-in" data-aos-delay="450">
-          <img
-            src="src/assets/luna-img.png"
-            alt="Gata Luna"
-            class="adoption-img"
-          />
-          <div class="adoption-card-content">
-            <div
-              class="container-row"
-              style="align-items: center; justify-content: space-between"
-            >
-              <h3>Luna</h3>
-              <span class="tag">Gata</span>
-            </div>
-            <p class="pet-info">Gata • 1 ano</p>
-            <p class="text description-text">
-              Calma e independente, perfeita para apartamento.
-            </p>
-            <div class="container-row button-group">
-              <button class="btn btn-secondary">
-                <span class="material-symbols-outlined">favorite</span>
-                Apadrinhar
-              </button>
-              <button class="btn btn-primary">Adotar</button>
-            </div>
-          </div>
-        </div>
-        <div class="adoption-card" data-aos="zoom-in" data-aos-delay="600">
-          <img
-            src="src/assets/mia-img.png"
-            alt="Gatinha Mia"
-            class="adoption-img"
-          />
-          <div class="adoption-card-content">
-            <div
-              class="container-row"
-              style="align-items: center; justify-content: space-between"
-            >
-              <h3>Mia</h3>
-              <span class="tag">Gata</span>
-            </div>
-            <p class="pet-info">Gata • 3 meses</p>
-            <p class="text description-text">
-              Gatinha curiosa e carinhosa, adora colo.
-            </p>
-            <div class="container-row button-group">
-              <button class="btn btn-secondary">
-                <span class="material-symbols-outlined">favorite</span>
-                Apadrinhar
-              </button>
-              <button class="btn btn-primary">Adotar</button>
-            </div>
-          </div>
-        </div>
-        <div class="adoption-card" data-aos="zoom-in" data-aos-delay="750">
-          <img
-            src="src/assets/luck-img.png"
-            alt="Cão Exemplo"
-            class="adoption-img"
-          />
-          <div class="adoption-card-content">
-            <div
-              class="container-row"
-              style="align-items: center; justify-content: space-between"
-            >
-              <h3>Thor</h3>
-              <span class="tag">Cachorro</span>
-            </div>
-            <p class="pet-info">Cachorro • 5 anos</p>
-            <p class="text description-text">
-              Um gigante gentil, ama passeios e bolinhas.
-            </p>
-            <div class="container-row button-group">
-              <button class="btn btn-secondary">
-                <span class="material-symbols-outlined">favorite</span>
-                Apadrinhar
-              </button>
-              <button class="btn btn-primary">Adotar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a
-        href="#"
-        class="btn btn-secondary see-all-btn"
-        data-aos="fade-up"
-        data-aos-delay="400"
-      >
-        Conhecer todos os animais disponíveis
-        <span class="material-symbols-outlined">arrow_right_alt</span>
-      </a>
-    </section>
-    <!-- Adoption End -->
-    <!-- Donation Start -->
-    <section class="container" id="donation">
-      <div class="container-fluid">
-        <h2 class="subtitle" data-aos="fade-up">Como ajudar</h2>
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-          Sua doação vira cuidado e carinho
-        </h1>
-        <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
-          Escolha a forma que melhor se encaixa no seu orçamento. Toda
-          contribuição faz diferença!
+        <p class="text" data-aos="fade-up" data-aos-delay="300">
+          Ao longo dos anos, já resgatamos mais de 2.500 animais, realizamos
+          milhares de castrações gratuitas e promovemos a educação sobre posse
+          responsável em nossa comunidade.
         </p>
-      </div>
-      <div class="donation-cards-container container-row">
-        <div class="donation-card" data-aos="fade-down" data-aos-delay="300">
-          <div class="donation-card-content">
-            <h3 class="card-title">Doação única</h3>
-            <p class="card-description">Contribua o quanto puder</p>
-            <p class="price">R$50,00</p>
-            <ul class="benefits-list">
-              <li>1 saco de ração</li>
-              <li>Ajuda emergencial</li>
-              <li>Transparência no uso</li>
-            </ul>
-            <p class="payment-title">Formas de pagamento:</p>
-            <div class="container-row payment-icons">
-              <span class="payment-icon">Pix</span>
-              <span class="payment-icon">PagSeguro</span>
-              <span class="payment-icon">PicPay</span>
-            </div>
+        <div class="container-row about-data">
+          <div class="container-column">
+            <h3 data-aos="zoom-in" data-aos-delay="400" data-target="2500">2500 +</h3>
+            <p class="text" data-aos="fade-up" data-aos-delay="450">
+              Animais resgatados
+            </p>
           </div>
-          <button class="btn btn-primary btn-donate">Doar uma vez</button>
-        </div>
-        <div
-          class="donation-card highlight-card"
-          data-aos="flip-up"
-          data-aos-delay="500"
-        >
-          <span class="highlight-tag">Mais impacto</span>
-          <div class="donation-card-content">
-            <h3 class="card-title">Apadrinhamento Mensal</h3>
-            <p class="card-description">Ajude todos os meses</p>
-            <p class="price">R$ 75,00/mês</p>
-            <ul class="benefits-list">
-              <li>Ração e medicamentos recorrentes</li>
-              <li>Apoio a castrações mensais</li>
-              <li>Relatório de impacto exclusivo</li>
-            </ul>
-            <p class="payment-title">Formas de pagamento:</p>
-            <div class="container-row payment-icons">
-              <span class="payment-icon">Pix</span>
-              <span class="payment-icon">PagSeguro</span>
-              <span class="payment-icon">PicPay</span>
-            </div>
+          <div class="container-column">
+            <h3 data-aos="zoom-in" data-aos-delay="500">5000 +</h3>
+            <p class="text" data-aos="fade-up" data-aos-delay="550">
+              Castrações realizadas
+            </p>
           </div>
-          <button class="btn btn-primary btn-donate">Doar uma vez</button>
-        </div>
-        <div class="donation-card" data-aos="fade-down" data-aos-delay="700">
-          <div class="donation-card-content">
-            <h3 class="card-title">Doação única</h3>
-            <p class="card-description">Contribua o quanto puder</p>
-            <p class="price">R$1000,00</p>
-            <ul class="benefits-list">
-              <li>Exames e vacinas</li>
-              <li>Kit pós-resgate</li>
-              <li>Ajuda onde for mais urgente</li>
-            </ul>
-            <p class="payment-title">Formas de pagamento:</p>
-            <div class="container-row payment-icons">
-              <span class="payment-icon">Pix</span>
-              <span class="payment-icon">PagSeguro</span>
-              <span class="payment-icon">PicPay</span>
-            </div>
+          <div class="container-column">
+            <h3 data-aos="zoom-in" data-aos-delay="600">300</h3>
+            <p class="text" data-aos="fade-up" data-aos-delay="650">
+              Voluntários
+            </p>
           </div>
-          <button class="btn btn-primary btn-donate">Doar uma vez</button>
         </div>
       </div>
-      <div class="qrcode-section">
-        <img
-          src="src/assets/qrcode.png"
-          alt="Pix QR Code"
-          class="qrcode-img"
-          data-aos="fade-right"
-          data-aos-delay="250"
-        />
-        <div class="qrcode-text" data-aos="fade-left" data-aos-delay="300">
-          <h3 class="subtitle">Pix QR Code</h3>
-          <p class="text qrcode-description">Escaneie para doar rapidamente</p>
-          <p class="text qrcode-chave">Chave Pix: garra.marilia@gmail.com</p>
+      <div class="container-column container-image">
+        <img src="src/assets/about-img.png" loading="lazy" class="img" alt="about-img" data-aos="zoom-out" data-aos-delay="200" />
+      </div>
+    </div>
+  </section>
+  <!-- About End -->
+  <!-- Programs Start -->
+  <section class="container" id="programs">
+    <div class="container-fluid">
+      <h2 data-aos="fade-up">O que fazemos</h2>
+      <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+        Programas que salvam vidas
+      </h1>
+    </div>
+    <div class="container-row cards-container" style="margin: 5rem 0" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+      <div class="card" data-aos="zoom-in-up" data-aos-delay="300">
+        <div class="container-row">
+          <div class="container-column">
+            <img src="src/assets/icons/program-icon-paw.png" alt="program-paw-icon" loading="lazy"/>
+          </div>
+          <div class="container-column">
+            <h3>Resgate e Acolhimento</h3>
+            <p class="text">
+              Atendimento a animais em risco e acolhimento temporário.
+            </p>
+          </div>
         </div>
       </div>
-      <p class="final-info" data-aos="fade-up" data-aos-delay="350">
-        Aceitamos Pix, PagSeguro, PicPay e transferência bancária
+      <div class="card" data-aos="zoom-in-up" data-aos-delay="500">
+        <div class="container-row">
+          <div class="container-column">
+            <img src="src/assets/icons/program-icon-health.png" alt="program-health-icon" loading="lazy"/>
+          </div>
+          <div class="container-column">
+            <h3>Saúde e Castração</h3>
+            <p class="text">
+              Clínica parceira, vacinação e mutirões de castração.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card" data-aos="zoom-in-up" data-aos-delay="700">
+        <div class="container-row">
+          <div class="container-column">
+            <img src="src/assets/icons/program-icon-heart.png" alt="program-heart-icon" loading="lazy"/>
+          </div>
+          <div class="container-column">
+            <h3>Adoção Responsável</h3>
+            <p class="text">Triagem, feiras e acompanhamento pós-adoção.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Programs End -->
+  <!-- Adoption Start -->
+  <section class="container" id="adoption">
+    <div class="container-fluid">
+      <h2 class="subtitle" data-aos="fade-up">Adoção e Apadrinhamento</h2>
+      <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+        Conheça quem está esperando por você
+      </h1>
+      <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
+        Todos os animais são castrados, vacinados e vermifugados. Você pode
+        adotar ou apadrinhar à distância.
       </p>
-      <blockquote class="quote" data-aos="fade-up" data-aos-delay="355">
-        "Ao doar, você pratica a verdadeira ética: cuidar de toda vida que
-        precisa de nós." Albert Schweitzer
-      </blockquote>
-    </section>
-    <!-- Donation End -->
-    <!-- Needs Start -->
-    <section class="container" id="needs">
-      <div class="container-fluid">
-        <h2 class="subtitle" data-aos="fade-up">Necessidades urgentes</h2>
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-          O que precisamos agora
-        </h1>
-        <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
-          Estes são os itens críticos que precisamos para continuar salvando
-          vidas. Você pode doar diretamente ou contribuir financeiramente.
-        </p>
-      </div>
-      <div class="needs-cards-container container-row">
-        <div class="needs-card" data-aos="fade-right" data-aos-delay="300">
-          <span class="needs-tag tag-critical">Crítico</span>
-          <div class="needs-icon-title">
-            <img
-              src="src/assets/icons/needs-icon-box.png"
-              alt="Icone de caixa"
-            />
-            <h3 class="subtitle">Ração para Cães</h3>
+    </div>
+    <div class="adoption-cards-container container-row">
+      <div class="adoption-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="src/assets/rex-img.png" alt="Cachorro Rex" class="adoption-img" loading="lazy" />
+        <div class="adoption-card-content">
+          <div class="container-row" style="align-items: center; justify-content: space-between">
+            <h3>Rex</h3>
+            <span class="tag">Cachorro</span>
           </div>
-
-          <div class="stock-info">
-            <p class="stock-label">Estoque Atual:</p>
-            <p class="stock-value">15KG</p>
-          </div>
-          <div class="progress-bar-container">
-            <div
-              class="progress-bar progress-critical"
-              style="width: 15%"
-              data-aos="progress-bar"
-              data-aos-delay="400"
-            ></div>
-          </div>
-          <button class="btn btn-secondary needs-btn">Doar Ração</button>
-        </div>
-        <div class="needs-card" data-aos="fade-right" data-aos-delay="500">
-          <span class="needs-tag tag-critical">Crítico</span>
-          <div class="needs-icon-title">
-            <img
-              src="src/assets/icons/needs-icon-box.png"
-              alt="Icone de caixa"
-            />
-            <h3 class="subtitle">Ração para Gatos</h3>
-          </div>
-          <div class="stock-info">
-            <p class="stock-label">Estoque Atual:</p>
-            <p class="stock-value">8KG</p>
-          </div>
-          <div class="progress-bar-container">
-            <div
-              class="progress-bar progress-critical"
-              style="width: 8%"
-              data-aos="progress-bar"
-              data-aos-delay="600"
-            ></div>
-          </div>
-          <button class="btn btn-secondary needs-btn">Doar Ração</button>
-        </div>
-        <div class="needs-card" data-aos="fade-left" data-aos-delay="700">
-          <span class="needs-tag tag-urgent">Urgente</span>
-          <div class="needs-icon-title">
-            <span
-              class="material-symbols-outlined icon-medical"
-              style="transform: scale(1.1); margin-bottom: 1.355rem"
-              >medical_services</span
-            >
-            <h3 class="subtitle">Medicamentos</h3>
-          </div>
-          <div class="stock-info">
-            <p class="stock-label">Estoque Atual:</p>
-            <p class="stock-value">40%</p>
-          </div>
-          <div class="progress-bar-container">
-            <div
-              class="progress-bar progress-urgent"
-              style="width: 40%"
-              data-aos="progress-bar"
-              data-aos-delay="800"
-            ></div>
-          </div>
-          <button class="btn btn-secondary needs-btn">Contribuir</button>
-        </div>
-        <div class="needs-card" data-aos="fade-left" data-aos-delay="900">
-          <span class="needs-tag tag-moderate">Moderado</span>
-          <div class="needs-icon-title">
-            <img
-              src="src/assets/icons/needs-icon-box.png"
-              alt="Icone de caixa"
-            />
-            <h3 class="subtitle">Materiais de Limpeza</h3>
-          </div>
-          <div class="stock-info">
-            <p class="stock-label">Estoque Atual:</p>
-            <p class="stock-value">65%</p>
-          </div>
-          <div class="progress-bar-container">
-            <div
-              class="progress-bar progress-moderate"
-              style="width: 65%"
-              data-aos="progress-bar"
-              data-aos-delay="1000"
-            ></div>
-          </div>
-          <button class="btn btn-secondary needs-btn">Doar Materiais</button>
-        </div>
-      </div>
-    </section>
-    <!-- Needs End -->
-    <!-- Volunteer Start -->
-    <section class="container" id="volunteer">
-      <div class="container-row volunteer-content-wrapper">
-        <div class="container-column volunteer-info-column">
-          <h2 class="subtitle" data-aos="fade-up">Voluntariado</h2>
-          <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-            Doe Tempo: Junte-se à <br />
-            nossa matilha
-          </h1>
-          <p
-            class="text text-info"
-            style="margin-left: 0"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            Precisamos de lares temporários, transporte solidário, apoio em
-            feiras e produção de conteúdo. Toda ajuda conta.
+          <p class="pet-info">Cachorro • 2 anos</p>
+          <p class="text description-text">
+            Carinhoso, adora brincar e é ótimo com crianças.
           </p>
-          <div class="container-row volunteer-tags-container">
-            <span class="volunteer-tag" data-aos="zoom-in"
-              >Lar Temporário</span
-            >
-            <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="100"
-              >Transporte</span
-            >
-            <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="200"
-              >Divulgação</span
-            >
-            <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="300"
-              >Eventos</span
-            >
-            <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="350"
-              >Fotografia</span
-            >
-            <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="355"
-              >Veterinária</span
-            >
-          </div>
-          <div class="how-it-works" style="max-width: 768px">
-            <h3 class="subtitle" data-aos="fade-right" data-aos-delay="900">
-              Como funciona?
-            </h3>
-            <p class="text" data-aos="fade-right" data-aos-delay="1000">
-              Passos para se começar a voluntariar
-            </p>
-            <ol class="steps-list">
-              <li class="text" data-aos="fade-right" data-aos-delay="1100">
-                Preencha o formulário de interesse ao lado.
-              </li>
-              <li class="text" data-aos="fade-right" data-aos-delay="1200">
-                Participe da conversa de boas-vindas no WhatsApp.
-              </li>
-              <li class="text" data-aos="fade-right" data-aos-delay="1300">
-                Escolha uma frente de atuação.
-              </li>
-              <li class="text" data-aos="fade-right" data-aos-delay="1400">
-                Receba materiais e comece a ajudar!
-              </li>
-            </ol>
-          </div>
-        </div>
-        <div class="container-column volunteer-form-column">
-          <div
-            class="volunteer-form-card"
-            data-aos="fade-left"
-            data-aos-delay="400"
-          >
-            <h3 class="title">Formulário do Voluntário</h3>
-            <p class="form-instruction-text">
-              Preencha seus dados e entraremos em contato
-            </p>
-            <form action="#" method="POST" class="volunteer-form">
-              <div class="form-group">
-                <label for="nome" class="label">Nome Completo</label>
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  placeholder="Seu nome"
-                  class="input"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email" class="label">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="seu@email.com"
-                  class="input"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="whatsapp" class="label">WhatsApp</label>
-                <input
-                  type="tel"
-                  id="whatsapp"
-                  name="whatsapp"
-                  placeholder="(00) 00000-0000"
-                  class="input"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="area" class="label">Área de interesse</label>
-                <textarea
-                  id="area"
-                  name="area"
-                  placeholder="Conte-nos como você gostaria de ajudar..."
-                  class="input textarea"
-                  rows="4"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary form-submit-btn">
-                <span class="material-symbols-outlined">send</span> Enviar
-                Formulário
-              </button>
-              <button type="button" class="btn btn-secondary form-whatsapp-btn">
-                <span class="material-symbols-outlined">sms</span> Falar no
-                WhatsApp
-              </button>
-            </form>
+          <div class="container-row button-group">
+            <button class="btn btn-secondary">
+              <span class="material-symbols-outlined">favorite</span>
+              Apadrinhar
+            </button>
+            <button class="btn btn-primary">Adotar</button>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Volunteer End -->
-    <!-- Transparency Start -->
-    <section class="container" id="transparency">
-      <div class="container-fluid">
-        <h2 class="transparency-subtitle" data-aos="fade-up">Transparência</h2>
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-          Como usamos suas doações
-        </h1>
-        <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
-          Prestamos contas de cada centavo recebido. Veja como seus recursos são
-          aplicados.
-        </p>
-      </div>
-      <div class="transparency-cards-container container-row">
-        <div
-          class="container-column card-data"
-          data-aos="fade-right"
-          data-aos-delay="300"
-        >
-          <div class="card-header">
-            <span class="material-symbols-outlined icon-data">check_box</span>
-            <h3 class="subtitle">Despesas e Receitas - Último mês.</h3>
+      <div class="adoption-card" data-aos="zoom-in" data-aos-delay="450">
+        <img src="src/assets/luna-img.png" alt="Gata Luna" class="adoption-img" loading="lazy"/>
+        <div class="adoption-card-content">
+          <div class="container-row" style="align-items: center; justify-content: space-between">
+            <h3>Luna</h3>
+            <span class="tag">Gata</span>
           </div>
-          <div class="data-item">
-            <p class="data-label text">Receitas</p>
-            <p class="data-value">R$ 45.230,00</p>
-            <div class="progress-bar-container">
-              <div
-                class="progress-bar progress-green"
-                style="width: 100%"
-                data-aos="progress-bar-fill"
-                data-aos-delay="400"
-              ></div>
-            </div>
-          </div>
-          <div class="data-item">
-            <p class="data-label text">Despesas</p>
-            <p class="data-value highlight-orange">R$ 42.180,00</p>
-            <div class="progress-bar-container">
-              <div
-                class="progress-bar progress-orange"
-                style="width: 93%"
-                data-aos="progress-bar-fill"
-                data-aos-delay="500"
-              ></div>
-            </div>
-          </div>
-          <div
-            class="data-item data-saldo"
-            data-aos="zoom-in"
-            data-aos-delay="600"
-          >
-            <p class="data-label text">Saldo</p>
-            <p class="data-value saldo-value">R$ 3.050,00</p>
-          </div>
-        </div>
-
-        <div
-          class="container-column card-distribution"
-          data-aos="fade-left"
-          data-aos-delay="300"
-        >
-          <h3 class="subtitle">Distribuição de Gastos</h3>
-          <div class="distribution-item">
-            <p class="distribution-label text">Alimentação</p>
-            <p class="distribution-percentage">45%</p>
-            <div class="progress-bar-container distribution-bar">
-              <div
-                class="progress-bar progress-orange-soft"
-                style="width: 45%"
-                data-aos="progress-bar-fill"
-                data-aos-delay="700"
-              ></div>
-            </div>
-          </div>
-          <div class="distribution-item">
-            <p class="distribution-label text">Veterinária e Medicamentos</p>
-            <p class="distribution-percentage">35%</p>
-            <div class="progress-bar-container distribution-bar">
-              <div
-                class="progress-bar progress-orange-soft"
-                style="width: 35%"
-                data-aos="progress-bar-fill"
-                data-aos-delay="800"
-              ></div>
-            </div>
-          </div>
-          <div class="distribution-item">
-            <p class="distribution-label text">Infraestrutura</p>
-            <p class="distribution-percentage">12%</p>
-            <div class="progress-bar-container distribution-bar">
-              <div
-                class="progress-bar progress-orange-soft"
-                style="width: 12%"
-                data-aos="progress-bar-fill"
-                data-aos-delay="900"
-              ></div>
-            </div>
-          </div>
-          <div class="distribution-item">
-            <p class="distribution-label text">Divulgação e Eventos</p>
-            <p class="distribution-percentage">8%</p>
-            <div class="progress-bar-container distribution-bar">
-              <div
-                class="progress-bar progress-orange-soft"
-                style="width: 8%"
-                data-aos="progress-bar-fill"
-                data-aos-delay="1000"
-              ></div>
-            </div>
-          </div>
-          <button
-            class="btn btn-secondary report-btn"
-            data-aos="fade-up"
-            data-aos-delay="1100"
-          >
-            <span class="material-symbols-outlined">calendar_today</span> Ver
-            Relatório Completo
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- Transparency End -->
-    <!-- Impact History Start -->
-    <section class="container" id="impact">
-      <div class="container-fluid">
-        <h2 class="subtitle" data-aos="fade-up">Histórias de Impacto</h2>
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-          Vidas transformadas pelo GARRA
-        </h1>
-        <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
-          Acompanhe as histórias de resgate, recuperação e adoção que
-          compartilhamos nas redes sociais.
-        </p>
-      </div>
-      <!-- Swiper Container -->
-      <div class="adoption-cards-container">
-        <div class="swiper impactSwiper">
-          <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-              <div class="adoption-card">
-                <img
-                  src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop"
-                  alt="Cachorro Rex"
-                  class="adoption-img"
-                />
-                <div class="card-content">
-                  <div class="card-meta">
-                    <span class="material-symbols-outlined icon-time"
-                      >schedule</span
-                    >
-                    <small>há 2 dias</small>
-                  </div>
-                  <h3 class="subtitle">Rex encontrou um lar!</h3>
-                  <p class="card-description-impact">
-                    Depois de 3 meses no abrigo, Rex foi adotado por uma família
-                    amorosa. Veja a emoção do encontro! 🖤🐾
-                  </p>
-                  <a href="#" class="btn btn-link">
-                    Ver no Instagram
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-              <div class="adoption-card">
-                <img
-                  src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
-                  alt="Gata Luna"
-                  class="adoption-img"
-                />
-                <div class="card-content">
-                  <div class="card-meta">
-                    <span class="material-symbols-outlined icon-time"
-                      >schedule</span
-                    >
-                    <small>há 5 dias</small>
-                  </div>
-                  <h3 class="subtitle">Resgate de 5 gatinhos</h3>
-                  <p class="card-description-impact">
-                    Resgatamos uma ninhada abandonada. Todos estão saudáveis e
-                    prontos para adoção em breve! ✨
-                  </p>
-                  <a href="#" class="btn btn-link">
-                    Ver no Facebook
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="swiper-slide">
-              <div class="adoption-card">
-                <img
-                  src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=300&fit=crop"
-                  alt="Gatinha Mia"
-                  class="adoption-img"
-                />
-                <div class="card-content">
-                  <div class="card-meta">
-                    <span class="material-symbols-outlined icon-time"
-                      >schedule</span
-                    >
-                    <small>há 1 semana</small>
-                  </div>
-                  <h3 class="subtitle">Mutirão de castração</h3>
-                  <p class="card-description-impact">
-                    Mais um mutirão realizado! 45 animais castrados
-                    gratuitamente. Obrigado aos voluntários! 🙏
-                  </p>
-                  <a href="#" class="btn btn-link">
-                    Ver no Instagram
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 4 -->
-            <div class="swiper-slide">
-              <div class="adoption-card">
-                <img
-                  src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop"
-                  alt="Cachorro Rex"
-                  class="adoption-img"
-                />
-                <div class="card-content">
-                  <div class="card-meta">
-                    <span class="material-symbols-outlined icon-time"
-                      >schedule</span
-                    >
-                    <small>há 2 dias</small>
-                  </div>
-                  <h3 class="subtitle">Rex encontrou um lar!</h3>
-                  <p class="card-description-impact">
-                    Depois de 3 meses no abrigo, Rex foi adotado por uma família
-                    amorosa. Veja a emoção do encontro! 🖤🐾
-                  </p>
-                  <a href="#" class="btn btn-link">
-                    Ver no Instagram
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 5 -->
-            <div class="swiper-slide">
-              <div class="adoption-card">
-                <img
-                  src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
-                  alt="Gata Luna"
-                  class="adoption-img"
-                />
-                <div class="card-content">
-                  <div class="card-meta">
-                    <span class="material-symbols-outlined icon-time"
-                      >schedule</span
-                    >
-                    <small>há 5 dias</small>
-                  </div>
-                  <h3 class="subtitle">Resgate de 5 gatinhos</h3>
-                  <p class="card-description-impact">
-                    Resgatamos uma ninhada abandonada. Todos estão saudáveis e
-                    prontos para adoção em breve! ✨
-                  </p>
-                  <a href="#" class="btn btn-link">
-                    Ver no Facebook
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 6 -->
-            <div class="swiper-slide">
-              <div class="adoption-card">
-                <img
-                  src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=300&fit=crop"
-                  alt="Gatinha Mia"
-                  class="adoption-img"
-                />
-                <div class="card-content">
-                  <div class="card-meta">
-                    <span class="material-symbols-outlined icon-time"
-                      >schedule</span
-                    >
-                    <small>há 1 semana</small>
-                  </div>
-                  <h3 class="subtitle">Mutirão de castração</h3>
-                  <p class="card-description-impact">
-                    Mais um mutirão realizado! 45 animais castrados
-                    gratuitamente. Obrigado aos voluntários! 🙏
-                  </p>
-                  <a href="#" class="btn btn-link">
-                    Ver no Instagram
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Navigation Buttons -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-      <div class="container-row" style="margin-top: 2rem">
-        <a
-          href="https://www.instagram.com/garramarilia/"
-          class="btn btn-secondary see-all-btn"
-          data-aos="fade-up"
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            alt="instagram-icon"
-          />
-          Seguir no Instagram
-        </a>
-        <a
-          href="https://www.facebook.com/garramarilia"
-          class="btn btn-secondary see-all-btn"
-          data-aos="fade-up"
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"
-            alt="facebook-icon"
-          />
-          Seguir no Facebook
-        </a>
-      </div>
-    </section>
-    <!-- Impact History End -->
-    <!-- Footer Start -->
-    <footer class="container" id="footer">
-      <div class="container-row newsletter-container">
-        <div
-          class="container-column"
-          data-aos="fade-right"
-          data-aos-delay="100"
-        >
-          <h2 class="subtitle">Fique por dentro</h2>
-          <h1 class="title">Receba notícias e histórias de adoção</h1>
-          <p class="text text-info">
-            Enviamos só o essencial: transparência de gastos, resgates e
-            vitórias da comunidade.
+          <p class="pet-info">Gata • 1 ano</p>
+          <p class="text description-text">
+            Calma e independente, perfeita para apartamento.
           </p>
-        </div>
-        <form
-          class="container-column container-form"
-          method="post"
-          data-aos="fade-left"
-          data-aos-delay="200"
-        >
-          <div class="container-row">
-            <input
-              type="email"
-              name="email_newsletter"
-              id="email_newsletter"
-              placeholder="Seu Email:"
-              class="input"
-            />
-            <input type="submit" value="Assinar" class="btn btn-primary" />
+          <div class="container-row button-group">
+            <button class="btn btn-secondary">
+              <span class="material-symbols-outlined">favorite</span>
+              Apadrinhar
+            </button>
+            <button class="btn btn-primary">Adotar</button>
           </div>
-          <small class="text">
-            Ao assinar, você concorda em receber comunicações do GARRA.
-          </small>
-        </form>
-      </div>
-      <div class="container-row footer-data-row">
-        <div class="container-column footer-logo-col">
-          <img src="src/assets/logo.png" alt="Logo GARRA" class="footer-logo" />
-          <p class="text footer-description">
-            Grupo de Apoio e Resgate de Animais. <br />
-            Salvando vidas desde 2015.
-          </p>
         </div>
-        <div class="container-column footer-nav-col">
-          <h3 class="subtitle footer-section-title">Navegação</h3>
-          <ul class="footer-list">
-            <li><a href="#about" class="footer-link">Sobre</a></li>
-            <li><a href="#" class="footer-link">Animais</a></li>
-            <li><a href="#" class="footer-link">Doar</a></li>
-            <li><a href="#volunteer" class="footer-link">Voluntariado</a></li>
-            <li>
-              <a href="#transparency" class="footer-link">Transparência</a>
+      </div>
+      <div class="adoption-card" data-aos="zoom-in" data-aos-delay="600">
+        <img src="src/assets/mia-img.png" alt="Gatinha Mia" class="adoption-img" loading="lazy"/>
+        <div class="adoption-card-content">
+          <div class="container-row" style="align-items: center; justify-content: space-between">
+            <h3>Mia</h3>
+            <span class="tag">Gata</span>
+          </div>
+          <p class="pet-info">Gata • 3 meses</p>
+          <p class="text description-text">
+            Gatinha curiosa e carinhosa, adora colo.
+          </p>
+          <div class="container-row button-group">
+            <button class="btn btn-secondary">
+              <span class="material-symbols-outlined">favorite</span>
+              Apadrinhar
+            </button>
+            <button class="btn btn-primary">Adotar</button>
+          </div>
+        </div>
+      </div>
+      <div class="adoption-card" data-aos="zoom-in" data-aos-delay="600">
+        <img src="src/assets/mia-img.png" alt="Gatinha Mia" class="adoption-img" loading="lazy"/>
+        <div class="adoption-card-content">
+          <div class="container-row" style="align-items: center; justify-content: space-between">
+            <h3>Mia</h3>
+            <span class="tag">Gata</span>
+          </div>
+          <p class="pet-info">Gata • 3 meses</p>
+          <p class="text description-text">
+            Gatinha curiosa e carinhosa, adora colo.
+          </p>
+          <div class="container-row button-group">
+            <button class="btn btn-secondary">
+              <span class="material-symbols-outlined">favorite</span>
+              Apadrinhar
+            </button>
+            <button class="btn btn-primary">Adotar</button>
+          </div>
+        </div>
+      </div>
+      <div class="adoption-card" data-aos="zoom-in" data-aos-delay="450">
+        <img src="src/assets/luna-img.png" alt="Gata Luna" class="adoption-img" loading="lazy"/>
+        <div class="adoption-card-content">
+          <div class="container-row" style="align-items: center; justify-content: space-between">
+            <h3>Luna</h3>
+            <span class="tag">Gata</span>
+          </div>
+          <p class="pet-info">Gata • 1 ano</p>
+          <p class="text description-text">
+            Calma e independente, perfeita para apartamento.
+          </p>
+          <div class="container-row button-group">
+            <button class="btn btn-secondary">
+              <span class="material-symbols-outlined">favorite</span>
+              Apadrinhar
+            </button>
+            <button class="btn btn-primary">Adotar</button>
+          </div>
+        </div>
+      </div>
+      <div class="adoption-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="src/assets/rex-img.png" alt="Cachorro Rex" class="adoption-img" loading="lazy"/>
+        <div class="adoption-card-content">
+          <div class="container-row" style="align-items: center; justify-content: space-between">
+            <h3>Rex</h3>
+            <span class="tag">Cachorro</span>
+          </div>
+          <p class="pet-info">Cachorro • 2 anos</p>
+          <p class="text description-text">
+            Carinhoso, adora brincar e é ótimo com crianças.
+          </p>
+          <div class="container-row button-group">
+            <button class="btn btn-secondary">
+              <span class="material-symbols-outlined">favorite</span>
+              Apadrinhar
+            </button>
+            <button class="btn btn-primary">Adotar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="" class="btn btn-secondary see-all-btn" data-aos="fade-up" data-aos-delay="400">
+      Conhecer todos os animais disponíveis
+      <span class="material-symbols-outlined">arrow_right_alt</span>
+    </a>
+  </section>
+  <!-- Adoption End -->
+  <!-- Donation Start -->
+  <section class="container" id="donation">
+    <div class="container-fluid">
+      <h2 class="subtitle" data-aos="fade-up">Como ajudar</h2>
+      <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+        Sua doação vira cuidado e carinho
+      </h1>
+      <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
+        Escolha a forma que melhor se encaixa no seu orçamento. Toda
+        contribuição faz diferença!
+      </p>
+    </div>
+    <div class="donation-cards-container container-row">
+      <div class="donation-card" data-aos="fade-down" data-aos-delay="300">
+        <div class="donation-card-content">
+          <h3 class="card-title">Doação única</h3>
+          <p class="card-description">Contribua o quanto puder</p>
+          <p class="price">R$50,00</p>
+          <ul class="benefits-list">
+            <li>1 saco de ração</li>
+            <li>Ajuda emergencial</li>
+            <li>Transparência no uso</li>
+          </ul>
+          <p class="payment-title">Formas de pagamento:</p>
+          <div class="container-row payment-icons">
+            <span class="payment-icon">Pix</span>
+            <span class="payment-icon">PagSeguro</span>
+            <span class="payment-icon">PicPay</span>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-donate">Doar uma vez</button>
+      </div>
+      <div class="donation-card highlight-card" data-aos="flip-up" data-aos-delay="500">
+        <span class="highlight-tag">Mais impacto</span>
+        <div class="donation-card-content">
+          <h3 class="card-title">Apadrinhamento Mensal</h3>
+          <p class="card-description">Ajude todos os meses</p>
+          <p class="price">R$ 75,00/mês</p>
+          <ul class="benefits-list">
+            <li>Ração e medicamentos recorrentes</li>
+            <li>Apoio a castrações mensais</li>
+            <li>Relatório de impacto exclusivo</li>
+          </ul>
+          <p class="payment-title">Formas de pagamento:</p>
+          <div class="container-row payment-icons">
+            <span class="payment-icon">Pix</span>
+            <span class="payment-icon">PagSeguro</span>
+            <span class="payment-icon">PicPay</span>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-donate">Doar uma vez</button>
+      </div>
+      <div class="donation-card" data-aos="fade-down" data-aos-delay="700">
+        <div class="donation-card-content">
+          <h3 class="card-title">Doação única</h3>
+          <p class="card-description">Contribua o quanto puder</p>
+          <p class="price">R$1000,00</p>
+          <ul class="benefits-list">
+            <li>Exames e vacinas</li>
+            <li>Kit pós-resgate</li>
+            <li>Ajuda onde for mais urgente</li>
+          </ul>
+          <p class="payment-title">Formas de pagamento:</p>
+          <div class="container-row payment-icons">
+            <span class="payment-icon">Pix</span>
+            <span class="payment-icon">PagSeguro</span>
+            <span class="payment-icon">PicPay</span>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-donate">Doar uma vez</button>
+      </div>
+    </div>
+    <div class="qrcode-section">
+      <img src="src/assets/qrcode.png" alt="Pix QR Code" loading="lazy" class="qrcode-img" data-aos="fade-right"
+        data-aos-delay="250" />
+      <div class="qrcode-text" data-aos="fade-left" data-aos-delay="300">
+        <h3 class="subtitle">Pix QR Code</h3>
+        <p class="text qrcode-description">Escaneie para doar rapidamente</p>
+        <p class="text qrcode-chave">Chave Pix: garra.marilia@gmail.com</p>
+      </div>
+    </div>
+    <p class="final-info" data-aos="fade-up" data-aos-delay="350">
+      Aceitamos Pix, PagSeguro, PicPay e transferência bancária
+    </p>
+    <blockquote class="quote" data-aos="fade-up" data-aos-delay="355">
+      "Ao doar, você pratica a verdadeira ética: cuidar de toda vida que
+      precisa de nós." Albert Schweitzer
+    </blockquote>
+  </section>
+  <!-- Donation End -->
+  <!-- Needs Start -->
+  <section class="container" id="needs">
+    <div class="container-fluid">
+      <h2 class="subtitle" data-aos="fade-up">Necessidades urgentes</h2>
+      <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+        O que precisamos agora
+      </h1>
+      <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
+        Estes são os itens críticos que precisamos para continuar salvando
+        vidas. Você pode doar diretamente ou contribuir financeiramente.
+      </p>
+    </div>
+    <div class="needs-cards-container container-row">
+      <div class="needs-card" data-aos="fade-right" data-aos-delay="300">
+        <span class="needs-tag tag-critical">Crítico</span>
+        <div class="needs-icon-title">
+          <img src="src/assets/icons/needs-icon-box.png" alt="Icone de caixa" loading="lazy"/>
+          <h3 class="subtitle">Ração para Cães</h3>
+        </div>
+
+        <div class="stock-info">
+          <p class="stock-label">Estoque Atual:</p>
+          <p class="stock-value">15KG</p>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar progress-critical" style="width: 15%" data-aos="progress-bar" data-aos-delay="400">
+          </div>
+        </div>
+        <button class="btn btn-secondary needs-btn">Doar Ração</button>
+      </div>
+      <div class="needs-card" data-aos="fade-right" data-aos-delay="500">
+        <span class="needs-tag tag-critical">Crítico</span>
+        <div class="needs-icon-title">
+          <img src="src/assets/icons/needs-icon-box.png" alt="Icone de caixa" loading="lazy" />
+          <h3 class="subtitle">Ração para Gatos</h3>
+        </div>
+        <div class="stock-info">
+          <p class="stock-label">Estoque Atual:</p>
+          <p class="stock-value">8KG</p>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar progress-critical" style="width: 8%" data-aos="progress-bar" data-aos-delay="600">
+          </div>
+        </div>
+        <button class="btn btn-secondary needs-btn">Doar Ração</button>
+      </div>
+      <div class="needs-card" data-aos="fade-left" data-aos-delay="700">
+        <span class="needs-tag tag-urgent">Urgente</span>
+        <div class="needs-icon-title">
+          <span class="material-symbols-outlined icon-medical"
+            style="transform: scale(1.1); margin-bottom: 1.355rem">medical_services</span>
+          <h3 class="subtitle">Medicamentos</h3>
+        </div>
+        <div class="stock-info">
+          <p class="stock-label">Estoque Atual:</p>
+          <p class="stock-value">40%</p>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar progress-urgent" style="width: 40%" data-aos="progress-bar" data-aos-delay="800">
+          </div>
+        </div>
+        <button class="btn btn-secondary needs-btn">Contribuir</button>
+      </div>
+      <div class="needs-card" data-aos="fade-left" data-aos-delay="900">
+        <span class="needs-tag tag-moderate">Moderado</span>
+        <div class="needs-icon-title">
+          <img src="src/assets/icons/needs-icon-box.png" alt="Icone de caixa" loading="lazy"/>
+          <h3 class="subtitle">Materiais de Limpeza</h3>
+        </div>
+        <div class="stock-info">
+          <p class="stock-label">Estoque Atual:</p>
+          <p class="stock-value">65%</p>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar progress-moderate" style="width: 65%" data-aos="progress-bar" data-aos-delay="1000">
+          </div>
+        </div>
+        <button class="btn btn-secondary needs-btn">Doar Materiais</button>
+      </div>
+    </div>
+  </section>
+  <!-- Needs End -->
+  <!-- Volunteer Start -->
+  <section class="container" id="volunteer">
+    <div class="container-row volunteer-content-wrapper">
+      <div class="container-column volunteer-info-column">
+        <h2 class="subtitle" data-aos="fade-up">Voluntariado</h2>
+        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+          Doe Tempo: Junte-se à <br />
+          nossa matilha
+        </h1>
+        <p class="text text-info" style="margin-left: 0" data-aos="fade-up" data-aos-delay="200">
+          Precisamos de lares temporários, transporte solidário, apoio em
+          feiras e produção de conteúdo. Toda ajuda conta.
+        </p>
+        <div class="container-row volunteer-tags-container">
+          <span class="volunteer-tag" data-aos="zoom-in">Lar Temporário</span>
+          <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="100">Transporte</span>
+          <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="200">Divulgação</span>
+          <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="300">Eventos</span>
+          <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="350">Fotografia</span>
+          <span class="volunteer-tag" data-aos="zoom-in" data-aos-delay="355">Veterinária</span>
+        </div>
+        <div class="how-it-works" style="max-width: 768px">
+          <h3 class="subtitle" data-aos="fade-right" data-aos-delay="10">
+            Como funciona?
+          </h3>
+          <p class="text" data-aos="fade-right" data-aos-delay="50">
+            Passos para se começar a voluntariar
+          </p>
+          <ol class="steps-list">
+            <li class="text" data-aos="fade-right" data-aos-delay="100">
+              Preencha o formulário de interesse ao lado.
             </li>
-          </ul>
-        </div>
-        <div class="container-column footer-contact-col">
-          <h3 class="subtitle footer-section-title">Contato</h3>
-          <ul class="footer-list">
-            <li>garra.marilia@gmail.com</li>
-            <li>(00) 0000-0000</li>
-            <li>WhatsApp: (00) 00000-0000</li>
-            <li>Rua Pascoal Eugênio Brasini, 255</li>
-            <li>Marília - São Paulo</li>
-          </ul>
-        </div>
-        <div class="container-column footer-pix-col">
-          <h3 class="subtitle footer-section-title">Doe via Pix</h3>
-          <img
-            src="src/assets/qrcode.png"
-            alt="QR Code Pix"
-            class="footer-qrcode"
-          />
-          <small class="text pix-key-text">
-            Chave Pix: <br />
-            garra.marilia@gmail.com
-          </small>
+            <li class="text" data-aos="fade-right" data-aos-delay="200">
+              Participe da conversa de boas-vindas no WhatsApp.
+            </li>
+            <li class="text" data-aos="fade-right" data-aos-delay="300">
+              Escolha uma frente de atuação.
+            </li>
+            <li class="text" data-aos="fade-right" data-aos-delay="300">
+              Receba materiais e comece a ajudar!
+            </li>
+          </ol>
         </div>
       </div>
-      <div class="footer-copyright-row">
-        <p class="text copyright-text">
-          © 2025 GARRA - Grupo de Apoio e Resgate de Animais. CNPJ:
-          20.661.830/0001-77. Transparência e prestação de contas públicas.
+      <div class="container-column volunteer-form-column">
+        <div class="volunteer-form-card" data-aos="fade-left" data-aos-delay="400">
+          <h3 class="title">Formulário do Voluntário</h3>
+          <p class="form-instruction-text">
+            Preencha seus dados e entraremos em contato
+          </p>
+          <form action="#" method="POST" class="volunteer-form">
+            <div class="form-group">
+              <label for="nome" class="label">Nome Completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" class="input" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="label">Email</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" class="input" required />
+            </div>
+            <div class="form-group">
+              <label for="whatsapp" class="label">WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" class="input" required />
+            </div>
+            <div class="form-group">
+              <label for="area" class="label">Área de interesse</label>
+              <textarea id="area" name="area" placeholder="Conte-nos como você gostaria de ajudar..."
+                class="input textarea" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <span class="material-symbols-outlined">send</span> Enviar
+              Formulário
+            </button>
+            <button type="button" class="btn btn-secondary form-whatsapp-btn">
+              <span class="material-symbols-outlined">sms</span> Falar no
+              WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Volunteer End -->
+  <!-- Transparency Start -->
+  <section class="container" id="transparency">
+    <div class="container-fluid">
+      <h2 class="transparency-subtitle" data-aos="fade-up">Transparência</h2>
+      <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+        Como usamos suas doações
+      </h1>
+      <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
+        Prestamos contas de cada centavo recebido. Veja como seus recursos são
+        aplicados.
+      </p>
+    </div>
+    <div class="transparency-cards-container container-row">
+      <div class="container-column card-data" data-aos="fade-right" data-aos-delay="300">
+        <div class="card-header">
+          <span class="material-symbols-outlined icon-data">check_box</span>
+          <h3 class="subtitle">Despesas e Receitas - Último mês.</h3>
+        </div>
+        <div class="data-item">
+          <p class="data-label text">Receitas</p>
+          <p class="data-value">R$ 45.230,00</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar progress-green" style="width: 100%" data-aos="progress-bar-fill"
+              data-aos-delay="400"></div>
+          </div>
+        </div>
+        <div class="data-item">
+          <p class="data-label text">Despesas</p>
+          <p class="data-value highlight-orange">R$ 42.180,00</p>
+          <div class="progress-bar-container">
+            <div class="progress-bar progress-orange" style="width: 93%" data-aos="progress-bar-fill"
+              data-aos-delay="500"></div>
+          </div>
+        </div>
+        <div class="data-item data-saldo" data-aos="zoom-in" data-aos-delay="600">
+          <p class="data-label text">Saldo</p>
+          <p class="data-value saldo-value">R$ 3.050,00</p>
+        </div>
+      </div>
+
+      <div class="container-column card-distribution" data-aos="fade-left" data-aos-delay="300">
+        <h3 class="subtitle">Distribuição de Gastos</h3>
+        <div class="distribution-item">
+          <p class="distribution-label text">Alimentação</p>
+          <p class="distribution-percentage">45%</p>
+          <div class="progress-bar-container distribution-bar">
+            <div class="progress-bar progress-orange-soft" style="width: 45%" data-aos="progress-bar-fill"
+              data-aos-delay="700"></div>
+          </div>
+        </div>
+        <div class="distribution-item">
+          <p class="distribution-label text">Veterinária e Medicamentos</p>
+          <p class="distribution-percentage">35%</p>
+          <div class="progress-bar-container distribution-bar">
+            <div class="progress-bar progress-orange-soft" style="width: 35%" data-aos="progress-bar-fill"
+              data-aos-delay="800"></div>
+          </div>
+        </div>
+        <div class="distribution-item">
+          <p class="distribution-label text">Infraestrutura</p>
+          <p class="distribution-percentage">12%</p>
+          <div class="progress-bar-container distribution-bar">
+            <div class="progress-bar progress-orange-soft" style="width: 12%" data-aos="progress-bar-fill"
+              data-aos-delay="900"></div>
+          </div>
+        </div>
+        <div class="distribution-item">
+          <p class="distribution-label text">Divulgação e Eventos</p>
+          <p class="distribution-percentage">8%</p>
+          <div class="progress-bar-container distribution-bar">
+            <div class="progress-bar progress-orange-soft" style="width: 8%" data-aos="progress-bar-fill"
+              data-aos-delay="1000"></div>
+          </div>
+        </div>
+        <button class="btn btn-secondary report-btn" data-aos="fade-up" data-aos-delay="1100">
+          <span class="material-symbols-outlined">calendar_today</span> Ver
+          Relatório Completo
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Transparency End -->
+  <!-- Impact History Start -->
+  <section class="container" id="impact">
+    <div class="container-fluid">
+      <h2 class="subtitle" data-aos="fade-up">Histórias de Impacto</h2>
+      <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+        Vidas transformadas pelo GARRA
+      </h1>
+      <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
+        Acompanhe as histórias de resgate, recuperação e adoção que
+        compartilhamos nas redes sociais.
+      </p>
+    </div>
+    <!-- Swiper Container -->
+    <div class="adoption-cards-container">
+      <div class="swiper impactSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="adoption-card">
+              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop"
+                alt="Cachorro Rex" class="adoption-img" loading="lazy"/>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="material-symbols-outlined icon-time">schedule</span>
+                  <small>há 2 dias</small>
+                </div>
+                <h3 class="subtitle">Rex encontrou um lar!</h3>
+                <p class="card-description-impact">
+                  Depois de 3 meses no abrigo, Rex foi adotado por uma família
+                  amorosa. Veja a emoção do encontro! 🖤🐾
+                </p>
+                <a href="#" class="btn btn-link">
+                  Ver no Instagram
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="adoption-card">
+              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
+                alt="Gata Luna" class="adoption-img" loading="lazy"/>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="material-symbols-outlined icon-time">schedule</span>
+                  <small>há 5 dias</small>
+                </div>
+                <h3 class="subtitle">Resgate de 5 gatinhos</h3>
+                <p class="card-description-impact">
+                  Resgatamos uma ninhada abandonada. Todos estão saudáveis e
+                  prontos para adoção em breve! ✨
+                </p>
+                <a href="#" class="btn btn-link">
+                  Ver no Facebook
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="adoption-card">
+              <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=300&fit=crop"
+                alt="Gatinha Mia" class="adoption-img" loading="lazy"/>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="material-symbols-outlined icon-time">schedule</span>
+                  <small>há 1 semana</small>
+                </div>
+                <h3 class="subtitle">Mutirão de castração</h3>
+                <p class="card-description-impact">
+                  Mais um mutirão realizado! 45 animais castrados
+                  gratuitamente. Obrigado aos voluntários! 🙏
+                </p>
+                <a href="#" class="btn btn-link">
+                  Ver no Instagram
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="adoption-card">
+              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop"
+                alt="Cachorro Rex" class="adoption-img" loading="lazy"/>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="material-symbols-outlined icon-time">schedule</span>
+                  <small>há 2 dias</small>
+                </div>
+                <h3 class="subtitle">Rex encontrou um lar!</h3>
+                <p class="card-description-impact">
+                  Depois de 3 meses no abrigo, Rex foi adotado por uma família
+                  amorosa. Veja a emoção do encontro! 🖤🐾
+                </p>
+                <a href="#" class="btn btn-link">
+                  Ver no Instagram
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="adoption-card">
+              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
+                alt="Gata Luna" class="adoption-img" loading="lazy"/>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="material-symbols-outlined icon-time">schedule</span>
+                  <small>há 5 dias</small>
+                </div>
+                <h3 class="subtitle">Resgate de 5 gatinhos</h3>
+                <p class="card-description-impact">
+                  Resgatamos uma ninhada abandonada. Todos estão saudáveis e
+                  prontos para adoção em breve! ✨
+                </p>
+                <a href="#" class="btn btn-link">
+                  Ver no Facebook
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <div class="adoption-card">
+              <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=400&h=300&fit=crop"
+                alt="Gatinha Mia" class="adoption-img" loading="lazy"/>
+              <div class="card-content">
+                <div class="card-meta">
+                  <span class="material-symbols-outlined icon-time">schedule</span>
+                  <small>há 1 semana</small>
+                </div>
+                <h3 class="subtitle">Mutirão de castração</h3>
+                <p class="card-description-impact">
+                  Mais um mutirão realizado! 45 animais castrados
+                  gratuitamente. Obrigado aos voluntários! 🙏
+                </p>
+                <a href="#" class="btn btn-link">
+                  Ver no Instagram
+                  <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="container-row" style="margin-top: 2rem">
+      <a href="https://www.instagram.com/garramarilia/" class="btn btn-secondary see-all-btn" data-aos="fade-up">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="instagram-icon" />
+        Seguir no Instagram
+      </a>
+      <a href="https://www.facebook.com/garramarilia" class="btn btn-secondary see-all-btn" data-aos="fade-up">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="facebook-icon" />
+        Seguir no Facebook
+      </a>
+    </div>
+  </section>
+  <!-- Impact History End -->
+  <!-- Footer Start -->
+  <footer class="container" id="footer">
+    <div class="container-row newsletter-container">
+      <div class="container-column" data-aos="fade-right" data-aos-delay="100">
+        <h2 class="subtitle">Fique por dentro</h2>
+        <h1 class="title">Receba notícias e histórias de adoção</h1>
+        <p class="text text-info">
+          Enviamos só o essencial: transparência de gastos, resgates e
+          vitórias da comunidade.
         </p>
       </div>
-    </footer>
-    <!-- Footer End -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="module" src="src/scripts/index.js"></script>
-    <script>
-      const swiper = new Swiper(".impactSwiper", {
-        // Slides por visualização
-        slidesPerView: 1,
-        spaceBetween: 30,
+      <form class="container-column container-form" method="post" data-aos="fade-left" data-aos-delay="200">
+        <div class="container-row">
+          <input type="email" name="email_newsletter" id="email_newsletter" placeholder="Seu Email:" class="input" />
+          <input type="submit" value="Assinar" class="btn btn-primary" />
+        </div>
+        <small class="text">
+          Ao assinar, você concorda em receber comunicações do GARRA.
+        </small>
+      </form>
+    </div>
+    <div class="container-row footer-data-row">
+      <div class="container-column footer-logo-col">
+        <img src="src/assets/logo.png" alt="Logo GARRA" class="footer-logo" loading="lazy"/>
+        <p class="text footer-description">
+          Grupo de Apoio e Resgate de Animais. <br />
+          Salvando vidas desde 2015.
+        </p>
+      </div>
+      <div class="container-column footer-nav-col">
+        <h3 class="subtitle footer-section-title">Navegação</h3>
+        <ul class="footer-list">
+          <li><a href="#about" class="footer-link hover-nav-item">Sobre</a></li>
+          <li><a href="#adoption" class="footer-link hover-nav-item">Animais</a></li>
+          <li><a href="#donation" class="footer-link hover-nav-item">Doar</a></li>
+          <li><a href="#volunteer" class="footer-link hover-nav-item">Voluntariado</a></li>
+          <li>
+            <a href="#transparency" class="footer-link hover-nav-item">Transparência</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container-column footer-contact-col">
+        <h3 class="subtitle footer-section-title">Contato</h3>
+        <ul class="footer-list">
+          <li>garra.marilia@gmail.com</li>
+          <li>(00) 0000-0000</li>
+          <li>WhatsApp: (00) 00000-0000</li>
+          <li>Rua Pascoal Eugênio Brasini, 255</li>
+          <li>Marília - São Paulo</li>
+        </ul>
+      </div>
+      <div class="container-column footer-pix-col">
+        <h3 class="subtitle footer-section-title">Doe via Pix</h3>
+        <img src="src/assets/qrcode.png" alt="QR Code Pix" class="footer-qrcode" loading="lazy"/>
+        <small class="text pix-key-text">
+          Chave Pix: <br />
+          garra.marilia@gmail.com
+        </small>
+      </div>
+    </div>
+    <div class="footer-copyright-row">
+      <p class="text copyright-text">
+        © 2025 GARRA - Grupo de Apoio e Resgate de Animais. CNPJ:
+        20.661.830/0001-77. Transparência e prestação de contas públicas.
+      </p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    const swiper = new Swiper(".impactSwiper", {
+      // Slides por visualização
+      slidesPerView: 1,
+      spaceBetween: 30,
 
-        // Loop infinito
-        loop: true,
+      // Loop infinito
+      loop: true,
 
-        // Autoplay
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
+      // Autoplay
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+
+      // Navegação
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      // Paginação
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      // Responsive breakpoints
+      breakpoints: {
+        // Quando a largura >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
         },
-
-        // Navegação
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+        // Quando a largura >= 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
         },
-
-        // Paginação
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+        // Quando a largura >= 1024px
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
         },
+      },
+    });
+  </script>
+  <script>
+    AOS.init({
+      // Define o offset (em px) de quando a animação deve começar
+      offset: 120,
+      // Duração da animação (em ms)
+      duration: 1000,
+      // Uma vez que o elemento é animado, se deve ou não repetir a animação ao rolar para cima
+      once: true,
+    });
+  </script>
+  <script type="module" src="src/scripts/index.js"></script>
+</body>
 
-        // Responsive breakpoints
-        breakpoints: {
-          // Quando a largura >= 640px
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          // Quando a largura >= 768px
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          // Quando a largura >= 1024px
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-        },
-      });
-    </script>
-    <script>
-      AOS.init({
-        // Define o offset (em px) de quando a animação deve começar
-        offset: 120,
-        // Duração da animação (em ms)
-        duration: 1000,
-        // Uma vez que o elemento é animado, se deve ou não repetir a animação ao rolar para cima
-        once: true,
-      });
-    </script>
-  </body>
 </html>

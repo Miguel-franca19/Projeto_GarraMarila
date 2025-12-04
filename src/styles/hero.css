@@ -66,6 +66,7 @@
   display: block;
   margin: auto;
 }
+
 .container-column.button-container {
   gap: 15px;
   margin-top: 20px;
@@ -86,7 +87,10 @@
 }
 
 .title span {
-  color: var(--quintenary-color);
+  background: linear-gradient(135deg, var(--quintenary-color), var(--primary-color), var(--secondary-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-icon {

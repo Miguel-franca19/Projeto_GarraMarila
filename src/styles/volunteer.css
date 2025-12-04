@@ -77,7 +77,7 @@
 }
 
 .steps-list li::before {
-  content: "🐾";
+  content: url("../assets/icons/paw-icon.png");
   position: absolute;
   left: 0;
   top: 50%;

@@ -77,12 +77,19 @@
   color: var(--btn-color);
 }
 
-.footer-list {
+.sidebar-list {
+  margin-top: 9rem;
+  margin-left: 15px;
+}
+
+.footer-list,
+.sidebar-list {
   list-style: none;
   padding: 0;
 }
 
-.footer-list li {
+.footer-list li,
+.sidebar-list li {
   font-size: calc(0.9em + 0.1vw);
   color: var(--font-color);
   margin-bottom: 8px;
