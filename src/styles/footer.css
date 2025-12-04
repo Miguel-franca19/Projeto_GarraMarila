@@ -77,11 +77,6 @@
   color: var(--btn-color);
 }
 
-.sidebar-list {
-  margin-top: 9rem;
-  margin-left: 15px;
-}
-
 .footer-list,
 .sidebar-list {
   list-style: none;
