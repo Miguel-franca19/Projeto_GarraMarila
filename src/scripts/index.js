@@ -3,3 +3,4 @@
 import './open-menu.js';
 import './sticky-navbar.js';
 import './theme.js';
+import './show-adoption-cards.js';
