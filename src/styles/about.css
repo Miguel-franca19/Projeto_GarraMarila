@@ -4,7 +4,7 @@
 
 */
 
-.container-row .about-data .container-column {
+.about-data .container-column {
   flex: 1;
   padding: 20px;
   text-align: center;
@@ -17,15 +17,4 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.buttons-container-about {
-  display: flex;
-  justify-content: flex-start;
-  gap: 55px;
-}
-
-.buttons-container-about .container-column{
-  align-items: flex-start !important;
-  flex: none !important;
 }

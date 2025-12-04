@@ -1,5 +1,3 @@
-// Script e funções para alternar entre temas claro e escuro, salvando a preferência do usuário
-
 const themeToggle = document.querySelector(".theme-switch__checkbox");
 const heroSource = document.getElementById("hero-img-source");
 

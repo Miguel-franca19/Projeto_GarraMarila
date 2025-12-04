@@ -1,5 +1,3 @@
-// Script para abrir e fechar o menu lateral
-
 const sidebar = document.querySelector('#sidebar');
 const toggleButton = document.querySelectorAll('.menu-burguer');
 

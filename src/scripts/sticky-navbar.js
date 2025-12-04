@@ -1,5 +1,3 @@
-// Script para tornar a navbar fixa e adicionar animação ao rolar a página
-
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
   const scrollThreshold = 100; // Define o ponto (em pixels) para a animação começar
@@ -15,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Define a posição inicial da navbar para 'fixed'
   navbar.style.position = "fixed";
   navbar.style.top = "0";
-  navbar.style.zIndex = "1000"; 
+  navbar.style.zIndex = "1000"; // Garante que fique acima de outros elementos
 
   // Adiciona o listener de scroll
   window.addEventListener("scroll", handleScroll);
