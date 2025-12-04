@@ -130,6 +130,8 @@ body {
   cursor: pointer;
   font-size: calc(1em + 0.01vw);
   transition: all 150ms ease;
+  text-decoration: none;
+  text-align: center;
 }
 
 .btn:hover {
@@ -142,6 +144,7 @@ body {
 
 .btn-primary {
   color: var(--white-color);
+  font-weight: bold;
   background-color: var(--primary-color);
 }
 

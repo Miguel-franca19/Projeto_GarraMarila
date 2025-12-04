@@ -82,15 +82,17 @@
   padding: 5px 10px;
 }
 
-.dark #hero .title {
-  color: var(--font-color);
-}
-
-.title span {
+.title span,
+.dark .title:not(#hero .title) {
   background: linear-gradient(135deg, var(--quintenary-color), var(--primary-color), var(--secondary-color));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+
+.dark #hero .title {
+  color: var(--font-color) !important;
 }
 
 .text-icon {
