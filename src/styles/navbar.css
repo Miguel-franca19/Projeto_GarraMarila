@@ -12,6 +12,22 @@
   padding-bottom: 5px;
 }
 
+.sections-nav {
+  position: relative;
+}
+
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.sections-nav .nav {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -74,6 +90,13 @@
   color: var(--font-color);
   font-weight: 500;
   transition: color 150ms ease;
+}
+
+.sections-nav .nav .nav-link.active {
+  color: var(--primary-color);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--hover-color);
 }
 
 .navbar .nav .nav-link:hover,

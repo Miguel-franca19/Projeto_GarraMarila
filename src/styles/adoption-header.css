@@ -1,11 +1,10 @@
 /* Header CSS 
 
-    - CSS para os headers da página de adoção
+  - CSS para os headers da página de adoção
 
 */
 
 #header-adoption {
-  margin-top: 2rem;
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 4rem;
 }
@@ -17,15 +16,6 @@
   font-size: 16px;
 }
 
-.container-logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  padding: 0 20px;
-  width: 100%;
-}
-
 .container-header .title {
   font-size: calc(1.2em + 0.1vw);
 }
@@ -34,12 +24,8 @@
   font-size: calc(0.9em + 0.1vw);
 }
 
-#header-adoption .see-all-btn {
-  margin: 0;
-}
-
 #all-animals {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 /* Form CSS  */
@@ -66,3 +52,55 @@
   font-size: 20px;
   pointer-events: none;
 }
+
+/* Donation Page Start */
+.donation-cards-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.donation-cards-container .needs-card {
+  border: 1px solid var(--tertiary-color);
+  width: 235px;
+}
+
+.donation-cards-container .needs-card:hover {
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-card-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.title-card-donation {
+  color: var(--primary-color);
+  font-size: calc(1.5em + 0.2vw);
+}
+
+.title-card-donation span {
+  font-size: 0.8em;
+}
+
+.donation-tag {
+  position: absolute;
+  top: -60px;
+  right: -59px;
+  padding: 3px 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  opacity: .1;
+}
+
+.donation-cards-container .text {
+  font-size: .85em;
+}
+
+/* Donation Page End */
