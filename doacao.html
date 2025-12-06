@@ -3,29 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animais para Adoção | ONG GARRA Marília</title>
+    <title>Ajude a ONG GARRA Marília | Doação Pix, Mensal</title>
     <meta
       name="description"
-      content="Conheça todos os cães e gatos resgatados pela ONG GARRA em Marília/SP disponíveis para adoção e apadrinhamento."
+      content="Sua doação garante ração, vacinas e tratamento veterinário para nossos cães e gatos resgatados em Marília/SP. Doe via PIX ou Apadrinhe mensalmente!"
     />
     <meta
       name="keywords"
-      content="Adoção de Animais Marília, Cães para Adoção, Gatos para Adoção, Adotar Pet Marília, Apadrinhamento de Animais, ONG GARRA Adoção"
+      content="Doação ONG Marília, Doar para Animais, Doação PIX Pet, Apadrinhar Animal Marília, ONG GARRA Doações, Ajuda Animais Resgatados"
     />
-    <meta property="og:title" content="Animais para Adoção | GARRA Marília" />
+
+    <meta
+      property="og:title"
+      content="Apoie a GARRA Marília: Faça sua Doação!"
+    />
     <meta
       property="og:description"
-      content="Conheça todos os cães e gatos resgatados pela ONG GARRA em Marília/SP disponíveis para adoção e apadrinhamento."
+      content="Sua doação garante ração, vacinas e tratamento veterinário para nossos cães e gatos resgatados em Marília/SP. Doe via PIX ou Apadrinhe mensalmente!"
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://garramarilia.vercel.app/animais.html"
+      content="https://garramarilia.vercel.app/doacao.html"
     />
     <meta property="og:image" content="src/assets/logo.png" />
     <meta name="author" content="ONG GARRA" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://garramarilia.vercel.app/animais.html" />
+    <link rel="canonical" href="https://garramarilia.vercel.app/doacao.html" />
     <link rel="stylesheet" href="src/styles/index.css" />
     <link rel="shortcut icon" href="src/assets/logo.png" type="image/x-icon" />
 
@@ -112,13 +116,15 @@
               </div>
             </div>
           </label>
-          <a href="#adoption"><button class="btn btn-primary">Doar</button></a>
+          <a href="#donation-page"
+            ><button class="btn btn-primary">Doar</button></a
+          >
         </div>
       </div>
     </nav>
     <!-- Navbar End -->
     <!-- Header Start -->
-    <header class="container section-page" id="header-adoption">
+    <header class="container section-page" style="margin-bottom: 4rem">
       <div class="container-fluid">
         <p class="hero-highlight" data-aos="fade-up">
           Impacto real na vida de muitos animais
@@ -136,15 +142,15 @@
           uma segunda chance para animais abandonados. Com transparência total,
           mostramos exatamente como seu apoio faz a diferença.
         </p>
-        <div class="container-row">
+        <div class="container-row buttons-container-donation">
           <div class="container-column">
             <a
-              href="#donation"
+              href="#donation-page"
               class="btn btn-primary"
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <span class="material-symbols-outlined"> arrow_downward </span>
+              <span class="material-symbols-outlined"> favorite </span>
               Fazer uma Doação
             </a>
           </div>
@@ -160,8 +166,111 @@
           </div>
         </div>
       </div>
+    </header>
+    <!-- Header End -->
+    <!-- Donation Start -->
+    <section class="container" id="donation-page">
+      <div class="container-row container-donation">
+        <div class="container-column qrcode-section-container">
+          <p class="text" style="text-align: center">
+            Escaneie o QR Code com seu aplicativo do banco
+          </p>
+          <div class="container-donation-qrcode">
+            <img src="src/assets/qrcode-big.png" alt="qrcode" />
+          </div>
+          <div class="donation-info-container">
+            <div class="info-block">
+              <span class="info-label-box">Chave</span>
+              <div class="info-value-group">
+                <span class="main-value">doar@garra.org.br</span>
+                <span class="text sub-text">E-mail</span>
+              </div>
+            </div>
+
+            <div class="info-block">
+              <span class="info-label-box">CNPJ</span>
+              <div class="info-value-group">
+                <span class="main-value">12.345.678/0001-90</span>
+                <span class="text sub-text">ONG Instituto Garra</span>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary" style="width: 100%">
+            <span class="material-symbols-outlined"> qr_code </span>
+            Copiar Código Pix
+          </button>
+        </div>
+        <div
+          class="container-column"
+          style="justify-content: flex-start; padding: 0 25px"
+        >
+          <h3 class="title">Doe Rapidamente via PIX</h3>
+          <p class="text">Forma mais rápida e sem taxas de intermediação</p>
+          <div class="container-row buttons-donation">
+            <button
+              type="button"
+              class="btn btn-secondary see-all-btn"
+              style="margin: 0"
+            >
+              Doação Única
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary see-all-btn active"
+              style="margin: 0"
+            >
+              Apadrinhamento Mensal
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary see-all-btn"
+              style="margin: 0"
+            >
+              Doação para Tratamento
+            </button>
+          </div>
+          <p class="text">Ajude todos os meses com:</p>
+          <ul class="benefits-list">
+            <li>Garante 1 dia de alimentação</li>
+            <li>Ajuda em resgates imediatos</li>
+            <li>Receba um comprovante transparente</li>
+          </ul>
+          <p class="price">R$35,00/mês</p>
+          <div class="toast" style="margin-top: auto">
+            <p class="text">
+              <span>Importante:</span> Após doar, envie o comprovante para nosso
+              WhatsApp <span>(11)00000-0000</span> para recebermos e enviarmoos
+              seu certificado!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Donation End -->
+    <!-- Impact Start -->
+    <section class="container section-page" id="impact">
+      <div class="container-fluid">
+        <p class="hero-highlight" data-aos="fade-up">Cada Real Conta</p>
+        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+          Veja o impacto da sua contribuição
+        </h1>
+        <p
+          class="text"
+          style="max-width: 660px"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Qualquer valor faz diferença na vida dos nossos animais. Veja como sua
+          doação é transformada em cuidado real.
+        </p>
+      </div>
       <div class="donation-cards-container">
-        <div class="needs-card" style="overflow: hidden;" data-aos="fade-right" data-aos-delay="100">
+        <div
+          class="needs-card"
+          style="overflow: hidden"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <span class="donation-tag"></span>
           <div class="donation-card-title">
             <h2 class="title-card-donation"><span>R$</span>1</h2>
@@ -169,7 +278,12 @@
           </div>
           <p class="text">Alimenta um animal resgatado por um dia completo</p>
         </div>
-        <div class="needs-card" style="overflow: hidden;" data-aos="fade-right" data-aos-delay="150">
+        <div
+          class="needs-card"
+          style="overflow: hidden"
+          data-aos="fade-right"
+          data-aos-delay="150"
+        >
           <span class="donation-tag"></span>
           <div class="donation-card-title">
             <h2 class="title-card-donation"><span>R$</span>10</h2>
@@ -177,7 +291,12 @@
           </div>
           <p class="text">Vermífugo e medicamentos essenciais para um animal</p>
         </div>
-        <div class="needs-card" style="overflow: hidden;" data-aos="fade-right" data-aos-delay="250">
+        <div
+          class="needs-card"
+          style="overflow: hidden"
+          data-aos="fade-right"
+          data-aos-delay="250"
+        >
           <span class="donation-tag"></span>
           <div class="donation-card-title">
             <h2 class="title-card-donation"><span>R$</span>30</h2>
@@ -185,105 +304,84 @@
           </div>
           <p class="text">Alimenta um animal resgatado por um dia completo</p>
         </div>
-        <div class="needs-card" style="overflow: hidden;" data-aos="fade-right" data-aos-delay="300">
+        <div
+          class="needs-card"
+          style="overflow: hidden"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <span class="donation-tag"></span>
           <div class="donation-card-title">
             <h2 class="title-card-donation"><span>R$</span>50</h2>
             <h3 class="subtitle">Castração</h3>
           </div>
-          <p class="text">Cirurgia de castração que previne abandono e doenças</p>
+          <p class="text">
+            Cirurgia de castração que previne abandono e doenças
+          </p>
         </div>
-        <div class="needs-card" style="overflow: hidden;" data-aos="fade-right" data-aos-delay="350">
+        <div
+          class="needs-card"
+          style="overflow: hidden"
+          data-aos="fade-right"
+          data-aos-delay="350"
+        >
           <span class="donation-tag"></span>
           <div class="donation-card-title">
             <h2 class="title-card-donation"><span>R$</span>100</h2>
             <h3 class="subtitle">Consulta Veterinária</h3>
           </div>
-          <p class="text">Consulta completa com exames e diagnóstico profissional</p>
-        </div>
-      </div>
-    </header>
-    <!-- Header End -->
-    <!-- Adoption Start -->
-    <section class="container" id="donation">
-      <div class="container-fluid">
-        <p class="hero-highlight" data-aos="fade-up">Escolha seu valor</p>
-        <h1 class="title" data-aos="fade-up" data-aos-delay="100">
-          Formas de Contribuir
-        </h1>
-        <p class="text text-info" data-aos="fade-up" data-aos-delay="200">
-          Escolha a opção que melhor se encaixa no seu orçamento. Toda
-          contribuição faz diferença!
-        </p>
-      </div>
-      <div class="donation-cards-container container-row">
-        <div class="donation-card" data-aos="fade-down" data-aos-delay="300">
-          <div class="donation-card-content">
-            <h3 class="card-title">Doação única</h3>
-            <p class="card-description">Ajude com uma pequena ação</p>
-            <p class="price">R$10,00</p>
-            <ul class="benefits-list">
-              <li>Garante 1 dia de alimentação</li>
-              <li>Ajuda em resgates imediatos</li>
-              <li>Receba um comprovante transparente</li>
-            </ul>
-            <p class="payment-title">Formas de pagamento:</p>
-            <div class="container-row payment-icons">
-              <span class="payment-icon">Pix</span>
-              <span class="payment-icon">PagSeguro</span>
-              <span class="payment-icon">PicPay</span>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-donate">Doar uma vez</button>
-        </div>
-        <div
-          class="donation-card highlight-card"
-          data-aos="flip-up"
-          data-aos-delay="500"
-        >
-          <span class="highlight-tag">Mais impacto</span>
-          <div class="donation-card-content">
-            <h3 class="card-title">Apadrinhamento Mensal</h3>
-            <p class="card-description">Ajude todos os meses</p>
-            <p class="price">R$ 35,00/mês</p>
-            <ul class="benefits-list">
-              <li>Custeia ração, vacinas e vermífugos</li>
-              <li>Apoio a castrações mensais</li>
-              <li>Relatório de impacto exclusivo</li>
-              <li>Receba um comprovante transparente</li>
-            </ul>
-            <p class="payment-title">Formas de pagamento:</p>
-            <div class="container-row payment-icons">
-              <span class="payment-icon">Pix</span>
-              <span class="payment-icon">PagSeguro</span>
-              <span class="payment-icon">PicPay</span>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-donate">Apadrinhar Agora</button>
-        </div>
-        <div class="donation-card" data-aos="fade-down" data-aos-delay="700">
-          <div class="donation-card-content">
-            <h3 class="card-title">Doação para Tratamento</h3>
-            <p class="card-description">Ajude a fechar uma despesa médica</p>
-            <p class="price">R$150,00</p>
-            <ul class="benefits-list">
-              <li>Cobre um exame de sangue laboratorial</li>
-              <li>Ajuda na medicação pós-operatória</li>
-              <li>Suporte à compra de medicamentos caros</li>
-              <li>Receba um comprovante transparente</li>
-            </ul>
-            <p class="payment-title">Formas de pagamento:</p>
-            <div class="container-row payment-icons">
-              <span class="payment-icon">Pix</span>
-              <span class="payment-icon">PagSeguro</span>
-              <span class="payment-icon">PicPay</span>
-            </div>
-          </div>
-          <button class="btn btn-primary btn-donate">Doar uma vez</button>
+          <p class="text">
+            Consulta completa com exames e diagnóstico profissional
+          </p>
         </div>
       </div>
     </section>
-    <!-- Adoption End -->
+    <!-- Impact End -->
+    <!-- CTA Start -->
+    <section class="container section-page" style="margin-bottom: 4rem">
+      <div class="container-fluid">
+        <span class="material-symbols-outlined cta-icon" data-aos="fade-up">
+          favorite
+        </span>
+        <h3 class="title" data-aos="fade-up" data-aos-delay="100">
+          Cada doação salva uma vida
+        </h3>
+        <p
+          class="text"
+          style="max-width: 660px"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Neste exato momento, há animais precisando de ajuda. Sua contribuição
+          pode ser a diferença entre a vida e a morte, entre o sofrimento e o
+          amor. Juntos, podemos transformar realidades.
+        </p>
+        <div class="container-row buttons-container-donation">
+          <div class="container-column">
+            <a
+              href="#donation-page"
+              class="btn btn-primary"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <span class="material-symbols-outlined"> favorite </span>
+              Fazer uma Doação Agora
+            </a>
+          </div>
+          <div class="container-column">
+            <a
+              href="index.html"
+              class="btn btn-secondary see-all-btn"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              Voltar para o Início
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA End -->
     <!-- Footer Start -->
     <footer class="container" id="footer">
       <div class="container-row footer-data-row">

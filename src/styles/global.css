@@ -152,6 +152,7 @@ a {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .btn:hover {
@@ -208,6 +209,12 @@ a {
 .text-info {
   max-width: 600px;
   margin: 10px 0 40px;
+}
+
+h3.title {
+  text-align: left;
+  font-size: calc(1.5em + 0.5vw);
+  font-family: var(--text-font);
 }
 
 /* Form Elements CSS */

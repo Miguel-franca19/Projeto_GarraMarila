@@ -1,0 +1,172 @@
+/* Donation Pix CSS 
+
+  - CSS para a seção de pix de donation.html
+
+*/
+.donation-cards-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+
+.donation-cards-container .needs-card {
+  border: 1px solid var(--tertiary-color);
+  width: 235px;
+}
+
+.donation-cards-container .needs-card:hover {
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-card-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.title-card-donation {
+  color: var(--primary-color);
+  font-size: calc(1.5em + 0.2vw);
+}
+
+.title-card-donation span {
+  font-size: 0.8em;
+}
+
+.donation-tag {
+  position: absolute;
+  top: -60px;
+  right: -59px;
+  padding: 3px 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  opacity: 0.1;
+}
+
+.donation-cards-container .text {
+  font-size: 0.85em;
+}
+
+.cta-icon {
+  color: var(--primary-color);
+  font-size: 5em !important;
+}
+
+.container-donation {
+  background-color: var(--white-color);
+  padding: 35px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: auto;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+
+.qrcode-section-container {
+  max-width: 450px;
+  width: 100%;
+}
+
+.container-donation-qrcode {
+  background-color: var(--white-color);
+  border: 1px solid var(--tertiary-color);
+  padding: 25px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 0 10px 4px rgba(255, 140, 0, 0.1);
+}
+
+.container-donation-qrcode img {
+  width: 75%;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}
+
+.donation-info-container {
+  margin-top: 10px;
+  padding: 15px;
+  width: 100%;
+}
+
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.info-label-box {
+  background-color: var(--hover-color);
+  color: var(--btn-color);
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 15px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.info-value-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-value {
+  font-weight: bold;
+  color: var(--btn-color);
+  word-break: break-all;
+}
+
+.sub-text {
+  font-size: 12px;
+}
+
+.container-row.buttons-donation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.buttons-donation .see-all-btn {
+  font-size: 0.9em;
+  margin: 0;
+  width: 100%;
+}
+
+.buttons-donation .see-all-btn.active {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.toast {
+  background-color: var(--tertiary-color);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+}
+
+.toast span {
+  font-weight: 800;
+  color: var(--quintenary-color);
+}
+
+@media (min-width: 768px) {
+  .container-row.buttons-donation {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: visible;
+  }
+
+  .container-row.buttons-donation .btn {
+    width: auto;
+  }
+}
