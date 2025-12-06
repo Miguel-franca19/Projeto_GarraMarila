@@ -176,7 +176,7 @@
             Escaneie o QR Code com seu aplicativo do banco
           </p>
           <div class="container-donation-qrcode">
-            <img src="src/assets/qrcode-big.png" alt="qrcode" />
+            <img src="src/assets/qrcode-big.png" id="qrcode-img" alt="qrcode" />
           </div>
           <div class="donation-info-container">
             <div class="info-block">
@@ -211,6 +211,7 @@
               type="button"
               class="btn btn-secondary see-all-btn"
               style="margin: 0"
+              data-type="unica"
             >
               Doação Única
             </button>
@@ -218,6 +219,7 @@
               type="button"
               class="btn btn-secondary see-all-btn active"
               style="margin: 0"
+              data-type="mensal"
             >
               Apadrinhamento Mensal
             </button>
@@ -225,17 +227,26 @@
               type="button"
               class="btn btn-secondary see-all-btn"
               style="margin: 0"
+              data-type="tratamento"
             >
-              Doação para Tratamento
+              Doação p/ Tratamento
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary see-all-btn"
+              style="margin: 0"
+              data-type="outro"
+            >
+              Outro Valor
             </button>
           </div>
-          <p class="text">Ajude todos os meses com:</p>
-          <ul class="benefits-list">
+          <p class="text" id="subtitle">Ajude todos os meses com:</p>
+          <ul class="benefits-list" id="benefits-list">
             <li>Garante 1 dia de alimentação</li>
             <li>Ajuda em resgates imediatos</li>
             <li>Receba um comprovante transparente</li>
           </ul>
-          <p class="price">R$35,00/mês</p>
+          <p class="price" id="donation-price">R$35,00/mês</p>
           <div class="toast" style="margin-top: auto">
             <p class="text">
               <span>Importante:</span> Após doar, envie o comprovante para nosso
@@ -454,6 +465,6 @@
     <!-- Footer End -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="src/scripts/index.js"></script>
-    <script src="src/services/data-animals.js"></script>
+    <script src="src/services/donation.js"></script>
   </body>
 </html>

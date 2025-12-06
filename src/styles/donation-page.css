@@ -3,7 +3,7 @@
   - CSS para a seção de pix de donation.html
 
 */
-.donation-cards-container {
+#impact .donation-cards-container {
   margin-top: 1.5rem;
   display: flex;
   justify-content: flex-start;
@@ -157,6 +157,19 @@
 .toast span {
   font-weight: 800;
   color: var(--quintenary-color);
+}
+
+/* Animação suave no QR Code */
+.qrcode-fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.qrcode-fade-in {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 @media (min-width: 768px) {
