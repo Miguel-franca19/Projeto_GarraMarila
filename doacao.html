@@ -466,5 +466,29 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="src/scripts/index.js"></script>
     <script src="src/services/donation.js"></script>
+    <script>
+      // 1. pegar o plano da URL
+      const params = new URLSearchParams(window.location.search);
+      const plano = params.get('plano');
+
+      // 2. função para ativar o card correspondente
+      function ativarCard(plano) {
+        const cards = document.querySelectorAll('.donation-card-option');
+
+        cards.forEach(card => {
+          card.classList.remove('active-card');
+          if (card.dataset.plano === plano) {
+            card.classList.add('active-card');
+            card.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        });
+      }
+
+      // 3. ativar automaticamente caso o plano exista
+      if (plano) {
+        ativarCard(plano);
+      }
+    </script>
+
   </body>
 </html>
