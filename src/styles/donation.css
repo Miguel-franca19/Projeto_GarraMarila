@@ -19,7 +19,6 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-align: left;
   width: 100%;
   max-width: 350px;
@@ -83,6 +82,11 @@
   gap: 10px;
 }
 
+.card-footer {
+  margin-top: auto;
+  margin-bottom: 1rem; 
+}
+
 .payment-icon {
   border: var(--border);
   padding: 5px 10px;
@@ -93,7 +97,6 @@
 
 .btn-donate {
   width: 100%;
-  margin-top: auto;
 }
 
 /* Highlight Card (Apadrinhamento Mensal) */
