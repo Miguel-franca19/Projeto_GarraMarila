@@ -145,7 +145,7 @@
              </a>
           </div>
           <div class="container-column">
-             <a href="#contact-form" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="400">
+             <a href="#contact" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="400">
                <span class="material-symbols-outlined">call</span>
               Entre em contato
              </a>
@@ -193,7 +193,81 @@
     <!-- Header End -->
     <!-- Contact Section Start -->
     <section class="container" id="contact">
-      
+      <div class="container-row">
+        <div class="contact-form-section" data-aos="fade-right">
+          <h2>Envie uma Mensagem</h2>
+          <p>Preencha o formulário abaixo e retornaremos em até 24 horas úteis.</p>
+          
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefone">Telefone/WhatsApp *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+              </div>
+
+              <div class="form-group">
+                <label for="assunto">Assunto *</label>
+                <select id="assunto" name="assunto" required>
+                  <option value="">Selecione um assunto</option>
+                  <option value="adocao">Adoção de Animal</option>
+                  <option value="apadrinhamento">Apadrinhamento</option>
+                  <option value="voluntariado">Voluntariado</option>
+                  <option value="doacao">Doação</option>
+                  <option value="resgate">Relatar Resgate</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Conte-nos como podemos ajudar..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <span>✉</span>
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+        <div class="social-media-section">
+          <div class="social-card">
+            <h3>Links Úteis</h3>
+            
+            <a href="animais.html" class="useful-link">
+              <span class="link-icon"><span class="material-symbols-outlined">favorite</span></span>
+              <span class="link-text">Animais para Adoção</span>
+            </a>
+
+            <a href="doacao.html" class="useful-link">
+              <span class="link-icon"><span class="material-symbols-outlined">volunteer_activism</span></span>
+              <span class="link-text">Como Doar</span>
+            </a>
+
+            <a href="#about" class="useful-link">
+              <span class="link-icon"><span class="material-symbols-outlined">page_menu_ios</span></span>
+              <span class="link-text">Institucional</span>
+            </a>
+
+            <a href="#volunteer" class="useful-link">
+              <span class="link-icon"><span class="material-symbols-outlined">account_box</span></span>
+              <span class="link-text">Seja Voluntário</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Contact Section End -->
     <!-- Footer Start -->
@@ -268,6 +342,6 @@
     <!-- Footer End -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="src/scripts/index.js"></script>
-    <script src="src/services/data-animals.js"></script>
+    <script src="src/services/contact.js"></script>
   </body>
 </html>
