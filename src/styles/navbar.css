@@ -12,6 +12,10 @@
   padding-bottom: 5px;
 }
 
+.navbar .btn-secondary {
+  border: 0;
+}
+
 .sections-nav {
   position: relative;
 }

@@ -144,7 +144,7 @@ a {
   padding: 15px 25px;
   border: none;
   gap: 8px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: calc(1em + 0.01vw);
   transition: all 150ms ease;
@@ -174,8 +174,9 @@ a {
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: var(--white-color);
   color: var(--btn-color);
+  border: 1px solid lightgray;
 }
 .btn-secondary:hover {
   background-color: var(--hover-color);
@@ -253,6 +254,10 @@ h3.title {
 }
 
 @media (min-width: 768px) {
+  .container-row {
+    flex-wrap: nowrap;
+  }
+  
   .buttons-navbar {
     display: flex !important;
   }

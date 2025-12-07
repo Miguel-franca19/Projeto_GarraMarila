@@ -19,37 +19,6 @@ themeToggle.addEventListener("change", function () {
   }
 });
 
-function autoTheme() {
-  if (window.matchMedia) {
-    const preferTheme = "(prefers-color-scheme: dark)";
-
-    const prefersDarkMode = window.matchMedia(preferTheme).matches;
-    if (prefersDarkMode) {
-      html.classList.add("dark");
-      themeToggle.checked = true;
-      updateHeroImage(true);
-    } else {
-      html.classList.remove("dark");
-      themeToggle.checked = false;
-      updateHeroImage(false);
-    }
-
-    window.matchMedia(preferTheme).addEventListener("change", (event) => {
-      if (event.matches) {
-        html.classList.add("dark");
-        themeToggle.checked = true;
-        updateHeroImage(true);
-      } else {
-        html.classList.remove("dark");
-        themeToggle.checked = false;
-        updateHeroImage(false);
-      }
-    });
-  } else {
-    noPreference();
-  }
-}
-
 function noPreference() {
   const savedTheme = localStorage.getItem("theme") || "light";
   if (savedTheme == "dark") {
@@ -67,4 +36,50 @@ function updateHeroImage(isDark) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => autoTheme());
+function loadTheme() {
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme) {
+    const isDark = savedTheme === "dark";
+    if (isDark) {
+      html.classList.add("dark");
+    } else {
+      html.classList.remove("dark");
+    }
+    themeToggle.checked = isDark;
+    updateHeroImage(isDark);
+  } else if (window.matchMedia) {
+
+    const preferTheme = "(prefers-color-scheme: dark)";
+    const prefersDarkMode = window.matchMedia(preferTheme).matches;
+
+    if (prefersDarkMode) {
+      html.classList.add("dark");
+      themeToggle.checked = true;
+      updateHeroImage(true);
+    } else {
+      html.classList.remove("dark");
+      themeToggle.checked = false;
+      updateHeroImage(false);
+    }
+
+    window.matchMedia(preferTheme).addEventListener("change", (event) => {
+
+      if (!localStorage.getItem("theme")) {
+        if (event.matches) {
+          html.classList.add("dark");
+          themeToggle.checked = true;
+          updateHeroImage(true);
+        } else {
+          html.classList.remove("dark");
+          themeToggle.checked = false;
+          updateHeroImage(false);
+        }
+      }
+    });
+  } else {
+    noPreference(); 
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => loadTheme());

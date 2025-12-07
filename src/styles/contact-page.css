@@ -1,0 +1,48 @@
+/* Contact Page CSS 
+
+  - CSS para a página de contato e abrigo
+
+*/
+
+#header-contact .hero-highlight{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-list {
+  list-style: none;
+  flex-shrink: 0;
+  width: 560px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 2rem;
+}
+
+.contact-item .material-symbols-outlined {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  padding: 20px;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+.contact-item .btn {
+  margin-left: auto;
+  width: 100%;
+  max-width: 200px;
+}
+
+.contact-item h3 {
+  color: var(--title-color);
+}
+
+.btn-sm {
+  padding: 10px 15px;
+}
