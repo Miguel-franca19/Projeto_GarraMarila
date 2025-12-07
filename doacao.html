@@ -182,15 +182,14 @@
             <div class="info-block">
               <span class="info-label-box">Chave</span>
               <div class="info-value-group">
-                <span class="main-value">doar@garra.org.br</span>
+                <span class="main-value">garra.marilia@gmail.com</span>
                 <span class="text sub-text">E-mail</span>
               </div>
             </div>
-
             <div class="info-block">
               <span class="info-label-box">CNPJ</span>
               <div class="info-value-group">
-                <span class="main-value">12.345.678/0001-90</span>
+                <span class="main-value">20.661.830/0001-77</span>
                 <span class="text sub-text">ONG Instituto Garra</span>
               </div>
             </div>
@@ -253,6 +252,33 @@
               WhatsApp <span>(14) 99827-7874</span> para recebermos e enviarmoos
               seu certificado!
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" style="margin-top: 2rem;">
+        <p class="text">Outras formas de pagamento:</p>
+        <div class="container-pag-buttons" style="margin: 0;">
+          <button type="button" class="btn btn-secondary btn-sm see-all-btn" data-modal="pagseguro">
+            PagSeguro
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm see-all-btn" data-modal="picpay">
+            PicPay
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm see-all-btn" data-modal="transferencia">
+            Transferência Bancária
+          </button>
+          <button type="button" class="btn btn-secondary btn-sm see-all-btn" data-modal="cartao">
+            Cartão de Crédito
+          </button>
+        </div>
+        <div id="genericModal" class="modal">
+          <div class="modal-content">
+              <span class="close-button">&times;</span>
+              <div class="modal-header"></div>
+              <div class="modal-body"></div>
+              <div class="modal-footer">
+                <button id="closeModalBtn" class="btn btn-secondary see-all-btn" style="width: 100%;">Fechar</button>
+              </div>
           </div>
         </div>
       </div>
@@ -466,6 +492,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="src/scripts/index.js"></script>
     <script src="src/services/donation.js"></script>
+    <script src="src/services/modal.js"></script>
     <script>
       // 1. pegar o plano da URL
       const params = new URLSearchParams(window.location.search);
