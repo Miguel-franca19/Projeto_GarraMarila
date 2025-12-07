@@ -93,7 +93,7 @@
 }
 
 .title span,
-.dark .title:not(#hero .title) {
+.dark .title:not(#hero .title, #header-contact .title) {
   background: linear-gradient(135deg, var(--quintenary-color), var(--primary-color), var(--secondary-color));
   background-clip: text;
   -webkit-background-clip: text;
@@ -101,7 +101,8 @@
 }
 
 
-.dark #hero .title {
+.dark #hero .title,
+.dark #header-contact .title {
   color: var(--font-color) !important;
 }
 

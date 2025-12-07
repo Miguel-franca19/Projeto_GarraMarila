@@ -168,7 +168,7 @@
                 <h3>E-mail</h3>
                 <p class="text">garra.marilia@gmail.com</p>
               </div>
-              <a href="https://wa.me/14998277874" class="btn btn-secondary btn-sm see-all-btn" target="_blank" rel="noopener noreferrer">Enviar E-mail</a>
+              <a href="mailto:garra.marilia@gmail.com" class="btn btn-secondary btn-sm see-all-btn" target="_blank" rel="noopener noreferrer">Enviar E-mail</a>
             </li>
             <li class="contact-item" data-aos="fade-left" data-aos-delay="50">
               <span class="material-symbols-outlined">chat</span>
@@ -192,7 +192,7 @@
     </header>
     <!-- Header End -->
     <!-- Contact Section Start -->
-    <section class="container" id="contact">
+    <section class="container" id="contact" data-aos="fade-up">
       <div class="container-row">
         <div class="contact-form-section" data-aos="fade-right">
           <h2>Envie uma Mensagem</h2>
@@ -242,34 +242,116 @@
             </button>
           </form>
         </div>
-        <div class="social-media-section">
+        <div class="social-media-section" data-aos="fade-left">
           <div class="social-card">
             <h3>Links Úteis</h3>
             
-            <a href="animais.html" class="useful-link">
+            <a href="animais.html" class="useful-link" target="_self">
               <span class="link-icon"><span class="material-symbols-outlined">favorite</span></span>
               <span class="link-text">Animais para Adoção</span>
             </a>
 
-            <a href="doacao.html" class="useful-link">
+            <a href="doacao.html" class="useful-link" target="_self">
               <span class="link-icon"><span class="material-symbols-outlined">volunteer_activism</span></span>
               <span class="link-text">Como Doar</span>
             </a>
 
-            <a href="#about" class="useful-link">
+            <a href="index.html" class="useful-link" target="_self">
               <span class="link-icon"><span class="material-symbols-outlined">page_menu_ios</span></span>
               <span class="link-text">Institucional</span>
             </a>
 
-            <a href="#volunteer" class="useful-link">
+            <a href="index.html#volunteer" class="useful-link" target="_self">
               <span class="link-icon"><span class="material-symbols-outlined">account_box</span></span>
               <span class="link-text">Seja Voluntário</span>
             </a>
           </div>
         </div>
       </div>
+      <div class="container-row" id="home">
+        <div class="location-card-large">
+          <div class="map-container-large">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.889304917734!2d-49.969298!3d-22.206312699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfd6fd121fa705%3A0x97dadc227b8eff8c!2sR.%20Pascoal%20Eug%C3%AAnio%20Brasini%2C%20255%20-%20Jardim%20Eldorado%2C%20Mar%C3%ADlia%20-%20SP%2C%2017505-010!5e0!3m2!1spt-BR!2sbr!4v1765139801351!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style="border:0; border-radius: 10px 10px 0 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="location-info">
+            <div class="info-section">
+              <div class="info-icon-title">
+                <span class="material-symbols-outlined">timer</span>
+                <h3 class="title">Horário de Atendimento</h3>
+              </div>
+              <p class="text">Segunda a Sexta: 9h às 18h</p>
+              <p class="text">Sábados: 9h às 14h</p>
+              <p class="text">Domingos e Feriados: Fechado</p>
+            </div>
+            <div class="info-section">
+              <div class="info-icon-title">
+                <span class="material-symbols-outlined">location_on</span>
+                <h3 class="title">Sede Principal</h3>
+              </div>
+              <p class="text">Rua Pascoal Eugênio Brasini, 255</p>
+              <p class="text">Marília - São Paulo, CEP 17514-150</p>
+            </div>
+          
+          </div>
+          <a href="https://www.google.com/maps/dir//Rua+Pascoal+Eugênio+Brasini,+255+Marília+SP" target="_blank" class="btn btn-secondary">
+            <span class="material-symbols-outlined">map</span>
+            Como Chegar
+          </a>
+        </div> 
+      </div>
     </section>
     <!-- Contact Section End -->
+    <!-- CTA Start -->
+    <section class="container section-page" style="margin-bottom: 4rem">
+      <div class="container-fluid">
+        <span class="material-symbols-outlined cta-icon" data-aos="fade-up">
+          pets
+        </span>
+        <h3 class="title" data-aos="fade-up" data-aos-delay="100">
+          Estamos Aqui para Ajudar
+        </h3>
+        <p
+          class="text"
+          style="max-width: 660px"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Seja para adotar, ser voluntário ou doar, cada ação faz diferença na vida dos nossos animais.
+        </p>
+        <div class="container-row buttons-container-donation">
+          <div class="container-column">
+            <a
+              href="doacao.html"
+              class="btn btn-primary"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <span class="material-symbols-outlined"> favorite </span>
+              Fazer uma Doação Agora
+            </a>
+          </div>
+          <div class="container-column">
+            <a
+              href="animais.html"
+              class="btn btn-secondary see-all-btn"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              Ver Animais Disponíveis
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA End -->
     <!-- Footer Start -->
     <footer class="container" id="footer">
       <div class="container-row footer-data-row">
