@@ -3,33 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato e Abrigo | ONG GARRA Marília</title>
+    <title>Contato, Endereço e Informações | ONG GARRA Marília</title>
     <meta
       name="description"
-      content="Conheça todos os cães e gatos resgatados pela ONG GARRA em Marília/SP disponíveis para adoção e apadrinhamento."
+      content="Entre em contato com a ONG GARRA em Marília/SP via WhatsApp, e-mail ou redes sociais. Conheça nossa missão e saiba como ajudar ou visitar nosso abrigo."
     />
     <meta
       name="keywords"
-      content="Adoção de Animais Marília, Cães para Adoção, Gatos para Adoção, Adotar Pet Marília, Apadrinhamento de Animais, ONG GARRA Adoção"
+      content="Contato ONG GARRA, WhatsApp GARRA Marília, Endereço Abrigo Animais, Visitar ONG GARRA, Apoiar ONG Animais Marília, Institucional ONG GARRA"
     />
-    <meta property="og:title" content="Animais para Adoção | GARRA Marília" />
+    <meta property="og:title" content="Contato e Abrigo | ONG GARRA Marília" />
     <meta
       property="og:description"
-      content="Conheça todos os cães e gatos resgatados pela ONG GARRA em Marília/SP disponíveis para adoção e apadrinhamento."
+      content="Entre em contato com a ONG GARRA em Marília/SP via WhatsApp, e-mail ou redes sociais. Conheça nossa missão e saiba como ajudar ou visitar nosso abrigo."
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://garramarilia.vercel.app/animais.html"
+      content="https://garramarilia.vercel.app/contato-abrigo.html"
     />
     <meta property="og:image" content="src/assets/logo.png" />
     <meta name="author" content="ONG GARRA" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://garramarilia.vercel.app/animais.html" />
 
+    <link
+      rel="canonical"
+      href="https://garramarilia.vercel.app/contato-abrigo.html"
+    />
     <link rel="stylesheet" href="src/styles/index.css" />
     <link rel="shortcut icon" href="src/assets/logo.png" type="image/x-icon" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -46,7 +48,11 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar sections-nav" data-aos="fade-down" data-aos-duration="600">
+    <nav
+      class="navbar sections-nav"
+      data-aos="fade-down"
+      data-aos-duration="600"
+    >
       <div class="container">
         <div class="nav-logo-container">
           <a href="index.html" target="_self" style="text-decoration: none">
@@ -64,13 +70,13 @@
         </div>
         <ul class="nav">
           <li class="nav-item" data-aos="fade-in" data-aos-delay="200">
-            <a href="animais.html" class="nav-link">Animais</a>
+            <a href="animais.html" class="nav-link ">Animais</a>
           </li>
           <li class="nav-item" data-aos="fade-in" data-aos-delay="300">
             <a href="doacao.html" class="nav-link">Doação</a>
           </li>
           <li class="nav-item" data-aos="fade-in" data-aos-delay="400">
-            <a href="#donation" class="nav-link active">Contato e Abrigo</a>
+            <a href="contact.html" class="nav-link active">Contato e Abrigo</a>
           </li>
         </ul>
         <div
@@ -109,22 +115,111 @@
               </div>
             </div>
           </label>
-          <a href="animais.html" target="_self"
-            ><button class="btn btn-secondary">Adotar</button></a
+          <a href="#all-animals"
+            ><button class="btn btn-secondary">Apadrinhar</button></a
           >
-          <a href="doacao.html" target="_self"
-            ><button class="btn btn-primary">Doar</button></a
+          <a href="#all-animals"
+            ><button class="btn btn-primary">Adotar</button></a
           >
         </div>
+        <button class="menu-burguer" data-aos="fade-left" data-aos-delay="800">
+          <i id="menu-icon" class="material-symbols-outlined">menu</i>
+        </button>
       </div>
     </nav>
     <!-- Navbar End -->
+    <!--Sidebar Start -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="logo">
+          <img
+            src="src/assets/logotipo-garra-80x80-transparent.png"
+            alt="Logo Garra Marília"
+          />
+          <span>Garra</span>
+        </a>
+        <button id="close-btn" class="menu-burguer">
+          <i class="material-symbols-outlined">close</i>
+        </button>
+      </div>
+      <ul class="sidebar-nav">
+        <li class="hover-nav-item accordion-header" id="accordionHeader">
+          <p class="sidebar-nav-link">Página Institucional</p>
+          <span class="accordion-icon">+</span>
+        </li>
+
+        <div class="accordion-content" id="accordionContent">
+          <li class="hover-nav-item">
+            <a href="index.html#about" target="_self" class="sidebar-nav-link"
+              >Sobre</a
+            >
+          </li>
+          <li class="hover-nav-item">
+            <a
+              href="index.html#adoption"
+              target="_self"
+              class="sidebar-nav-link"
+              >Animais</a
+            >
+          </li>
+          <li class="hover-nav-item">
+            <a
+              href="index.html#donation"
+              target="_self"
+              class="sidebar-nav-link"
+              >Doar</a
+            >
+          </li>
+          <li class="hover-nav-item">
+            <a
+              href="index.html#volunteer"
+              target="_self"
+              class="sidebar-nav-link"
+              >Voluntariado</a
+            >
+          </li>
+          <li class="hover-nav-item">
+            <a
+              href="index.html#transparency"
+              target="_self"
+              class="sidebar-nav-link"
+              >Transparência</a
+            >
+          </li>
+        </div>
+        <li class="hover-nav-item">
+          <a href="animais.html" class="sidebar-nav-link"
+            >Ver Animais Disponíveis</a
+          >
+        </li>
+        <li class="hover-nav-item">
+          <a href="doacao.html" class="sidebar-nav-link">Fazer uma Doação</a>
+        </li>
+        <li class="hover-nav-item">
+          <a href="contact.html" class="sidebar-nav-link active"
+            >Contato e Abrigo</a
+          >
+        </li>
+      </ul>
+      <div class="sidebar-buttons">
+        <button class="btn btn-secondary btn-sm">Voluntariar</button>
+        <button class="btn btn-primary btn-sm">Doar</button>
+      </div>
+      <ul class="sidebar-list">
+        <li>Pix: garra.marilia@gmail.com</li>
+        <li>WhatsApp: +55 (14) 99827-7874</li>
+        <li>Rua Pascoal Eugênio Brasini, 255</li>
+        <li>Marília - São Paulo</li>
+      </ul>
+    </aside>
+    <!--Sidebar End -->
     <!-- Header Start -->
     <header class="container section-page" id="header-contact">
-      <div class="container-row" style="align-items: start;">
+      <div class="container-row" style="align-items: start">
         <div class="container-column">
           <p class="hero-highlight" data-aos="fade-up">
-            <span class="material-symbols-outlined">calendar_clock</span> 2014 - 2025
+            <span class="material-symbols-outlined">calendar_clock</span> 2014 -
+            2025
           </p>
           <h1 class="title" data-aos="fade-up" data-aos-delay="100">
             ONG GARRA - Uma Jornada de <span>Amor e Compaixão</span>
@@ -135,24 +230,36 @@
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Há 10 anos, três pessoas com um sonho em comum se reuniram para mudar a realidade dos animais abandonados. Hoje, somos uma família de 300 voluntários que já transformou milhares de vidas.
+            Há 10 anos, três pessoas com um sonho em comum se reuniram para
+            mudar a realidade dos animais abandonados. Hoje, somos uma família
+            de 300 voluntários que já transformou milhares de vidas.
           </p>
           <div class="buttons-container-about">
-          <div class="container-column">
-             <a href="#home" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">
-               <span class="material-symbols-outlined">search</span>
-              Conheça nosso Abrigo
-             </a>
-          </div>
-          <div class="container-column">
-             <a href="#contact" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="400">
-               <span class="material-symbols-outlined">call</span>
-              Entre em contato
-             </a>
+            <div class="container-column">
+              <a
+                href="#home"
+                class="btn btn-primary"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <span class="material-symbols-outlined">search</span>
+                Conheça nosso Abrigo
+              </a>
+            </div>
+            <div class="container-column">
+              <a
+                href="#contact"
+                class="btn btn-secondary"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <span class="material-symbols-outlined">call</span>
+                Entre em contato
+              </a>
+            </div>
           </div>
         </div>
-        </div>
-         <div class="container-column">
+        <div class="container-column">
           <ul class="contact-list">
             <li class="contact-item" data-aos="fade-left">
               <span class="material-symbols-outlined">chat</span>
@@ -160,7 +267,13 @@
                 <h3>WhatsApp</h3>
                 <p class="text">(14) 99827-7874</p>
               </div>
-              <a href="https://wa.me/14998277874" class="btn btn-secondary btn-sm see-all-btn" target="_blank" rel="noopener noreferrer">Mandar Mensagem</a>
+              <a
+                href="https://wa.me/14998277874"
+                class="btn btn-secondary btn-sm see-all-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Mandar Mensagem</a
+              >
             </li>
             <li class="contact-item" data-aos="fade-left">
               <span class="material-symbols-outlined">mail</span>
@@ -168,7 +281,13 @@
                 <h3>E-mail</h3>
                 <p class="text">garra.marilia@gmail.com</p>
               </div>
-              <a href="mailto:garra.marilia@gmail.com" class="btn btn-secondary btn-sm see-all-btn" target="_blank" rel="noopener noreferrer">Enviar E-mail</a>
+              <a
+                href="mailto:garra.marilia@gmail.com"
+                class="btn btn-secondary btn-sm see-all-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Enviar E-mail</a
+              >
             </li>
             <li class="contact-item" data-aos="fade-left" data-aos-delay="50">
               <span class="material-symbols-outlined">chat</span>
@@ -176,7 +295,13 @@
                 <h3>Instagram</h3>
                 <p class="text">@garramarilia</p>
               </div>
-              <a href="https://www.instagram.com/garramarilia/" class="btn btn-secondary btn-sm see-all-btn" target="_blank" rel="noopener noreferrer">Seguir no Instagram</a>
+              <a
+                href="https://www.instagram.com/garramarilia/"
+                class="btn btn-secondary btn-sm see-all-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Seguir no Instagram</a
+              >
             </li>
             <li class="contact-item" data-aos="fade-left" data-aos-delay="100">
               <span class="material-symbols-outlined">mail</span>
@@ -184,7 +309,13 @@
                 <h3>Facebook</h3>
                 <p class="text">Garra Marília</p>
               </div>
-              <a href="https://www.facebook.com/garramarilia" class="btn btn-secondary btn-sm see-all-btn" target="_blank" rel="noopener noreferrer">Seguir no Facebook</a>
+              <a
+                href="https://www.facebook.com/garramarilia"
+                class="btn btn-secondary btn-sm see-all-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Seguir no Facebook</a
+              >
             </li>
           </ul>
         </div>
@@ -196,25 +327,45 @@
       <div class="container-row">
         <div class="contact-form-section" data-aos="fade-right">
           <h2>Envie uma Mensagem</h2>
-          <p>Preencha o formulário abaixo e retornaremos em até 24 horas úteis.</p>
-          
+          <p>
+            Preencha o formulário abaixo e retornaremos em até 24 horas úteis.
+          </p>
+
           <form id="contact-form">
             <div class="form-row">
               <div class="form-group">
                 <label for="nome">Nome Completo *</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Seu nome"
+                  required
+                />
               </div>
 
               <div class="form-group">
                 <label for="email">E-mail *</label>
-                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="seu@email.com"
+                  required
+                />
               </div>
             </div>
 
             <div class="form-row">
               <div class="form-group">
                 <label for="telefone">Telefone/WhatsApp *</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(00) 00000-0000"
+                  required
+                />
               </div>
 
               <div class="form-group">
@@ -233,7 +384,12 @@
 
             <div class="form-group">
               <label for="mensagem">Mensagem *</label>
-              <textarea id="mensagem" name="mensagem" placeholder="Conte-nos como podemos ajudar..." required></textarea>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Conte-nos como podemos ajudar..."
+                required
+              ></textarea>
             </div>
 
             <button type="submit" class="btn-submit">
@@ -245,24 +401,38 @@
         <div class="social-media-section" data-aos="fade-left">
           <div class="social-card">
             <h3>Links Úteis</h3>
-            
+
             <a href="animais.html" class="useful-link" target="_self">
-              <span class="link-icon"><span class="material-symbols-outlined">favorite</span></span>
+              <span class="link-icon"
+                ><span class="material-symbols-outlined">favorite</span></span
+              >
               <span class="link-text">Animais para Adoção</span>
             </a>
 
             <a href="doacao.html" class="useful-link" target="_self">
-              <span class="link-icon"><span class="material-symbols-outlined">volunteer_activism</span></span>
+              <span class="link-icon"
+                ><span class="material-symbols-outlined"
+                  >volunteer_activism</span
+                ></span
+              >
               <span class="link-text">Como Doar</span>
             </a>
 
             <a href="index.html" class="useful-link" target="_self">
-              <span class="link-icon"><span class="material-symbols-outlined">page_menu_ios</span></span>
+              <span class="link-icon"
+                ><span class="material-symbols-outlined"
+                  >page_menu_ios</span
+                ></span
+              >
               <span class="link-text">Institucional</span>
             </a>
 
             <a href="index.html#volunteer" class="useful-link" target="_self">
-              <span class="link-icon"><span class="material-symbols-outlined">account_box</span></span>
+              <span class="link-icon"
+                ><span class="material-symbols-outlined"
+                  >account_box</span
+                ></span
+              >
               <span class="link-text">Seja Voluntário</span>
             </a>
           </div>
@@ -271,14 +441,14 @@
       <div class="container-row" id="home">
         <div class="location-card-large">
           <div class="map-container-large">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.889304917734!2d-49.969298!3d-22.206312699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfd6fd121fa705%3A0x97dadc227b8eff8c!2sR.%20Pascoal%20Eug%C3%AAnio%20Brasini%2C%20255%20-%20Jardim%20Eldorado%2C%20Mar%C3%ADlia%20-%20SP%2C%2017505-010!5e0!3m2!1spt-BR!2sbr!4v1765139801351!5m2!1spt-BR!2sbr"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5296.236232341862!2d-50.03898623314685!3d-22.156832992099343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDA5JzI4LjkiUyA1MMKwMDInMDQuNCJX!5e1!3m2!1spt-BR!2sbr!4v1765156864115!5m2!1spt-BR!2sbr" 
               width="100%"
               height="100%"
-              style="border:0; border-radius: 10px 10px 0 0;"
+              style="border: 0; border-radius: 10px 10px 0 0"
               allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
+              referrerpolicy="no-referrer-when-downgrade"
+            >
             </iframe>
           </div>
           <div class="location-info">
@@ -299,13 +469,16 @@
               <p class="text">Rua Pascoal Eugênio Brasini, 255</p>
               <p class="text">Marília - São Paulo, CEP 17514-150</p>
             </div>
-          
           </div>
-          <a href="https://www.google.com/maps/dir//Rua+Pascoal+Eugênio+Brasini,+255+Marília+SP" target="_blank" class="btn btn-secondary">
+          <a
+            href="https://www.google.com/maps/place/22%C2%B009'28.9%22S+50%C2%B002'04.4%22W/@-22.156833,-50.0389862,1216m/data=!3m1!1e3!4m5!3m4!4b1!8m2!3d-22.1580188!4d-50.0345529?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            class="btn btn-secondary"
+          >
             <span class="material-symbols-outlined">map</span>
             Como Chegar
           </a>
-        </div> 
+        </div>
       </div>
     </section>
     <!-- Contact Section End -->
@@ -324,7 +497,8 @@
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Seja para adotar, ser voluntário ou doar, cada ação faz diferença na vida dos nossos animais.
+          Seja para adotar, ser voluntário ou doar, cada ação faz diferença na
+          vida dos nossos animais.
         </p>
         <div class="container-row buttons-container-donation">
           <div class="container-column">
@@ -354,6 +528,40 @@
     <!-- CTA End -->
     <!-- Footer Start -->
     <footer class="container" id="footer">
+      <div class="container-row newsletter-container">
+        <div
+          class="container-column"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <h2 class="subtitle">Fique por dentro</h2>
+          <h1 class="title">Receba notícias e histórias de adoção</h1>
+          <p class="text text-info">
+            Enviamos só o essencial: transparência de gastos, resgates e
+            vitórias da comunidade.
+          </p>
+        </div>
+        <form
+          class="container-column container-form"
+          method="post"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
+          <div class="container-row">
+            <input
+              type="email"
+              name="email_newsletter"
+              id="email_newsletter"
+              placeholder="Seu Email:"
+              class="input"
+            />
+            <input type="submit" value="Assinar" class="btn btn-primary" />
+          </div>
+          <small class="text">
+            Ao assinar, você concorda em receber comunicações do GARRA.
+          </small>
+        </form>
+      </div>
       <div class="container-row footer-data-row">
         <div class="container-column footer-logo-col">
           <img
@@ -369,24 +577,66 @@
         </div>
         <div class="container-column footer-nav-col">
           <h3 class="subtitle footer-section-title">Navegação</h3>
-          <ul class="footer-list">
-            <li>
-              <a href="#about" class="footer-link hover-nav-item">Sobre</a>
+          <ul class="sidebar-nav footer-list">
+            <li class="hover-nav-item accordion-header" id="accordionHeader">
+              <p class="sidebar-nav-link">Página Institucional</p>
+              <span class="accordion-icon">+</span>
             </li>
-            <li>
-              <a href="#adoption" class="footer-link hover-nav-item">Animais</a>
-            </li>
-            <li>
-              <a href="#donation" class="footer-link hover-nav-item">Doar</a>
-            </li>
-            <li>
-              <a href="#volunteer" class="footer-link hover-nav-item"
-                >Voluntariado</a
+            <div class="accordion-content" id="accordionContent">
+              <li class="hover-nav-item">
+                <a
+                  href="index.html#about"
+                  target="_self"
+                  class="sidebar-nav-link"
+                  >Sobre</a
+                >
+              </li>
+              <li class="hover-nav-item">
+                <a
+                  href="index.html#adoption"
+                  target="_self"
+                  class="sidebar-nav-link"
+                  >Animais</a
+                >
+              </li>
+              <li class="hover-nav-item">
+                <a
+                  href="index.html#donation"
+                  target="_self"
+                  class="sidebar-nav-link"
+                  >Doar</a
+                >
+              </li>
+              <li class="hover-nav-item">
+                <a
+                  href="index.html#volunteer"
+                  target="_self"
+                  class="sidebar-nav-link"
+                  >Voluntariado</a
+                >
+              </li>
+              <li class="hover-nav-item">
+                <a
+                  href="index.html#transparency"
+                  target="_self"
+                  class="sidebar-nav-link"
+                  >Transparência</a
+                >
+              </li>
+            </div>
+            <li class="hover-nav-item">
+              <a href="animais.html" class="sidebar-nav-link"
+                >Ver Animais Disponíveis</a
               >
             </li>
-            <li>
-              <a href="#transparency" class="footer-link hover-nav-item"
-                >Transparência</a
+            <li class="hover-nav-item">
+              <a href="doacao.html" class="sidebar-nav-link"
+                >Fazer uma Doação</a
+              >
+            </li>
+            <li class="hover-nav-item">
+              <a href="contact.html" class="sidebar-nav-link active"
+                >Contato e Abrigo</a
               >
             </li>
           </ul>
@@ -400,7 +650,7 @@
             <li>Marília - São Paulo</li>
           </ul>
         </div>
-        <div class="container-column footer-pix-col">
+        <a href="#donation" class="container-column footer-pix-col">
           <h3 class="subtitle footer-section-title">Doe via Pix</h3>
           <img
             src="src/assets/qrcode.png"
@@ -412,7 +662,7 @@
             Chave Pix: <br />
             garra.marilia@gmail.com
           </small>
-        </div>
+        </a>
       </div>
       <div class="footer-copyright-row">
         <p class="text copyright-text">

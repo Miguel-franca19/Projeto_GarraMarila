@@ -49,11 +49,7 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav
-      class="navbar sections-nav"
-      data-aos="fade-down"
-      data-aos-duration="600"
-    >
+    <nav class="navbar sections-nav" data-aos="fade-down" data-aos-duration="600">
       <div class="container">
         <div class="nav-logo-container">
           <a href="index.html" target="_self" style="text-decoration: none">
@@ -82,7 +78,7 @@
         </ul>
         <div
           class="buttons-navbar"
-          style="gap: 20px"
+          style="gap: 10px"
           data-aos="fade-left"
           data-aos-delay="700"
         >
@@ -116,13 +112,75 @@
               </div>
             </div>
           </label>
-          <a href="#donation-page"
-            ><button class="btn btn-primary">Doar</button></a
+          <a href="#all-animals"
+            ><button class="btn btn-secondary">Apadrinhar</button></a
+          >
+          <a href="#all-animals"
+            ><button class="btn btn-primary">Adotar</button></a
           >
         </div>
+        <button class="menu-burguer" data-aos="fade-left" data-aos-delay="800">
+          <i id="menu-icon" class="material-symbols-outlined">menu</i>
+        </button>
       </div>
     </nav>
     <!-- Navbar End -->
+    <!--Sidebar Start -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="logo">
+          <img src="src/assets/logotipo-garra-80x80-transparent.png" alt="Logo Garra Marília" />
+          <span>Garra</span>
+        </a>
+        <button id="close-btn" class="menu-burguer">
+          <i class="material-symbols-outlined">close</i>
+        </button>
+      </div>
+      <ul class="sidebar-nav">
+          <li class="hover-nav-item accordion-header" id="accordionHeader">
+            <p class="sidebar-nav-link">Página Institucional</p>
+            <span class="accordion-icon">+</span> 
+          </li>
+
+          <div class="accordion-content" id="accordionContent">
+              <li class="hover-nav-item">
+                  <a href="index.html#about" target="_self" class="sidebar-nav-link">Sobre</a>
+              </li>
+              <li class="hover-nav-item">
+                  <a href="index.html#adoption" target="_self" class="sidebar-nav-link">Animais</a>
+              </li>
+              <li class="hover-nav-item">
+                  <a href="index.html#donation" target="_self" class="sidebar-nav-link">Doar</a>
+              </li>
+              <li class="hover-nav-item">
+                  <a href="index.html#volunteer" target="_self" class="sidebar-nav-link">Voluntariado</a>
+              </li>
+              <li class="hover-nav-item">
+                  <a href="index.html#transparency" target="_self" class="sidebar-nav-link">Transparência</a>
+              </li>
+          </div>
+          <li class="hover-nav-item">
+            <a href="animais.html" class="sidebar-nav-link">Ver Animais Disponíveis</a>
+          </li>
+          <li class="hover-nav-item">
+            <a href="doacao.html" class="sidebar-nav-link active">Fazer uma Doação</a>
+          </li>
+          <li class="hover-nav-item">
+            <a href="contact.html" class="sidebar-nav-link">Contato e Abrigo</a>
+          </li>
+      </ul>
+      <div class="sidebar-buttons">
+        <button class="btn btn-secondary btn-sm">Voluntariar</button>
+        <button class="btn btn-primary btn-sm">Doar</button>
+      </div>
+      <ul class="sidebar-list">
+        <li>Pix: garra.marilia@gmail.com</li>
+        <li>WhatsApp: +55 (14) 99827-7874</li>
+        <li>Rua Pascoal Eugênio Brasini, 255</li>
+        <li>Marília - São Paulo</li>
+      </ul>
+    </aside>
+    <!--Sidebar End -->
     <!-- Header Start -->
     <header class="container section-page" style="margin-bottom: 4rem">
       <div class="container-fluid">
@@ -421,6 +479,40 @@
     <!-- CTA End -->
     <!-- Footer Start -->
     <footer class="container" id="footer">
+      <div class="container-row newsletter-container">
+        <div
+          class="container-column"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <h2 class="subtitle">Fique por dentro</h2>
+          <h1 class="title">Receba notícias e histórias de adoção</h1>
+          <p class="text text-info">
+            Enviamos só o essencial: transparência de gastos, resgates e
+            vitórias da comunidade.
+          </p>
+        </div>
+        <form
+          class="container-column container-form"
+          method="post"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
+          <div class="container-row">
+            <input
+              type="email"
+              name="email_newsletter"
+              id="email_newsletter"
+              placeholder="Seu Email:"
+              class="input"
+            />
+            <input type="submit" value="Assinar" class="btn btn-primary" />
+          </div>
+          <small class="text">
+            Ao assinar, você concorda em receber comunicações do GARRA.
+          </small>
+        </form>
+      </div>
       <div class="container-row footer-data-row">
         <div class="container-column footer-logo-col">
           <img
@@ -436,25 +528,36 @@
         </div>
         <div class="container-column footer-nav-col">
           <h3 class="subtitle footer-section-title">Navegação</h3>
-          <ul class="footer-list">
-            <li>
-              <a href="#about" class="footer-link hover-nav-item">Sobre</a>
+          <ul class="sidebar-nav footer-list">
+            <li class="hover-nav-item accordion-header" id="accordionHeader">
+              <p class="sidebar-nav-link">Página Institucional</p>
+              <span class="accordion-icon">+</span> 
             </li>
-            <li>
-              <a href="#adoption" class="footer-link hover-nav-item">Animais</a>
+            <div class="accordion-content" id="accordionContent">
+                <li class="hover-nav-item">
+                    <a href="index.html#about" target="_self" class="sidebar-nav-link">Sobre</a>
+                </li>
+                <li class="hover-nav-item">
+                    <a href="index.html#adoption" target="_self" class="sidebar-nav-link">Animais</a>
+                </li>
+                <li class="hover-nav-item">
+                    <a href="index.html#donation" target="_self" class="sidebar-nav-link">Doar</a>
+                </li>
+                <li class="hover-nav-item">
+                    <a href="index.html#volunteer" target="_self" class="sidebar-nav-link">Voluntariado</a>
+                </li>
+                <li class="hover-nav-item">
+                    <a href="index.html#transparency" target="_self" class="sidebar-nav-link">Transparência</a>
+                </li>
+            </div>
+            <li class="hover-nav-item">
+              <a href="animais.html" class="sidebar-nav-link">Ver Animais Disponíveis</a>
             </li>
-            <li>
-              <a href="#donation" class="footer-link hover-nav-item">Doar</a>
+            <li class="hover-nav-item">
+              <a href="doacao.html" class="sidebar-nav-link active">Fazer uma Doação</a>
             </li>
-            <li>
-              <a href="#volunteer" class="footer-link hover-nav-item"
-                >Voluntariado</a
-              >
-            </li>
-            <li>
-              <a href="#transparency" class="footer-link hover-nav-item"
-                >Transparência</a
-              >
+            <li class="hover-nav-item">
+              <a href="contact.html" class="sidebar-nav-link ">Contato e Abrigo</a>
             </li>
           </ul>
         </div>
@@ -467,7 +570,7 @@
             <li>Marília - São Paulo</li>
           </ul>
         </div>
-        <div class="container-column footer-pix-col">
+        <a href="#donation" class="container-column footer-pix-col">
           <h3 class="subtitle footer-section-title">Doe via Pix</h3>
           <img
             src="src/assets/qrcode.png"
@@ -479,7 +582,7 @@
             Chave Pix: <br />
             garra.marilia@gmail.com
           </small>
-        </div>
+        </a>
       </div>
       <div class="footer-copyright-row">
         <p class="text copyright-text">

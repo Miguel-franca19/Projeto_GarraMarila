@@ -83,13 +83,13 @@
   display: none;
 }
 
-.navbar .nav .nav-link:hover::before {
+.nav-link:hover::before {
   filter: drop-shadow(0 0 5px rgba(255, 165, 0, 0.5));
   opacity: 1;
 }
 
-.navbar .nav .nav-link,
-.sidebar .sidebar-nav .sidebar-nav-link {
+.nav-link,
+.sidebar-nav-link {
   text-decoration: none;
   color: var(--font-color);
   font-weight: 500;
@@ -103,8 +103,21 @@
   background-color: var(--hover-color);
 }
 
-.navbar .nav .nav-link:hover,
-.sidebar .sidebar-nav .sidebar-nav-link:hover {
+.sidebar-nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+.sidebar-nav-link.active::before {
+  content: url("../assets/icons/paw-icon.png");
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+}
+
+.nav-link:hover,
+.sidebar-nav-link:hover {
   color: var(--primary-color);
 }
 
@@ -127,6 +140,12 @@
   right: 0;
 }
 
+.sidebar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .sidebar .sidebar-header {
   display: flex;
   justify-content: space-between;
@@ -143,6 +162,8 @@
   display: flex;
   flex-direction: column;
   margin: 60px 0 40px;
+  list-style: none;
+
 }
 
 .sidebar-list {
@@ -207,15 +228,15 @@
 
 .navbar.sticky-scrolled {
   background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px); 
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dark .navbar.sticky-scrolled {
-  background-color: rgba(38, 38, 38, 0.8); 
+  background-color: rgba(38, 38, 38, 0.8);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -226,4 +247,42 @@
 
 .navbar.sticky-scrolled .container {
   height: 70px;
+}
+
+/* Estilos para o Accordion */
+.accordion-header {
+  cursor: pointer;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.accordion-header .sidebar-nav-link {
+  flex-grow: 1; 
+}
+
+.accordion-icon {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primary-color);
+  transition: transform 300ms ease;
+  padding-right: 10px;
+}
+
+.accordion-header.active .accordion-icon {
+  transform: rotate(180deg); 
+}
+
+.accordion-content {
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height 300ms ease-in-out; 
+  padding-left: 10px; 
+}
+
+.accordion-content .hover-nav-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 33px;
 }
