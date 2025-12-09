@@ -188,6 +188,7 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     overflow-x: visible;
+    
   }
 
   .container-row.buttons-donation .btn {

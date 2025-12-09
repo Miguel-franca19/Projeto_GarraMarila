@@ -60,6 +60,10 @@
       /* Swiper Carousel Styles */
       .adoption-cards-container {
         position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         padding: 20px 0 0;
         overflow: hidden;
@@ -351,6 +355,7 @@
         </div>
         <div
           class="container-column container-image"
+          id="primeira-img"
           data-aos="fade-left"
           data-aos-delay="100"
         >
@@ -381,7 +386,7 @@
           Nossa missão é salvar vidas
         </h1>
       </div>
-      <div class="container-row">
+      <div class="container-row" id="centraliza">
         <div class="container-column">
           <p class="text" data-aos="fade-up" data-aos-delay="100">
             O GARRA (Grupo de Apoio e Resgate de Animais) nasceu em 2015 com a
@@ -421,6 +426,7 @@
             class="btn btn-secondary see-all-btn"
             data-aos="fade-up"
             style="margin: 0"
+            id="boua"
           >
             <span class="material-symbols-outlined">home</span>
             Saiba mais sobre nós e nosso abrigo
@@ -471,7 +477,7 @@
         <div class="card" data-aos="zoom-in-up" data-aos-delay="300">
           <div class="container-row">
             <div class="container-column">
-              <img
+              <img class="iconezin"
                 src="src/assets/icons/program-icon-paw.png"
                 alt="program-paw-icon"
                 loading="lazy"
@@ -488,7 +494,7 @@
         <div class="card" data-aos="zoom-in-up" data-aos-delay="500">
           <div class="container-row">
             <div class="container-column">
-              <img
+              <img class="iconezin"
                 src="src/assets/icons/program-icon-health.png"
                 alt="program-health-icon"
                 loading="lazy"
@@ -505,7 +511,7 @@
         <div class="card" data-aos="zoom-in-up" data-aos-delay="700">
           <div class="container-row">
             <div class="container-column">
-              <img
+              <img class="iconezin"
                 src="src/assets/icons/program-icon-heart.png"
                 alt="program-heart-icon"
                 loading="lazy"
@@ -535,8 +541,8 @@
       <div class="adoption-cards-container container-row">
         <div class="adoption-card" data-aos="zoom-in" data-aos-delay="300">
           <img
-            src="src/assets/rex-img.png"
-            alt="Cachorro Rex"
+            src="src/assets/animais/1 - Madonna - 12 anos.png"
+            alt="Cachorra Madonna"
             class="adoption-img"
             loading="lazy"
           />
@@ -545,12 +551,12 @@
               class="container-row"
               style="align-items: center; justify-content: space-between"
             >
-              <h3>Rex</h3>
+              <h3>Madonna</h3>
               <span class="tag">Cachorro</span>
             </div>
-            <p class="pet-info">Cachorro • 2 anos</p>
+            <p class="pet-info">Fêmea • 2 anos</p>
             <p class="text description-text">
-              Carinhoso, adora brincar e é ótimo com crianças.
+              Carinhosa, adora brincar e é ótima com crianças.
             </p>
             <div class="container-row button-group">
               <button class="btn btn-secondary">
@@ -563,8 +569,8 @@
         </div>
         <div class="adoption-card" data-aos="zoom-in" data-aos-delay="450">
           <img
-            src="src/assets/luna-img.png"
-            alt="Gata Luna"
+            src="src/assets/animais/12 - Oreo - 1 ano.png"
+            alt="Gato Oreo"
             class="adoption-img"
             loading="lazy"
           />
@@ -573,12 +579,12 @@
               class="container-row"
               style="align-items: center; justify-content: space-between"
             >
-              <h3>Luna</h3>
-              <span class="tag">Gata</span>
+              <h3>Oreo</h3>
+              <span class="tag">Gato</span>
             </div>
-            <p class="pet-info">Gata • 1 ano</p>
+            <p class="pet-info">Macho • 1 ano</p>
             <p class="text description-text">
-              Calma e independente, perfeita para apartamento.
+              Calmo e independente, perfeito para apartamento.
             </p>
             <div class="container-row button-group">
               <button class="btn btn-secondary">
@@ -591,8 +597,8 @@
         </div>
         <div class="adoption-card" data-aos="zoom-in" data-aos-delay="600">
           <img
-            src="src/assets/mia-img.png"
-            alt="Gatinha Mia"
+            src="src/assets/animais/16 - Gabriel - 10 anos.png"
+            alt="Cachorro Gabriel"
             class="adoption-img"
             loading="lazy"
           />
@@ -601,12 +607,12 @@
               class="container-row"
               style="align-items: center; justify-content: space-between"
             >
-              <h3>Mia</h3>
-              <span class="tag">Gata</span>
+              <h3>Gabriel</h3>
+              <span class="tag">Cachorra</span>
             </div>
-            <p class="pet-info">Gata • 3 meses</p>
+            <p class="pet-info">Maho • 10 anos</p>
             <p class="text description-text">
-              Gatinha curiosa e carinhosa, adora colo.
+              Cachorrinho carinhoso, adora colo.
             </p>
             <div class="container-row button-group">
               <button class="btn btn-secondary">
@@ -1412,7 +1418,6 @@
           <ul class="footer-list">
             <li>garra.marilia@gmail.com</li>
             <li>WhatsApp: +55 (14) 99827-7874</li>
-            <li>Rua Pascoal Eugênio Brasini, 255</li>
             <li>Marília - São Paulo</li>
           </ul>
         </div>

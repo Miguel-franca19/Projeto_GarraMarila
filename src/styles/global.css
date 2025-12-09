@@ -24,9 +24,11 @@
 
 :root {
   --primary-color: #ff9800;
-  --secondary-color: #ffb347; /* Laranja Pastel */
+  --secondary-color: #ffb347;
+  /* Laranja Pastel */
   --tertiary-color: #fff4c7;
-  --quartenary-color: #08415c; /* Azul Escuro - Insticucional */
+  --quartenary-color: #08415c;
+  /* Azul Escuro - Insticucional */
   --quintenary-color: #b45309;
   --font-color: #585858;
   --btn-color: black;
@@ -43,14 +45,22 @@
 
 .dark {
   /* Cores para o Modo Escuro */
-  --primary-color: #ff9800; /* Pode manter cores de destaque, se quiser */
-  --secondary-color: #dd7c00; /* Uma variação escura do destaque */
-  --tertiary-color: #2c2c2c; /* Cor de fundo principal escura */
-  --quartenary-color: #ffffff; /* Use branco para o que era azul escuro */
-  --quintenary-color: #ffb347; /* Uma cor clara para o que era escuro */
-  --font-color: #e0e0e0; /* Cor da fonte clara */
-  --background-color: #1a1a1a; /* Fundo mais escuro */
-  --white-color: #2c2c2c; /* Onde era branco puro, coloque um cinza escuro */
+  --primary-color: #ff9800;
+  /* Pode manter cores de destaque, se quiser */
+  --secondary-color: #dd7c00;
+  /* Uma variação escura do destaque */
+  --tertiary-color: #2c2c2c;
+  /* Cor de fundo principal escura */
+  --quartenary-color: #ffffff;
+  /* Use branco para o que era azul escuro */
+  --quintenary-color: #ffb347;
+  /* Uma cor clara para o que era escuro */
+  --font-color: #e0e0e0;
+  /* Cor da fonte clara */
+  --background-color: #1a1a1a;
+  /* Fundo mais escuro */
+  --white-color: #2c2c2c;
+  /* Onde era branco puro, coloque um cinza escuro */
   --btn-color: white;
   --title-color: #ffb347;
   --hover-color: #1b1b1b;
@@ -99,8 +109,14 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
   /* border: var(--border); */
+}
+
+#container-row {
+  flex-wrap: nowrap;
 }
 
 .container-column {
@@ -108,6 +124,11 @@ a {
   flex-direction: column;
   justify-content: center;
   /* border: var(--border); */
+}
+
+.iconezin {
+  width: 50px;
+  height: 50px;
 }
 
 #about,
@@ -178,6 +199,7 @@ a {
   color: var(--btn-color);
   border: 1px solid lightgray;
 }
+
 .btn-secondary:hover {
   background-color: var(--hover-color);
 }
@@ -254,10 +276,7 @@ h3.title {
 }
 
 @media (min-width: 768px) {
-  .container-row {
-    flex-wrap: nowrap;
-  }
-  
+
   .buttons-navbar {
     display: flex !important;
   }
@@ -274,6 +293,91 @@ h3.title {
   .container {
     padding: 20px;
   }
+}
+
+@media (max-width: 1000px) {
+
+  #centraliza {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  #centraliza .container-image {
+    display: grid;
+    place-items: center;
+  }
+
+  #boua {
+    justify-self: center;
+    align-self: center;
+  }
+
+  #primeira-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .espaco-filtro {
+    background-color: #08415c;
+    flex-direction: column;
+  }
+
+}
+
+.vamooo {
+  display: flex;
+  flex-direction: column;
+}
+
+.espaco-filtro {
+  background-color: #222;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.276);
+  border-radius: 16px;
+  padding: 25px 40px;
+  display: flex;
+  gap: 15%;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.filtro-buscar,
+.filtro-categorias {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: 600;
+  color: #ff9800;
+  width: 100%;
+  max-width: 350px;
+}
+
+.filtros label {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.filtros input,
+select {
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 15px;
+  outline: none;
+  background-color: #fff;
+  transition: 0.3s;
 }
 
 /* Fim do arquivo global.css */
