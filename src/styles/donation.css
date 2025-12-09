@@ -3,7 +3,9 @@
   Estilos para a seção de Doação.
 
 */
-
+#donation .container-row { 
+  flex-direction: row;
+}
 .donation-cards-container {
   gap: 30px;
   justify-content: space-between;

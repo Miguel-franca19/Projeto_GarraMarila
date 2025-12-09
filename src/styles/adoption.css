@@ -4,6 +4,11 @@
 
 */
 
+#adoption .container-row, 
+#all-animals .container-row { 
+  flex-direction: row;
+}
+
 .adoption-subtitle {
   font-size: 1.1em;
   font-weight: 500;
@@ -12,7 +17,7 @@
 }
 
 .adoption-cards-container {
-  justify-content: space-between;
+  justify-content: space-between !important;
   margin: auto;
   gap: 30px;
   width: 100%;
@@ -38,6 +43,7 @@
   padding: 15px;
   display: flex;
   flex-direction: column; 
+  justify-content: flex-start;
   height: min-content;
 }
 
