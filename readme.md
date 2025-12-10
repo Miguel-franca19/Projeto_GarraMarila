@@ -13,22 +13,28 @@
 ---
 
 ## 📄 Descrição
-Este projeto tem o objetivo de colaborar com a instituição de Garro Marília. Ele foi criado como parte do aprendizado sobre o campo de tecnologia, com foco em tecnologias de desenvolvimeto web.
+Este projeto tem o objetivo de colaborar com a instituição Garra Marília. Ele foi criado como parte do aprendizado sobre o campo da tecnologia, com foco em desenvolvimento web.
 
 ## 💻 Tecnologias Utilizadas
 * HTML5
 * CSS3
 * Git (para controle de versão)
-* GitHub (para hospedagem e colaboração)
+* GitHub e Vercel (para hospedagem e colaboração)
 
 ## 📁 Estrutura de Pastas
 
 ```
 meu-projeto/
-├── docs/             # Documentação extra
 ├── src/
-│   ├── css/          # Arquivos de estilo
+│   ├── assets/       # Mídias e recursos do projeto
+│   │   ├── icons/    # Ícones e pequenos gráficos
+│   │   └── animais/  # Imagens relacionadas a animais
+│   ├── styles/       # Arquivos de estilo
 │   │   └── style.css
+│   ├── scripts/      # Arquivos JavaScript
+│   ├── fonts/        # Arquivos de fontes
+│   ├── services/     # Módulos de serviço (ex: API)
+│   ├── libs/         # Bibliotecas externas
 │   └── index.html    # Arquivo principal
 └── README.md
 ```
@@ -58,7 +64,7 @@ Sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*! Para con
 Este projeto está sob a licença [MIT License](https://opensource.org/licenses/MIT).
 
 ## 🧑‍🤝‍🧑 Autores
-* **[Seu Nome](https://github.com/seuperfil)** - Desenvolvedor Principal
+* **[João Pedro de Oliveira](https://github.com/jaojogadez)** - Desenvolvedor Principal
 
 
 # Guia Rápido: Subindo um Projeto Local para o GitHub 🚀
@@ -106,3 +112,4 @@ Envie o commit do seu repositório local para o GitHub:
 ```bash
 git push -u origin main
 ```
+Feito com dedicação para apoiar o Garra Marília
