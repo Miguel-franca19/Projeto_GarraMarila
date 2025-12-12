@@ -48,15 +48,6 @@ const animais = [
   },
   {
     classe:"cachorro",
-    nome: "Penny",
-    tipo: "Fêmea",
-    idade: "+10 anos",
-    descricao: "Cachorrinha sênior carinhosa, com muita história e amor para dar.",
-    imagemSrc: "src/assets/animais/6 - Penny - +10 anos.png",
-    imagemAlt: "Cachorra Penny",
-  },
-  {
-    classe:"cachorro",
     nome: "Melissa",
     tipo: "Fêmea",
     idade: "5 anos",
@@ -369,17 +360,7 @@ const animais = [
     descricao: "Cachorrinha sênior paciente e fiel, tece laços de amor com quem a acolhe.",
     imagemSrc: "src/assets/animais/42 - Penélope - 12 anos.png",
     imagemAlt: "Cachorra Penélope",
-  },
-  {
-    classe: "cachorro",
-    nome: "Zimba",
-    tipo: "Macho",
-    idade: "6 anos",
-    descricao: "Cachorro jovem-adulto com personalidade forte e coração bondoso.",
-    imagemSrc: "src/assets/animais/43 - Zimba - 6 anos.png",
-    imagemAlt: "Cachorro Zimba",
-  },
-  
+  },  
 ];
 
 /**
@@ -396,6 +377,7 @@ function criarCardAnimal(animal) {
                 src="${animal.imagemSrc}"
                 alt="${animal.imagemAlt}"
                 class="adoption-img"
+                loading="lazy"
             />
             <div class="adoption-card-content">
                 <div
