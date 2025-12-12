@@ -96,6 +96,13 @@
   transition: color 150ms ease;
 }
 
+.nav-link.active {
+  color: var(--primary-color);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--hover-color);
+}
+
 .sections-nav .nav .nav-link.active {
   color: var(--primary-color);
   padding: 5px;
@@ -127,7 +134,6 @@
   right: -100%;
   width: 75%;
   height: 100%;
-  background-color: var(--white-color);
   box-shadow: 2px -10px 15px rgba(0, 0, 0, 0.1);
   transition: right 250ms ease;
   z-index: 1000;
@@ -163,7 +169,6 @@
   flex-direction: column;
   margin: 60px 0 40px;
   list-style: none;
-
 }
 
 .sidebar-list {
@@ -226,7 +231,8 @@
   display: none !important;
 }
 
-.navbar.sticky-scrolled {
+.navbar.sticky-scrolled,
+.sidebar {
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -252,14 +258,14 @@
 /* Estilos para o Accordion */
 .accordion-header {
   cursor: pointer;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
 }
 
 .accordion-header .sidebar-nav-link {
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .accordion-icon {
@@ -271,14 +277,14 @@
 }
 
 .accordion-header.active .accordion-icon {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 .accordion-content {
-  max-height: 0; 
-  overflow: hidden; 
-  transition: max-height 300ms ease-in-out; 
-  padding-left: 10px; 
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out;
+  padding-left: 10px;
 }
 
 .accordion-content .hover-nav-item {
