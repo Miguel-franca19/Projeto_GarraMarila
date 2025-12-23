@@ -23,47 +23,47 @@
 }
 
 :root {
-  --primary-color: #ff9800;
-  --secondary-color: #ffb347;
-  /* Laranja Pastel */
-  --tertiary-color: #fff4c7;
-  --quartenary-color: #08415c;
-  /* Azul Escuro - Insticucional */
-  --quintenary-color: #b45309;
-  --font-color: #585858;
-  --btn-color: black;
-  --hover-color: rgb(240, 240, 240);
-  --title-color: #222;
-  --background-color: #f5f5f5;
+  /* Cores Principais - Escala de Azuis */
+  --primary-color: #08415c;
+  --secondary-color: #126d96;
+  --tertiary-color: #e6f1f6;
+  --quartenary-color: #032535;
+  --quintenary-color: #38bdf8;
+  --sextanary-color: #ef7a8d;
+
+  --font-color: #334155;
+  --title-color: #0f172a;
+  --btn-color: #08415c;
+  --hover-color: #0a5275;
+  --hover-gray: #f5f8fd;
+  --nav-side-color: rgba(255, 255, 255, 0.7);
+
+  --background-color: #f8fafc;
   --white-color: #ffffff;
+  --border: 1px solid #e2e8f0;
+
   --font-title: "MarvinRound", sans-serif;
   --font-text: "Nunito", sans-serif;
-
-  /* Borda para testar containers */
-  --border: 1px solid #c0c0c0;
 }
 
 .dark {
   /* Cores para o Modo Escuro */
-  --primary-color: #ff9800;
-  /* Pode manter cores de destaque, se quiser */
-  --secondary-color: #dd7c00;
-  /* Uma variação escura do destaque */
-  --tertiary-color: #2c2c2c;
-  /* Cor de fundo principal escura */
-  --quartenary-color: #ffffff;
-  /* Use branco para o que era azul escuro */
-  --quintenary-color: #ffb347;
-  /* Uma cor clara para o que era escuro */
-  --font-color: #e0e0e0;
-  /* Cor da fonte clara */
-  --background-color: #1a1a1a;
-  /* Fundo mais escuro */
-  --white-color: #2c2c2c;
-  /* Onde era branco puro, coloque um cinza escuro */
-  --btn-color: white;
-  --title-color: #ffb347;
-  --hover-color: #1b1b1b;
+  --primary-color: #38bdf8;
+  --secondary-color: #0ea5e9;
+  --tertiary-color: #1e293b;
+  --quartenary-color: #f1f5f9;
+  --quintenary-color: #7dd3fc;
+
+  --font-color: #cbd5e1;
+  --title-color: #f8fafc;
+  --btn-color: #38bdf8;
+  --hover-color: #0ea5e9;
+  --hover-gray: #0a517570;
+  --nav-side-color: rgba(25, 22, 54, 0.8);
+
+  --background-color: #020617;
+  --white-color: #0f172a;
+  --border: 1px solid #1e293b;
 }
 
 html,
@@ -201,7 +201,8 @@ a {
 }
 
 .btn-secondary:hover {
-  background-color: var(--hover-color);
+  background-color: var(--hover-gray);
+  color: var(--secondary-color);
 }
 
 /* Text Elements CSS */
@@ -276,7 +277,6 @@ h3.title {
 }
 
 @media (min-width: 768px) {
-
   .buttons-navbar {
     display: flex !important;
   }
@@ -296,7 +296,6 @@ h3.title {
 }
 
 @media (max-width: 1000px) {
-
   #centraliza {
     display: grid;
     place-items: center;
@@ -319,12 +318,10 @@ h3.title {
     justify-content: center;
   }
 
-
   .espaco-filtro {
     background-color: #08415c;
     flex-direction: column;
   }
-
 }
 
 .vamooo {

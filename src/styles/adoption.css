@@ -96,7 +96,7 @@
 }
 
 .see-all-btn:hover {
-  background-color: var(--hover-color) !important;
+  background-color: var(--hover-gray) !important;
 }
 
 @keyframes fadeIn {

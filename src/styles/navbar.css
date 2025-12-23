@@ -100,13 +100,14 @@
   color: var(--primary-color);
   padding: 5px;
   border-radius: 5px;
-  background-color: var(--hover-color);
+  background-color: var(--secondary-color);
 }
 
 .sections-nav .nav .nav-link.active {
   color: var(--primary-color);
   padding: 5px;
   border-radius: 5px;
+  color: var(--white-color);
   background-color: var(--hover-color);
 }
 
@@ -125,7 +126,7 @@
 
 .nav-link:hover,
 .sidebar-nav-link:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .sidebar {
@@ -233,14 +234,14 @@
 
 .navbar.sticky-scrolled,
 .sidebar {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--nav-side-color);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .dark .navbar.sticky-scrolled {
-  background-color: rgba(38, 38, 38, 0.8);
+  background-color: var(--nav-side-color);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
